@@ -1,0 +1,63 @@
+:root {
+    /* Colors */
+    --color-navy: #1f2937;
+    --color-ivory: #fffbeb;
+    --color-black: #1a1a1a;
+
+    /* Typography */
+    --font-family: monospace;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+}
+
+html {
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--color-ivory);
+    font-family: var(--font-family);
+    background: var(--color-navy);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-size: var(--font-size-base);
+}
+
+h1, h2, h3 {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+}
+
+.content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.back-arrow {
+    font-size: 2rem;
+    text-decoration: none;
+}
