@@ -2,11 +2,13 @@
 <html>
   <head>
       <meta charset="utf-8">
-      <meta name="viewport" 
+      <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
       <title>My site</title>
+      <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   </head>
   <body>
-    <p>this is the base template</p>
+      {{ block "main" . }}
+      {{ end }}
   </body>
 </html>
