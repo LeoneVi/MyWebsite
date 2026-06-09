@@ -1,12 +1,7 @@
 {{ define "main" }}
-{{ partials "header.html" . }}
+{{ partial "language_chooser.html" . }}
 <div class="layout">
   <div class="content">
-    <div class="links">
-      <a href="https://github.com/LeoneVi">GitHub</a>
-      <span> | </span>
-      <a href="https://www.linkedin.com/in/victoria-leone-b27162270/">LinkedIn</a>
-    </div>
     <h1>{{ .Site.Title }}</h1>
     {{ .Content }}
   </div>
