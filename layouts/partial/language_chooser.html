@@ -1,9 +1,0 @@
-{{ if .Translations }}
-    {{ range .Translations }}
-        <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
-    {{ end }}
-{{ else }}
-    {{ range .Site.Home.Translations }}
-        <span><s>{{ .Language.LanguageName }}</s></span>
-    {{ end }}
-{{ end }}

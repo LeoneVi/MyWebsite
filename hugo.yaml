@@ -2,15 +2,9 @@ baseURL: https://toryleone.com/
 locale: en-us
 title: 'Tory''s Website'
 
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: true
 
-[languages]
-
-  [languages.en]
-    languageName = "English"
-    weight = 1
-
-  [languages.pt]
-    languageName = "Português"
-    weight = 2
+languages:
+  en : { label: "English", weight: 1 }
+  pt: { label: "Português", weight: 2 }
