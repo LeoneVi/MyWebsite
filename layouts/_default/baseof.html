@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport"
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-      <title>Tory Leone</title>
-      {{ $style := resources.Get "css/style.css" }}
-      <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  </head>
-  <body>
-      {{ block "main" . }}
-      {{ end }}
-  </body>
+    <title>Tory Leone</title>
+    {{ $style := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $languagedropdownStyle := resources.Get "css/language-dropdown.css" }}
+    <link rel="stylesheet" href="{{ $languagedropdownStyle.RelPermalink }}">
+</head>
+<body>
+{{ block "main" . }}
+{{ end }}
+</body>
 </html>

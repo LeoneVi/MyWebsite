@@ -16,10 +16,10 @@
             {{ $lang := .Language.Lang }}
 
             {{ if eq $lang "en" }}
-            <img src="/images/flags/us.svg" alt="English" width="24" height="16"/>
+            <img src='{{ "images/flags/us.svg" | relURL }}' alt="English" width="24" height="16"/>
 
             {{ else if eq $lang "pt" }}
-            <img src="/images/flags/br.svg" alt="Português" width="24" height="16"/>
+            <img src='{{ "images/flags/br.svg" | relURL }}' alt="Português" width="24" height="16"/>
 
             {{ else }}
             <span><s>{{ .Language.LanguageName }}</s></span>
