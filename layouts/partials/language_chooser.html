@@ -2,21 +2,55 @@
 
 <div class="lang-dropdown">
 
+    <!-- button face -->
     <button class="lang-btn">
-        <img src='{{ "images/icons/globe.svg" | relURL }}' alt="🌐" />
-        <img src='{{ "images/icons/arrow-down.svg" | relURL }}' alt="▼" />
+        <span class="icon">
+            {{ readFile "static/icons/globe.svg" | safeHTML }}
+        </span>
+        <span class="icon">
+            {{ readFile "static/icons/arrow-down.svg" | safeHTML }}
+        </span>
     </button>
 
     <div class="lang-menu">
 
+        {{ $current := .Page.Language.Lang }}
         {{ range .Page.AllTranslations }}
-        <a href="{{ .RelPermalink }}" class="lang-item">
-            {{ if eq .Language.Lang "en" }}
-            <img src='{{ "images/icons/flags/us.svg" | relURL }}' alt="English"/>
-            {{ else if eq .Language.Lang "pt" }}
-            <img src='{{ "images/icons/flags/br.svg" | relURL }}' alt="Português"/>
+        {{ $lang := .Language.Lang }}
+
+        <div class="lang-item">
+
+            {{ if eq $lang $current }}
+            <!-- current language -->
+            <span class="lang-active">
+                        {{ if eq $lang "en" }}
+                            <span class="icon">
+                                    {{ readFile "static/icons/flags/us.svg" | safeHTML }}
+                            </span>
+                        {{ else if eq $lang "pt" }}
+                            <span class="icon">
+                                    {{ readFile "static/icons/flags/br.svg" | safeHTML }}
+                            </span>
+                        {{ end }}
+                    </span>
+
+            {{ else }}
+            <!-- inactive language -->
+            <a href="{{ .RelPermalink }}" class="lang-link">
+                {{ if eq $lang "en" }}
+                <span class="icon">
+                    {{ readFile "static/icons/flags/us.svg" | safeHTML }}
+                </span>
+                {{ else if eq $lang "pt" }}
+                <span class="icon">
+                    {{ readFile "static/icons/flags/br.svg" | safeHTML }}
+                </span>
+                {{ end }}
+            </a>
             {{ end }}
-        </a>
+
+        </div>
+
         {{ end }}
 
     </div>

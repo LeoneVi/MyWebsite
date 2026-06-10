@@ -4,16 +4,15 @@
     float: right;
 }
 
-.lang-btn {
-    background: none;
-    border: none;
-    color: inherit;
-    font-size: var(--font-size-lg);
-    cursor: pointer;
-    padding: var(--spacing-sm);
-    display: flex;
+.lang-btn svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.lang-btn .icon {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
 }
 
 .lang-btn:hover {
@@ -24,11 +23,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--color-navy);
     display: none;
     flex-direction: column;
-    min-width: 150px;
-    z-index: 10;
     margin-top: 0.5rem;
 }
 
@@ -42,6 +38,7 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+    opacity: 0.8;
     text-decoration: none;
     color: var(--color-ivory);
 }
@@ -51,9 +48,8 @@
     text-decoration: underline;
 }
 
-.lang-item {
-    display: flex;
-    gap: 8px;
-    opacity: 0.6;
-    text-decoration: none;
+.lang-menu svg {
+    width: 25px;
+    height: 25px;
+    display: block;
 }
