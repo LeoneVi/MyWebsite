@@ -1,9 +1,34 @@
 {{ if .Translations }}
+
+<div class="lang-dropdown">
+
+    <!-- Trigger (current language or icon) -->
+    <button class="lang-btn">
+        🌐
+    </button>
+
+    <!-- Dropdown menu -->
+    <div class="lang-menu">
+
         {{ range .Translations }}
-            <a href="{{ .RelPermalink }}">{{ .Language }}</a>
+        <a href="{{ .RelPermalink }}" class="lang-item">
+
+            {{ $lang := .Language.Lang }}
+
+            {{ if eq $lang "en" }}
+            <img src="/images/flags/us.svg" alt="English"/>
+
+            {{ else if eq $lang "pt" }}
+            <img src="/images/flags/br.svg" alt="Português"/>
+
+            {{ else }}
+            <span><s>{{ .Language.LanguageName }}</s></span>
+            {{ end }}
+
+        </a>
         {{ end }}
-    {{ else }}
-        {{ range .Site.Home.Translations }}
-            <span><s>{{ .Language }}</s></span>
-        {{ end }}
+
+    </div>
+</div>
+
 {{ end }}
