@@ -3,7 +3,7 @@ locale: en-us
 title: 'Tory''s Website'
 
 defaultContentLanguage: "en"
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 
 languages:
   en : { label: "English", weight: 1 }
