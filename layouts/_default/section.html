@@ -1,4 +1,14 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    {{ if .Params.empty }}
+        <h1>{{ .Title }}</h1>
+        {{ if eq .Lang "pt" }}
+            <h2>Este site está em construção 🚧</h2>
+            <p>Por favor, volte em breve!</p>
+        {{ else }}
+            <h2>This site is under construction 🚧</h2>
+            <p>Please check back soon!</p>
+        {{ end }}
+    {{ else }}
+        {{ .Content }}
+    {{ end }}
 {{ end }}

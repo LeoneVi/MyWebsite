@@ -1,6 +1,0 @@
-{{ $url := urls.Parse .Destination }}
-{{ if or (eq $url.IsAbs true) (hasPrefix .Destination "/") }}
-    <img src="{{ .Destination }}" title="{{ .Title }}" alt="{{ .Title }}"/>
-{{ else }}
-    <img src="{{ .Page.Permalink }}/{{ .Destination }}" title="{{ .Title }}" alt="{{ .Title }}"/>
-{{ end }}
