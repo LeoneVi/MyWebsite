@@ -1,0 +1,21 @@
+.home-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-image {
+
+}
+
+.profile-image {
+    max-height: 50vh;
+    width: auto;
+    border-radius: 8px;
+}
