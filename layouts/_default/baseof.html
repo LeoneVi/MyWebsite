@@ -5,13 +5,21 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Tory Leone</title>
-    {{ $style := resources.Get "css/style.css" }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    {{ $languagedropdownStyle := resources.Get "css/language-dropdown.css" }}
-    <link rel="stylesheet" href="{{ $languagedropdownStyle.RelPermalink }}">
+    {{ $style := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $languagedropdownStyle := resources.Get "css/language-dropdown.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $languagedropdownStyle.Permalink }}">
+    {{ if .IsHome }}
+    {{ $homeStyle := resources.Get "css/home.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $homeStyle.Permalink }}">
+    {{ end }}
 </head>
 <body>
+
+{{ partial "header.html" . }}
+
 {{ block "main" . }}
 {{ end }}
+
 </body>
 </html>

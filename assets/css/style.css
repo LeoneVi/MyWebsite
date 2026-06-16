@@ -1,15 +1,15 @@
 :root {
     /* Colors */
-    --color-navy: #1f2937;
+    --color-indigo: #393D60;
     --color-ivory: #fffbeb;
     --color-black: #1a1a1a;
 
     /* Typography */
     --font-family: monospace;
     --font-size-sm: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 1.5rem;
+    --font-size-base: 1.125rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
 
     /* Spacing */
     --spacing-xs: 0.25rem;
@@ -24,7 +24,8 @@ html {
     padding: 2rem;
     color: var(--color-ivory);
     font-family: var(--font-family);
-    background: var(--color-navy);
+    background: var(--color-indigo);
+    overflow-y: hidden;
 }
 
 a {
@@ -46,18 +47,8 @@ h1, h2, h3 {
     margin-bottom: var(--spacing-md);
 }
 
-.layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-lg);
-}
-
-.content {
-    flex: 1;
-    min-width: 280px;
-}
-
-.back-arrow {
-    font-size: 2rem;
-    text-decoration: none;
+hr {
+    border: none;
+    border-top: 2px solid var(--color-ivory);
+    margin: 1rem 0;
 }

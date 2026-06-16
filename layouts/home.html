@@ -1,9 +1,10 @@
 {{ define "main" }}
-{{ partial "language_chooser.html" . }}
-<div class="layout">
-  <div class="content">
-    <h1>{{ .Title }}</h1>
+<div class="home-layout">
+  <div class="home-content">
     {{ .Content }}
+  </div>
+  <div class="home-image">
+    <img src="/images/StCatherine.JPG" alt="Profile" class="profile-image">
   </div>
 </div>
 {{ end }}
