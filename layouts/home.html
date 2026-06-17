@@ -1,10 +1,15 @@
 {{ define "main" }}
 <div class="home-layout">
-  <div class="home-content">
-    {{ .Content }}
+  <div class="home-main">
+    <div class="home-content">{{ .Content }}</div>
+    <div class="home-image">
+      <img src="{{ .Params.featured_image }}" class="profile-image">
+    </div>
   </div>
-  <div class="home-image">
-    <img src={{ .Params.featured_image }} alt="Profile" class="profile-image">
+
+  <div class="web-ring">
+    <div id="umaring"></div>
+    <script src="https://umaring.github.io/toryleone.js"></script>
   </div>
 </div>
 {{ end }}

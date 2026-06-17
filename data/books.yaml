@@ -78,7 +78,7 @@ books:
   cover: null
 - title: On Women
   author: Arthur Schopenhauer
-  review: Laughably stupid.
+  review: No review given.
   stars: 1
   finished_dates:
   - 2025/05/23
@@ -89,7 +89,7 @@ books:
     tea, and imagining yourself as a refined Victorian lady? I did, which is why I
     picked up this book! It’s packed with delightful mini-stories, historical news
     articles, and interesting passages that offer a glimpse into how Victorians saw
-    the world. <br/><br/>This book transports you right into the Victorian era. Highly
+    the world. This book transports you right into the Victorian era. Highly
     recommended!
   stars: 5
   finished_dates:
@@ -97,31 +97,10 @@ books:
   cover: https://covers.openlibrary.org/b/isbn/9780719058790-L.jpg?default=false
 - title: 'The Perfect Scoop: Ice Creams, Sorbets, Granitas, and Sweet Accompaniments'
   author: David Lebovitz
-  review: Icecream recipe list and review
+  review: No review given.
   stars: 0
   finished_dates: []
   cover: https://covers.openlibrary.org/b/isbn/9781580088084-L.jpg?default=false
-- title: Sewing Classic Clothes for Children
-  author: Kitty Benton
-  review: No review given.
-  stars: 0
-  finished_dates: []
-  cover: https://covers.openlibrary.org/b/isbn/9780878512041-L.jpg?default=false
-- title: 'Patterns of Fashion 1: Englishwomen''s Dresses and Their Construction C.
-    1660-1860'
-  author: Janet Arnold
-  review: No review given.
-  stars: 5
-  finished_dates:
-  - 2021/02/01
-  cover: https://covers.openlibrary.org/b/isbn/9780896760264-L.jpg?default=false
-- title: 'Patterns of Fashion 2: Englishwomen''s Dresses and Their Construction C.1860-1940'
-  author: Janet Arnold
-  review: No review given.
-  stars: 5
-  finished_dates:
-  - 2021/02/01
-  cover: https://covers.openlibrary.org/b/isbn/9780896760271-L.jpg?default=false
 - title: 'Hand Bookbinding: A Manual of Instruction (Dover Crafts: Book Binding &
     Printing)'
   author: Aldren A. Watson
@@ -151,9 +130,9 @@ books:
   finished_dates:
   - 2018/07/14
   cover: https://covers.openlibrary.org/b/isbn/9781626923485-L.jpg?default=false
-- title: おやすみプンプン コミック 全13巻完結セット (Oyasumi Punpun Box Set)
+- title: おやすみプンプン コミック (Oyasumi Punpun)
   author: Inio Asano
-  review: No review given.
+  review: I would not recommend this manga to anyone.
   stars: 3
   finished_dates:
   - 2019/12/01
@@ -176,9 +155,8 @@ books:
   author: Laurel Gallucci
   review: A lot of the recipes here are unfortunately a huge waste of ingredients.
     Gluten free flours are expensive as it is, the amount maple syrup some of these
-    recipes call for is crazy!<br/><br/>Recipes I liked:<br/>—————————<br/>• Streusel
-    blueberry muffins<br/><br/>Recipes I did not like:<br/>———————————<br/>• Coconut
-    flour crepes
+    recipes call for is crazy! I liked the Streusel blueberry muffins recipe, but the coconut 
+    flour crepes came out horribly.
   stars: 2
   finished_dates: []
   cover: https://covers.openlibrary.org/b/isbn/9781524761455-L.jpg?default=false
@@ -238,7 +216,7 @@ books:
     offer a clear view of reality: Your partner will change, and so will you. Both
     of you will have to make sacrifices to keep yourself and your partner happy. You
     both need to show acts of love to each other even when you don''t feel "in love,"
-    because over time, those feelings can return and deepen.<br/><br/>I couldn''t
+    because over time, those feelings can return and deepen. I couldn''t
     have gotten a better lesson on the meaning of singleness and marriage.'
   stars: 5
   finished_dates:
