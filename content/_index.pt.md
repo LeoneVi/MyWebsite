@@ -1,5 +1,6 @@
 ---
-title: Site da Tory 
+title: Site da Tory
+featured_image: "/images/StCatherine.JPG"
 ---
 
 # Olá, sou Tory

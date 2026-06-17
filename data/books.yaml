@@ -1,0 +1,343 @@
+books:
+- title: Rapunzel
+  author: Jacob Grimm
+  review: No review given.
+  stars: 4
+  finished_dates:
+  - 2020/12/07
+  cover: null
+- title: Arch Linux
+  author: Andrew Brookes
+  review: I read this because it was the most recently published book I could find.
+    It appears very handmade and the writing is informal. I appreciate having a resource
+    that explained everything in more detail while also looking at the arch docs.
+    Helped me with my first manual install.
+  stars: 4
+  finished_dates:
+  - 2026/01/22
+  cover: null
+- title: 'Just for Fun: The Story of an Accidental Revolutionary'
+  author: Linus Torvalds
+  review: No review given.
+  stars: 4
+  finished_dates:
+  - 2026/01/16
+  cover: https://covers.openlibrary.org/b/isbn/9780066620732-L.jpg?default=false
+- title: 'Cinderella: By Charles Perrault - Illustrated'
+  author: Charles Perrault
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2020/12/07
+  cover: null
+- title: 'Why We''re Catholic: Our Reasons for Faith, Hope, and Love'
+  author: Trent Horn
+  review: No review given.
+  stars: 4
+  finished_dates:
+  - 2025/07/20
+  cover: https://covers.openlibrary.org/b/isbn/9781683570240-L.jpg?default=false
+- title: Emergence
+  author: Shindo L
+  review: No review given.
+  stars: 1
+  finished_dates:
+  - 2019/06/10
+  cover: null
+- title: 'The Rape of Nanking: The Forgotten Holocaust of World War II'
+  author: Iris Chang
+  review: Before I read this book, I knew little about the Rape of Nanking, aside
+    from it being a massacre committed by the Japanese during World War Two. This
+    book vividly explained the sheer scale and depravity of this massacre. I now know
+    of the Safety Zones, established and protected by heroic Westerners, and the sacrifices
+    they made to save thousands of Chinese civilians.  If you're unfamiliar with this
+    tragedy, or know little details, I encourage you to read this book so that the
+    stories of hundreds of thousands of victims will not be forgotten.
+  stars: 5
+  finished_dates:
+  - 2024/09/09
+  cover: https://covers.openlibrary.org/b/isbn/9780140277449-L.jpg?default=false
+- title: A Little History of the World
+  author: E.H. Gombrich
+  review: A great introduction into the subject of history. Each topic is summarized
+    briefly, however it lays the foundations for readers to delve into the areas of
+    history they found most interesting in the book. I especially appreciated how
+    Gombrich ends the book with correcting errors he made in the first release in
+    the book, it's a great lesson we as readers need to be critical of information
+    we hear.
+  stars: 4
+  finished_dates:
+  - 2025/06/29
+  cover: https://covers.openlibrary.org/b/isbn/9780300108835-L.jpg?default=false
+- title: Tess of the D’Urbervilles
+  author: Thomas Hardy
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2025/05/21
+  cover: null
+- title: On Women
+  author: Arthur Schopenhauer
+  review: Laughably stupid.
+  stars: 1
+  finished_dates:
+  - 2025/05/23
+  cover: null
+- title: 'Victorian women''s magazines: An anthology'
+  author: Margaret Beetham
+  review: Have you ever dreamed of lighting a crackling fireplace, sipping a cup of
+    tea, and imagining yourself as a refined Victorian lady? I did, which is why I
+    picked up this book! It’s packed with delightful mini-stories, historical news
+    articles, and interesting passages that offer a glimpse into how Victorians saw
+    the world. <br/><br/>This book transports you right into the Victorian era. Highly
+    recommended!
+  stars: 5
+  finished_dates:
+  - 2021/08/09
+  cover: https://covers.openlibrary.org/b/isbn/9780719058790-L.jpg?default=false
+- title: 'The Perfect Scoop: Ice Creams, Sorbets, Granitas, and Sweet Accompaniments'
+  author: David Lebovitz
+  review: Icecream recipe list and review
+  stars: 0
+  finished_dates: []
+  cover: https://covers.openlibrary.org/b/isbn/9781580088084-L.jpg?default=false
+- title: Sewing Classic Clothes for Children
+  author: Kitty Benton
+  review: No review given.
+  stars: 0
+  finished_dates: []
+  cover: https://covers.openlibrary.org/b/isbn/9780878512041-L.jpg?default=false
+- title: 'Patterns of Fashion 1: Englishwomen''s Dresses and Their Construction C.
+    1660-1860'
+  author: Janet Arnold
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2021/02/01
+  cover: https://covers.openlibrary.org/b/isbn/9780896760264-L.jpg?default=false
+- title: 'Patterns of Fashion 2: Englishwomen''s Dresses and Their Construction C.1860-1940'
+  author: Janet Arnold
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2021/02/01
+  cover: https://covers.openlibrary.org/b/isbn/9780896760271-L.jpg?default=false
+- title: 'Hand Bookbinding: A Manual of Instruction (Dover Crafts: Book Binding &
+    Printing)'
+  author: Aldren A. Watson
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2021/04/01
+  cover: https://covers.openlibrary.org/b/isbn/9780486291574-L.jpg?default=false
+- title: 'Oedipus Rex  (The Theban Plays, #1)'
+  author: Sophocles
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2017/10/01
+  cover: https://covers.openlibrary.org/b/isbn/9781580495936-L.jpg?default=false
+- title: Counting the Cost
+  author: Jill Duggar
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2024/12/15
+  cover: null
+- title: Miss Kobayashi's Dragon Maid, Vol. 1
+  author: coolkyousinnjya
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2018/07/14
+  cover: https://covers.openlibrary.org/b/isbn/9781626923485-L.jpg?default=false
+- title: おやすみプンプン コミック 全13巻完結セット (Oyasumi Punpun Box Set)
+  author: Inio Asano
+  review: No review given.
+  stars: 3
+  finished_dates:
+  - 2019/12/01
+  cover: null
+- title: FLCL Omnibus
+  author: Gainax
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2020/01/14
+  cover: https://covers.openlibrary.org/b/isbn/9781595828682-L.jpg?default=false
+- title: My Lesbian Experience with Loneliness
+  author: Kabi Nagata
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2020/01/01
+  cover: https://covers.openlibrary.org/b/isbn/9781626926035-L.jpg?default=false
+- title: 'Sweet Laurel: Recipes for Whole Food, Grain-Free Desserts: A Baking Book'
+  author: Laurel Gallucci
+  review: A lot of the recipes here are unfortunately a huge waste of ingredients.
+    Gluten free flours are expensive as it is, the amount maple syrup some of these
+    recipes call for is crazy!<br/><br/>Recipes I liked:<br/>—————————<br/>• Streusel
+    blueberry muffins<br/><br/>Recipes I did not like:<br/>———————————<br/>• Coconut
+    flour crepes
+  stars: 2
+  finished_dates: []
+  cover: https://covers.openlibrary.org/b/isbn/9781524761455-L.jpg?default=false
+- title: Crime and Punishment
+  author: Fyodor Dostoevsky
+  review: One of the best books I have ever read.
+  stars: 5
+  finished_dates:
+  - 2023/12/12
+  cover: null
+- title: 'The Maiden Tribute of Modern Babylon: The Report of the Secret Commission'
+  author: William T. Stead
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2023/03/01
+  cover: https://covers.openlibrary.org/b/isbn/9781463647681-L.jpg?default=false
+- title: I'm Glad My Mom Died
+  author: Jennette McCurdy
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2023/12/05
+  cover: null
+- title: Why Does He Do That? Inside the Minds of Angry and Controlling Men
+  author: Lundy   Bancroft
+  review: Read this book to protect yourself, your daughters, your sisters, mothers,
+    and friends from abusers.
+  stars: 5
+  finished_dates:
+  - 2023/12/05
+  cover: https://covers.openlibrary.org/b/isbn/9780425191651-L.jpg?default=false
+- title: 'Digital Minimalism: Choosing a Focused Life in a Noisy World'
+  author: Cal Newport
+  review: No review given.
+  stars: 3
+  finished_dates:
+  - 2024/01/01
+  cover: null
+- title: 'The Simple Path to Wealth: Your Road Map to Financial Independence and a
+    Rich, Free Life'
+  author: J.L. Collins
+  review: I went from knowing nothing about personal finance, stock and bonds - to
+    becoming confident in investing for my future. If you think that all these things
+    are unapproachable, this book is for you. This was a great introduction into how
+    adults should handle their money!
+  stars: 4
+  finished_dates:
+  - 2024/11/15
+  cover: null
+- title: 'The Meaning of Marriage: Facing the Complexities of Commitment with the
+    Wisdom of God'
+  author: Timothy J. Keller
+  review: 'This book is for everyone: young adults, singles looking for a partner,
+    singles who never want to marry, and people who are dating, engaged, or married
+    already! Its aim is to shake off the myths and misunderstanding of marriage, and
+    offer a clear view of reality: Your partner will change, and so will you. Both
+    of you will have to make sacrifices to keep yourself and your partner happy. You
+    both need to show acts of love to each other even when you don''t feel "in love,"
+    because over time, those feelings can return and deepen.<br/><br/>I couldn''t
+    have gotten a better lesson on the meaning of singleness and marriage.'
+  stars: 5
+  finished_dates:
+  - 2024/08/21
+  cover: https://covers.openlibrary.org/b/isbn/9780525952473-L.jpg?default=false
+- title: The Art of Yoh Yoshinari Illustrations 吉成曜画集 イラストレーション編
+  author: Yoh Yoshinari
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2019/04/01
+  cover: https://covers.openlibrary.org/b/isbn/9784902948165-L.jpg?default=false
+- title: Looking for Alaska
+  author: John  Green
+  review: I don't know why this is on my highschool reading list, its sexual themes
+    are very inappropriate for children.
+  stars: 1
+  finished_dates:
+  - 2018/09/01
+  cover: https://covers.openlibrary.org/b/isbn/9781435249158-L.jpg?default=false
+- title: The Crucible
+  author: Arthur Miller
+  review: Pretty cool
+  stars: 3
+  finished_dates:
+  - 2020/01/01
+  cover: https://covers.openlibrary.org/b/isbn/9780142437339-L.jpg?default=false
+- title: The Great Gatsby
+  author: F. Scott Fitzgerald
+  review: No review given.
+  stars: 1
+  finished_dates:
+  - 2020/03/01
+  cover: https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg?default=false
+- title: Of Mice and Men
+  author: John Steinbeck
+  review: No review given.
+  stars: 3
+  finished_dates:
+  - 2017/09/01
+  cover: https://covers.openlibrary.org/b/isbn/9780142000670-L.jpg?default=false
+- title: '1984'
+  author: George Orwell
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2020/11/01
+  cover: null
+- title: American Psycho
+  author: Bret Easton Ellis
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2022/06/24
+  cover: https://covers.openlibrary.org/b/isbn/9780679735779-L.jpg?default=false
+- title: The Feeling of Power
+  author: Isaac Asimov
+  review: No review given.
+  stars: 1
+  finished_dates:
+  - 2023/02/01
+  cover: https://covers.openlibrary.org/b/isbn/9789998070011-L.jpg?default=false
+- title: Instinct
+  author: Lester del Rey
+  review: No review given.
+  stars: 1
+  finished_dates:
+  - 2023/02/11
+  cover: null
+- title: Lolita
+  author: Vladimir Nabokov
+  review: The biggest threat to young girls is predatory men. Dolores was robbed of
+    her mother, social freedom and bodily autonomy by a disgusting man. Parents, friends,
+    siblings of girls, be aware of the people around her. Many would like to use her
+    as a pawn in their own selfish game, and deprive her of the growth she needs to
+    become the strong, independent and intelligent woman she deserves to be.<br/>
+  stars: 4
+  finished_dates:
+  - 2024/01/05
+  cover: null
+- title: 'Smart Girls Marry Money: How Women Have Been Duped Into the Romantic Dream--And
+    How They''re Paying For It'
+  author: Elizabeth Ford
+  review: No review given.
+  stars: 3
+  finished_dates:
+  - 2024/01/20
+  cover: https://covers.openlibrary.org/b/isbn/9780762435173-L.jpg?default=false
+- title: The Woman in Me
+  author: Britney Spears
+  review: No review given.
+  stars: 0
+  finished_dates:
+  - 2024/06/17
+  cover: https://covers.openlibrary.org/b/isbn/9781668009048-L.jpg?default=false
+- title: 'The Hands-On Home: A Seasonal Guide to Cooking, Preserving & Natural Homekeeping'
+  author: Erica Strauss
+  review: No review given.
+  stars: 5
+  finished_dates:
+  - 2021/03/20
+  cover: https://covers.openlibrary.org/b/isbn/9781570619915-L.jpg?default=false

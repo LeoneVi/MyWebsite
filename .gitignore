@@ -5,3 +5,5 @@ resources/
 .vscode/
 
 .hugo_build.lock
+*.csv
+.venv

@@ -1,5 +1,6 @@
 ---
 title: Tory's Website
+featured_image: "/images/StCatherine.JPG"
 ---
 
 # Hi, I'm Tory

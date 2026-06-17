@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     gap: 3rem;
+    overflow-y: hidden;
 }
 
 .home-content {

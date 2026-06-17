@@ -25,7 +25,6 @@ html {
     color: var(--color-ivory);
     font-family: var(--font-family);
     background: var(--color-indigo);
-    overflow-y: hidden;
 }
 
 a {

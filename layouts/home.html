@@ -4,7 +4,7 @@
     {{ .Content }}
   </div>
   <div class="home-image">
-    <img src="/images/StCatherine.JPG" alt="Profile" class="profile-image">
+    <img src={{ .Params.featured_image }} alt="Profile" class="profile-image">
   </div>
 </div>
 {{ end }}

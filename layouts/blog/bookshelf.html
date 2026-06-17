@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="bookshelf">
+    <h1>{{ .Title }}</h1>
+
+    {{ $books := site.Data.books.books }}
+
+    <table class="data-table">
+        <thead>
+        <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Stars</th>
+            <th>Review</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range $books }}
+        <tr>
+            <td>
+                {{ if .cover }}
+                <img src="{{ .cover }}" alt="Cover of {{ .title }}" class="book-cover" style="width:40px;height:55px;object-fit:cover;">
+                {{ else }}
+                <div class="book-cover book-cover--placeholder"></div>
+                {{ end }}
+            </td>
+            <td class="book-title">{{ .title }}</td>
+            <td class="book-author">{{ .author }}</td>
+            <td class="book-stars">
+                {{ if .stars }}
+                {{ strings.Repeat .stars "★" }}{{ strings.Repeat (sub 5 .stars) "☆" }}
+                {{ end }}
+            </td>
+            <td class="book-review">{{ if .review }}{{ .review }}{{ end }}</td>
+        </tr>
+        {{ end }}
+        </tbody>
+    </table>
+</div>
+{{ end }}
