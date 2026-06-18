@@ -9,7 +9,6 @@
 
 .bookshelf .data-table th,
 .bookshelf .data-table td {
-    border: 1px solid var(--color-ivory) !important;
     vertical-align: top;
 }
 
@@ -31,13 +30,5 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    border-radius: 2px;
-}
-
-.book-cover--placeholder {
-    width: 40px;
-    height: 55px;
-    background-color: var(--color-ivory);
-    opacity: 0.2;
     border-radius: 2px;
 }
