@@ -1,0 +1,27 @@
+html:has(body.albums) {
+    padding: 0;
+    background: black;
+}
+
+body.albums {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+}
+
+.album-page,
+.albums {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+}

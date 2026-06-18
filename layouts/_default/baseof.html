@@ -10,6 +10,7 @@
     (resources.Get "css/language-dropdown.css")
     (resources.Get "css/home.css")
     (resources.Get "css/bookshelf.css")
+    (resources.Get "css/albums.css")
     | resources.Concat "css/main.css"
     | resources.Minify
     | resources.Fingerprint
@@ -17,9 +18,11 @@
 
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 </head>
-<body>
+<body class="{{ .Layout }}">
 
-{{ partial "header.html" . }}
+{{ if not (or (eq .Layout "albums") (eq .Layout "bookshelf")) }}
+    {{ partial "header.html" . }}
+{{ end }}
 
 {{ block "main" . }}
 {{ end }}
