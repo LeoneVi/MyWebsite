@@ -5,13 +5,22 @@
     {{ $books := site.Data.read_books }}
 
     <table class="data-table">
+        <colgroup>
+            <col class="col-cover">
+            <col class="col-title">
+            <col class="col-author">
+            <col class="col-stars">
+            <col class="col-review">
+            <col class="col-date">
+        </colgroup>
         <thead>
         <tr>
-            <th>Cover</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Stars</th>
-            <th>Review</th>
+            <th>cover</th>
+            <th>title</th>
+            <th>author</th>
+            <th>stars</th>
+            <th>review</th>
+            <th>date read</th>
         </tr>
         </thead>
         <tbody>
@@ -20,9 +29,7 @@
         <tr>
             <td>
                 {{ if and $meta.cover (ne $meta.cover "null") }}
-                <img src="{{ $meta.cover }}" class="book-cover" style="width:40px;height:55px;object-fit:cover;">
-                {{ else }}
-                <div class="book-cover book-cover--placeholder"></div>
+                <img src="{{ $meta.cover }}" class="book-cover">
                 {{ end }}
             </td>
             <td class="book-title">{{ $meta.title }}</td>
@@ -32,7 +39,12 @@
                 {{ strings.Repeat .rating "★" }}{{ strings.Repeat (sub 5 .rating) "☆" }}
                 {{ end }}
             </td>
-            <td class="book-review">{{ if .review }}{{ .review }}{{ end }}</td>
+            <td class="book-review">
+                {{ if .review }}
+                <span class="review-text">{{ .review }}</span>
+                {{ end }}
+            </td>
+            <td class="book-read">{{ if .date_read }}{{ .date_read }}{{ end }}</td>
         </tr>
         {{ end }}
         </tbody>

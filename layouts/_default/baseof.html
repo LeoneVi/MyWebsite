@@ -24,5 +24,9 @@
 {{ block "main" . }}
 {{ end }}
 
+
+{{ $bookshelfJS := resources.Get "js/bookshelf.js" | js.Build }}
+<script src="{{ $bookshelfJS.RelPermalink }}"></script>
+
 </body>
 </html>
