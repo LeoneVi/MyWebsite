@@ -85,6 +85,18 @@ def download_cover(url, filename):
 
 
 def enrich_book(book):
+
+    # check if book is already enriched, and if so, skip
+    meta = book.get("meta", {})
+
+    has_title = bool(meta.get("title"))
+    has_author = bool(meta.get("author"))
+    has_cover = bool(meta.get("cover"))
+    has_pages = bool(meta.get("page_count"))
+
+    if has_title and has_author and has_cover and has_pages: return book
+
+    # if book is not enriched, fetch info via OpenLibrary
     isbn = book.get("isbn")
     work_id = book.get("work_id")
 

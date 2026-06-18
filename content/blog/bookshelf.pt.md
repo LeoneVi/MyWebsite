@@ -1,4 +1,5 @@
 ---
 title: My Bookshelf
-empty: true
 ---
+
+Os livros que eu tenho lido.

@@ -2,7 +2,7 @@
 <div class="bookshelf">
     <h1>{{ .Title }}</h1>
 
-    {{ $books := site.Data.books.books }}
+    {{ $books := site.Data.books }}
 
     <table class="data-table">
         <thead>
@@ -16,19 +16,20 @@
         </thead>
         <tbody>
         {{ range $books }}
+        {{ $meta := .meta }}
         <tr>
             <td>
-                {{ if .cover }}
-                <img src="{{ .cover }}" alt="Cover of {{ .title }}" class="book-cover" style="width:40px;height:55px;object-fit:cover;">
+                {{ if and $meta.cover (ne $meta.cover "null") }}
+                <img src="{{ $meta.cover }}" class="book-cover" style="width:40px;height:55px;object-fit:cover;">
                 {{ else }}
                 <div class="book-cover book-cover--placeholder"></div>
                 {{ end }}
             </td>
-            <td class="book-title">{{ .title }}</td>
-            <td class="book-author">{{ .author }}</td>
+            <td class="book-title">{{ $meta.title }}</td>
+            <td class="book-author">{{ $meta.author }}</td>
             <td class="book-stars">
-                {{ if .stars }}
-                {{ strings.Repeat .stars "★" }}{{ strings.Repeat (sub 5 .stars) "☆" }}
+                {{ if .rating }}
+                {{ strings.Repeat .rating "★" }}{{ strings.Repeat (sub 5 .rating) "☆" }}
                 {{ end }}
             </td>
             <td class="book-review">{{ if .review }}{{ .review }}{{ end }}</td>

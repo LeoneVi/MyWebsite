@@ -1,4 +1,5 @@
 ---
 title: Blog
-empty: true
 ---
+
+📚 [Meu estante](/blog/bookshelf/)
