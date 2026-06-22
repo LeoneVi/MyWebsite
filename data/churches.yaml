@@ -2,11 +2,11 @@
 roman_catholic:
   - name: Newman Catholic Center
     location: Amherst, MA
-  - name: Mary Immaculate of Lourdes ✠
+  - name: Mary Immaculate of Lourdes
     location: Newton, MA
   - name: St. Joseph's Parish
     location: Medford, MA
-  - name: St. Paul Oratory ✠
+  - name: St. Paul Oratory
     location: Warren, MA
   - name: St. Brigid's Parish
     location: Amherst, MA
@@ -16,13 +16,19 @@ roman_catholic:
     location: Cambridge, MA
   - name: Immaculate Conception Parish
     location: Everett, MA
-  - name: St. Patrick Church ✠
+  - name: St. Patrick Church
     location: Columbus, OH
-  - name: St. Thomas More Priory ✠
+  - name: St. Thomas More Priory
     location: Sanford, FL
+  - name: Cathedral Basilica of St. Augustine
+    location: St. Augustine, FL
   - name: Basílica de Nossa Senhora Aparecida
     location: Aparecida, Brazil
   - name: Duomo di Siena
+    location: Siena, Italy
+  - name: Basilica di San Domenico
+    location: Siena, Italy
+  - name: Santuario della Casa di Santa Caterina
     location: Siena, Italy
   - name: Basilica di San Francesco d'Assisi
     location: Assisi, Italy
@@ -32,7 +38,7 @@ roman_catholic:
     location: Assisi, Italy
   - name: Chiesa di Santa Maria sopra Minerva
     location: Assisi, Italy
-  - name: Chiesa dei Santi Michele e Gaetano ✠
+  - name: Chiesa dei Santi Michele e Gaetano
     location: Florence, Italy
   - name: Chiesa di San Giovanni Battista
     location: Bracigliano, Italy
@@ -59,6 +65,9 @@ other:
   - name: Ruggles Baptist Church
     location: Boston, MA
     jurisdiction: Baptist
+  - name: St. Photios Greek Orthodox National Shrine
+    location: St. Augustine, FL
+    jurisdiction: Greek Orthodox
   - name: Assembleia de Deus do Jabaquara
     location: São Paulo, Brazil
     jurisdiction: Evangelical
