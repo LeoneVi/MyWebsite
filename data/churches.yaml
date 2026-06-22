@@ -44,6 +44,12 @@ roman_catholic:
     location: Florence, Italy
   - name: Chiesa di San Giovanni Battista
     location: Bracigliano, Italy
+  - name: Duomo di Napoli
+    location: Naples, Italy
+  - name: Duomo di Salerno
+    location: Salerno, Italy
+  - name: Chiesa di San Giorgio
+    location: Salerno, Italy
   - name: Santuario della Beata Vergine del Santo Rosario di Pompei
     location: Pompei, Italy
   - name: Santuario di Montevergine
@@ -52,6 +58,10 @@ roman_catholic:
     location: Amalfi, Italy
   - name: Parrocchia di Santa Maria Assunta
     location: Val Gardena, Italy
+  - name: Chiesa di San Moise
+    location: Venice, Italy
+  - name: San Bonaventura Al Palatino
+    location: Rome, Italy
   - name: Basilica Papale di San Pietro
     location: Vatican City
 
