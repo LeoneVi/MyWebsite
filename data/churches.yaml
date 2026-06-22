@@ -12,6 +12,8 @@ roman_catholic:
     location: Amherst, MA
   - name: Madonna Queen of the Universe Shrine
     location: East Boston, MA
+  - name: Saint Leonard of Port Maurice Parish
+    location: Boston, MA
   - name: St Francis of Assisi Church
     location: Cambridge, MA
   - name: Immaculate Conception Parish
@@ -48,6 +50,8 @@ roman_catholic:
     location: Mercogliano, Italy
   - name: Duomo di Sant'Andrea Apostolo
     location: Amalfi, Italy
+  - name: Parrocchia di Santa Maria Assunta
+    location: Val Gardena, Italy
   - name: Basilica Papale di San Pietro
     location: Vatican City
 
@@ -58,6 +62,8 @@ other:
     jurisdiction: Ukrainian Catholic
   - name: Saint John the Baptist Monastery
     location: Warwick, MA
+  - name: Saint Methodios Faith and Heritage Center
+    location: Contoocook, NH
     jurisdiction: Bulgarian Eastern Orthodox
   - name: Old North Church
     location: Boston, MA

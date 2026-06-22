@@ -1,6 +1,6 @@
 ---
 title: Site da Tory
-featured_image: "/images/StCatherine.JPG"
+featured_image: "/churches/duomo-di-siena-siena-italy/duomo-di-siena-siena-italy-08.jpeg"
 layout: home
 ---
 

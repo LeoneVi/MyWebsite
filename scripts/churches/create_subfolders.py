@@ -8,7 +8,7 @@ OUTPATH = BASE_DIR / "static" / "churches"
 
 def get_subfolder_string(church):
     name = church.get("name").lower().strip().replace(" ", "-")
-    location = church.get("location").lower().strip().replace(" ", "").replace(",","-")
+    location = church.get("location").lower().strip().replace(",", "").replace(" ","-")
     subfolder_string = f"{name}-{location}"
     return subfolder_string
 
