@@ -1,0 +1,69 @@
+# List of roman catholic churches I've been to
+roman_catholic:
+  - name: Newman Catholic Center
+    location: Amherst, MA
+  - name: Mary Immaculate of Lourdes ✠
+    location: Newton, MA
+  - name: St. Joseph's Parish
+    location: Medford, MA
+  - name: St. Paul Oratory ✠
+    location: Warren, MA
+  - name: St. Patrick's Church
+    location: Stoneham, MA
+  - name: St. Brigid's Parish
+    location: Amherst, MA
+  - name: Madonna Queen of the Universe Shrine
+    location: East Boston, MA
+  - name: St Francis of Assisi Church
+    location: Cambridge, MA
+  - name: Immaculate Conception Parish
+    location: Everett, MA
+  - name: St. Patrick Church ✠
+    location: Columbus, OH
+  - name: St. Thomas More Priory ✠
+    location: Sanford, FL
+  - name: Basílica de Nossa Senhora Aparecida
+    location: Aparecida, Brazil
+  - name: Duomo di Siena
+    location: Siena, Italy
+  - name: Basilica di San Francesco d'Assisi
+    location: Assisi, Italy
+  - name: Basilica di Santa Chiara
+    location: Assisi, Italy
+  - name: Basilica di Santa Maria Maggiore
+    location: Assisi, Italy
+  - name: Chiesa di Santa Maria sopra Minerva
+    location: Assisi, Italy
+  - name: Chiesa dei Santi Michele e Gaetano ✠
+    location: Florence, Italy
+  - name: Chiesa di San Giovanni Battista
+    location: Bracigliano, Italy
+  - name: Santuario della Beata Vergine del Santo Rosario di Pompei
+    location: Pompei, Italy
+  - name: Santuario di Montevergine
+    location: Mercogliano, Italy
+  - name: Duomo di Sant'Andrea Apostolo
+    location: Amalfi, Italy
+  - name: Basilica Papale di San Pietro
+    location: Vatican City
+
+
+other:
+  - name: Saints Peter and Paul Ukrainian Catholic Church
+    location: Ludlow, MA
+    jurisdiction: Ukrainian Catholic
+  - name: Saint John the Baptist Monastery
+    location: Warwick, MA
+    jurisdiction: Bulgarian Eastern Orthodox
+  - name: Old North Church
+    location: Boston, MA
+    jurisdiction: Episcopal
+  - name: Ruggles Baptist Church
+    location: Boston, MA
+    jurisdiction: Baptist
+  - name: Assembleia de Deus do Jabaquara
+    location: São Paulo, Brazil
+    jurisdiction: Evangelical
+  - name: Primeira Igreja Batista de Curitiba
+    location: Curitiba, Brazil
+    jurisdiction: Baptist

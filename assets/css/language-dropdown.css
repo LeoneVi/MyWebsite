@@ -39,8 +39,6 @@
     align-items: center;
     gap: var(--spacing-sm);
     opacity: 0.8;
-    text-decoration: none;
-    color: var(--color-ivory);
 }
 
 .lang-item:hover {
