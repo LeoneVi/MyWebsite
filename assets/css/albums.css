@@ -1,12 +1,11 @@
 html:has(body.albums) {
-    padding: 0;
     background: black;
 }
 
 body.albums {
     margin: 0;
-    background: black;
-    overflow: hidden;
+    overflow: auto;
+    scroll-behavior: auto;
 }
 
 .album-page {
@@ -22,5 +21,17 @@ body.albums {
     max-width: 90vw;
     max-height: 90vh;
     object-fit: contain;
-    display: block;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .album-page {
+        padding-top: var(--spacing-xl);
+        display: block;
+    }
+    .album-image {
+        max-width: 180vw;
+        max-height: 180vh;
+    }
 }

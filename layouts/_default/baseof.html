@@ -20,10 +20,7 @@
 </head>
 <body class="{{ .Layout }}">
 
-{{ if not (or (eq .Layout "albums") (eq .Layout "bookshelf")) }}
-    {{ partial "header.html" . }}
-{{ end }}
-
+{{ partial "header.html" . }}
 {{ block "main" . }}
 {{ end }}
 

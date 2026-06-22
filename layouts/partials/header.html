@@ -1,1 +1,13 @@
-{{ partial "language_chooser.html" . }}
+<header class="site-header">
+    <a onclick="history.back()" class="back-button">
+        {{ if not (eq .Layout "home") }}
+        ←
+        {{ end }}
+    </a>
+
+    <div class="lang-dropdown">
+        {{ if not (or (eq .Layout "albums") (eq .Layout "bookshelf")) }}
+            {{ partial "language_chooser.html" . }}
+        {{ end }}
+    </div>
+</header>

@@ -1,8 +1,18 @@
+function getMaxLength() {
+    if (window.matchMedia("(max-width: 480px)").matches) {
+        return 65; // phones
+    }
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        return 260; // tablets
+    }
+    return 430; // desktop
+}
+
 /* Make review text toggleable */
 document.querySelectorAll(".review-text").forEach(review => {
     const fullText = review.textContent.trim();
+    const max_length = getMaxLength();
 
-    const max_length = 430;
     if (fullText.length > max_length) {
         const shortText = fullText.slice(0, max_length);
 

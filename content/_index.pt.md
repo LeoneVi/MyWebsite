@@ -1,6 +1,7 @@
 ---
 title: Site da Tory
 featured_image: "/images/StCatherine.JPG"
+layout: home
 ---
 
 # Olá, sou Tory

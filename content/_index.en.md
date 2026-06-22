@@ -1,6 +1,7 @@
 ---
 title: Tory's Website
 featured_image: "/images/StCatherine.JPG"
+layout: home
 ---
 
 # Hi, I'm Tory
