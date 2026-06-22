@@ -62,6 +62,18 @@
     author: Thomas Hardy
     page_count: null
     cover: /books/OL44927W.jpg
+- isbn: '9781580088084'
+  date_read: '2025'
+  rating: 5
+  review: 'Extensive recipe list of icecreams, gelatos and sorbets. So far, I have
+    made the following flavors: Chocolate, Vanilla, Basil, Mint chocolate chip, Coffee'
+  meta:
+    title: 'The Perfect Scoop: Ice Creams, Sorbets, Granitas, and Sweet Accompaniments'
+    author: David Lebovitz
+    tags:
+    - recipe
+    page_count: 246
+    cover: /books/9781580088084.jpg
 - isbn: '9781668024447'
   date_read: '2024-12-15'
   rating: null
@@ -158,6 +170,19 @@
     author: Cal Newport
     page_count: 304
     cover: /books/9780525536543.jpg
+- isbn: '9781524761455'
+  date_read: '2024'
+  rating: 2
+  review: A lot of the recipes here are unfortunately a huge waste of ingredients.
+    Gluten free flours are expensive as it is, the amount maple syrup some of these
+    recipes call for is crazy!
+  meta:
+    title: 'Sweet Laurel: Recipes for Whole Food, Grain-Free Desserts: A Baking Book'
+    author: Laurel Gallucci
+    tags:
+    - recipe
+    page_count: 255
+    cover: /books/9781524761455.jpg
 - isbn: null
   work_id: OL166894W
   date_read: '2023-12-12'
@@ -367,8 +392,8 @@
     cover: /books/9781421586250.jpg
 - isbn: '9781421586267'
   date_read: '2019'
-  rating: null
-  review: null
+  rating: 3
+  review: Great artwork, but I could not recommend this series to anyone.
   meta:
     title: Goodnight Punpun, Vol. 7
     author: Inio Asano
@@ -411,27 +436,3 @@
     author: John Steinbeck
     page_count: 112
     cover: /books/9780142000670.jpg
-- isbn: '9781580088084'
-  date_read: null
-  rating: null
-  review: Icecream recipe list and review
-  meta:
-    title: 'The Perfect Scoop: Ice Creams, Sorbets, Granitas, and Sweet Accompaniments'
-    author: David Lebovitz
-    tags:
-    - recipe
-    page_count: 246
-    cover: /books/9781580088084.jpg
-- isbn: '9781524761455'
-  date_read: null
-  rating: 2
-  review: A lot of the recipes here are unfortunately a huge waste of ingredients.
-    Gluten free flours are expensive as it is, the amount maple syrup some of these
-    recipes call for is crazy!
-  meta:
-    title: 'Sweet Laurel: Recipes for Whole Food, Grain-Free Desserts: A Baking Book'
-    author: Laurel Gallucci
-    tags:
-    - recipe
-    page_count: 255
-    cover: /books/9781524761455.jpg
