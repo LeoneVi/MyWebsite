@@ -1,0 +1,29 @@
+.church-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.church-table td {
+    padding: .8rem;
+    vertical-align: top;
+}
+.church-table th {
+    padding: .8rem;
+    vertical-align: top;
+    text-align: left;
+}
+
+.thumbs {
+    display: flex;
+    gap: .3rem;
+    flex-wrap: wrap;
+}
+
+.thumbs img {
+    width: 64px;
+    height: 64px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}

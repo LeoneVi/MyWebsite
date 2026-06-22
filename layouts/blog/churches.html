@@ -1,0 +1,57 @@
+{{ define "churchTable" }}
+<table class="church-table">
+
+  <thead>
+  <tr>
+    <th>name</th>
+    <th>location</th>
+    <th>photos</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  {{ range . }}
+
+  {{ $name := .name | lower | replaceRE " " "-" }}
+  {{ $loc := .location | lower | replaceRE "," "" | replaceRE " " "-" }}
+  {{ $slug := printf "%s-%s" $name $loc }}
+
+  <tr>
+    <td>{{ .name }}</td>
+    <td>{{ .location }}</td>
+
+    <td>
+
+      {{ $dir := printf "/churches/%s" $slug }}
+
+      <div class="thumbs">
+
+        {{ range seq 1 6 }}
+        {{ $img := printf "%s/%d.jpeg" $dir . }}
+
+        <img
+                src="{{ $img }}"
+                loading="lazy"
+                onerror="this.remove()">
+
+        {{ end }}
+
+      </div>
+
+    </td>
+  </tr>
+
+  {{ end }}
+
+  </tbody>
+
+</table>
+{{ end }}
+
+{{ define "main" }}
+<h2>Roman Catholic</h2>
+{{ template "churchTable" .Site.Data.churches.roman_catholic }}
+
+<h2>Other</h2>
+{{ template "churchTable" .Site.Data.churches.other }}
+{{ end }}
