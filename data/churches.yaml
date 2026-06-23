@@ -26,6 +26,14 @@ roman_catholic:
     location: St. Augustine, FL
   - name: Basílica de Nossa Senhora Aparecida
     location: Aparecida, Brazil
+  - name: Acólitos Paróquia São Francisco de Assis
+    location: Monte Verde, Brazil
+  - name: Praça Cardeal Arcoverde
+    location: São Caetano do Sul, Brazil
+  - name: Igreja Matriz de Nossa Senhora da Candelária
+    location: Itu, Brazil
+  - name: Pátio do Colégio
+    location: São Paulo, Brazil
   - name: Duomo di Siena
     location: Siena, Italy
   - name: Basilica di San Domenico
@@ -44,6 +52,8 @@ roman_catholic:
     location: Florence, Italy
   - name: Chiesa di San Giovanni Battista
     location: Bracigliano, Italy
+  - name: Chiesa di San Pietro
+    location: Mercato San Severino, Italy
   - name: Duomo di Napoli
     location: Naples, Italy
   - name: Duomo di Salerno
@@ -56,6 +66,10 @@ roman_catholic:
     location: Mercogliano, Italy
   - name: Duomo di Sant'Andrea Apostolo
     location: Amalfi, Italy
+  - name: Basilica di Sant’Antonino
+    location: Sorrento, Italy
+  - name: Chiesa dei Santi Felice e Baccolo
+    location: Sorrento, Italy
   - name: Parrocchia di Santa Maria Assunta
     location: Val Gardena, Italy
   - name: Chiesa di San Moise
@@ -78,6 +92,9 @@ other:
   - name: Old North Church
     location: Boston, MA
     jurisdiction: Episcopal
+  - name: Reservoir Church
+    location: Cambridge, MA
+    jurisdiction: Non-denominational
   - name: Ruggles Baptist Church
     location: Boston, MA
     jurisdiction: Baptist
