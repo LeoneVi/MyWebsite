@@ -1,16 +1,23 @@
 {{ define "churchTable" }}
 <table class="church-table">
 
+  {{ $showJurisdiction := .showJurisdiction }}
+  {{ $rows := .rows }}
+
+
   <thead>
   <tr>
     <th>name</th>
     <th>location</th>
     <th>photos</th>
+    {{ if $showJurisdiction }}
+    <th>jurisdiction</th>
+    {{ end }}
   </tr>
   </thead>
 
   <tbody>
-  {{ range . }}
+  {{ range $rows }}
 
   {{ $name := .name | lower | replaceRE " " "-" }}
   {{ $loc := .location | lower | replaceRE "," "" | replaceRE " " "-" }}
@@ -19,23 +26,21 @@
   <tr>
     <td>{{ .name }}</td>
     <td>{{ .location }}</td>
+    {{ if $showJurisdiction }}
+    <td>{{ .jurisdiction | default "—" }}</td>
+    {{ end }}
 
     <td>
 
-      {{ $dir := printf "/churches/%s" $slug }}
+      {{ $dir := printf "static/churches/%s" $slug }}
 
       <div class="thumbs">
-
-        {{ range seq 1 6 }}
-        {{ $img := printf "%s/%d.jpeg" $dir . }}
-
-        <img
-                src="{{ $img }}"
-                loading="lazy"
-                onerror="this.remove()">
-
+        {{ if (fileExists $dir) }}
+        {{ $files := readDir $dir }}
+        {{ range sort $files "Name" }}
+        <img src="/churches/{{ $slug }}/{{ .Name }}" loading="lazy">
         {{ end }}
-
+        {{ end }}
       </div>
 
     </td>
@@ -49,9 +54,17 @@
 {{ end }}
 
 {{ define "main" }}
+
 <h2>Roman Catholic</h2>
-{{ template "churchTable" .Site.Data.churches.roman_catholic }}
+{{ template "churchTable" (dict
+"rows" .Site.Data.churches.roman_catholic
+"showJurisdiction" false
+) }}
 
 <h2>Other</h2>
-{{ template "churchTable" .Site.Data.churches.other }}
+{{ template "churchTable" (dict
+"rows" .Site.Data.churches.other
+"showJurisdiction" true
+) }}
+
 {{ end }}

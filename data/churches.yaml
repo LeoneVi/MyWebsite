@@ -14,7 +14,7 @@ roman_catholic:
     location: East Boston, MA
   - name: Saint Leonard of Port Maurice Parish
     location: Boston, MA
-  - name: St Francis of Assisi Church
+  - name: St. Francis of Assisi Church
     location: Cambridge, MA
   - name: Immaculate Conception Parish
     location: Everett, MA
@@ -86,9 +86,10 @@ other:
     jurisdiction: Ukrainian Catholic
   - name: Saint John the Baptist Monastery
     location: Warwick, MA
+    jurisdiction: Bulgarian Eastern Orthodox
   - name: Saint Methodios Faith and Heritage Center
     location: Contoocook, NH
-    jurisdiction: Bulgarian Eastern Orthodox
+    jurisdiction: Greek Orthodox
   - name: Old North Church
     location: Boston, MA
     jurisdiction: Episcopal

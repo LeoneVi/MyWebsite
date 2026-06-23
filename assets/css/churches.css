@@ -3,14 +3,17 @@
     border-collapse: collapse;
 }
 
-.church-table td {
-    padding: .8rem;
-    vertical-align: top;
-}
 .church-table th {
+    border-bottom: 2px solid var(--color-ivory);
     padding: .8rem;
     vertical-align: top;
     text-align: left;
+}
+
+.church-table td {
+    border-bottom: 1px solid var(--color-ivory);
+    padding: .8rem;
+    vertical-align: top;
 }
 
 .thumbs {
@@ -20,8 +23,8 @@
 }
 
 .thumbs img {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
 
     object-fit: cover;
 
