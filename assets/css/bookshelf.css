@@ -12,6 +12,7 @@
     text-align: left;
     border-bottom: 2px solid var(--color-ivory);
 }
+
 .bookshelf .data-table td {
     vertical-align: top;
     padding:  var(--spacing-md) var(--spacing-sm) var(--spacing-sm) 0px;

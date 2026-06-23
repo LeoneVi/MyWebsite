@@ -6,7 +6,7 @@
     </a>
 
     <div class="lang-dropdown">
-        {{ if not (or (eq .Layout "albums") (eq .Layout "bookshelf")) }}
+        {{ if gt (len .Translations) 0 }}
             {{ partial "language_chooser.html" . }}
         {{ end }}
     </div>

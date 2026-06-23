@@ -1,6 +1,6 @@
 ---
 title: Tory's Website
-featured_image: "/churches/duomo-di-siena-siena-italy/duomo-di-siena-siena-italy-08.jpeg"
+featured_image: "/churches/duomo-di-siena-siena-italy/8.jpeg"
 layout: home
 ---
 
