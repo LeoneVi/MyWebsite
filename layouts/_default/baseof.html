@@ -18,6 +18,7 @@
     }}
 
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"> <!-- import photoSwipe -->
 </head>
 <body class="{{ .Layout }}">
 
@@ -29,5 +30,17 @@
 {{ $bookshelfJS := resources.Get "js/bookshelf.js" | js.Build }}
 <script src="{{ $bookshelfJS.RelPermalink }}"></script>
 
+<!-- Photoswipe script -->
+<script type="module">
+    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '.pswp-gallery',
+        children: 'a',
+        pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.js')
+    });
+
+    lightbox.init();
+</script>
 </body>
 </html>

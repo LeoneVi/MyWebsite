@@ -1,56 +1,68 @@
 {{ define "churchTable" }}
-<table class="church-table">
 
-  {{ $showJurisdiction := .showJurisdiction }}
-  {{ $rows := .rows }}
+{{ $showJurisdiction := .showJurisdiction }}
+{{ $rows := .rows }}
 
+<div class="church-grid">
 
-  <thead>
-  <tr>
-    <th>name</th>
-    <th>location</th>
-    {{ if $showJurisdiction }}
-    <th>jurisdiction</th>
-    {{ end }}
-    <th>photos</th>
-  </tr>
-  </thead>
-
-  <tbody>
   {{ range $rows }}
 
   {{ $name := .name | lower | replaceRE " " "-" }}
   {{ $loc := .location | lower | replaceRE "," "" | replaceRE " " "-" }}
   {{ $slug := printf "%s-%s" $name $loc }}
 
-  <tr>
-    <td>{{ .name }}</td>
-    <td>{{ .location }}</td>
-    {{ if $showJurisdiction }}
-    <td>{{ .jurisdiction | default "—" }}</td>
+  {{ $files := resources.Match (printf "churches/%s/*" $slug) }}
+  {{ $count := len $files }}
+
+  <article class="church-card">
+
+    {{ if gt $count 0 }}
+    <div class="pswp-gallery">
+
+      {{ range $i, $img := $files }}
+      <a
+              href="{{ $img.RelPermalink }}"
+              data-pswp-width="{{ $img.Width }}"
+              data-pswp-height="{{ $img.Height }}"
+              {{ if ne $i 0 }}style="display:none"{{ end }}>
+
+        {{ if eq $i 0 }}
+        <img
+                class="church-photo"
+                src="{{ $img.RelPermalink }}"
+                loading="lazy"
+                alt="{{ $.name }}">
+
+        {{ if gt $count 1 }}
+        <span class="photo-count">{{ $count }} photos</span>
+        {{ end }}
+
+        {{ end }}
+
+      </a>
+      {{ end }}
+
+    </div>
     {{ end }}
 
-    <td>
+    <div class="church-info">
+      <h3>{{ .name }}</h3>
 
-      {{ $dir := printf "static/churches/%s" $slug }}
+      <p class="location">{{ .location }}</p>
 
-      <div class="thumbs">
-        {{ if (fileExists $dir) }}
-        {{ $files := readDir $dir }}
-        {{ range sort $files "Name" }}
-        <img src="/churches/{{ $slug }}/{{ .Name }}" loading="lazy">
-        {{ end }}
-        {{ end }}
-      </div>
+      {{ if $showJurisdiction }}
+      <p class="jurisdiction">
+        {{ .jurisdiction | default "—" }}
+      </p>
+      {{ end }}
+    </div>
 
-    </td>
-  </tr>
+  </article>
 
   {{ end }}
 
-  </tbody>
+</div>
 
-</table>
 {{ end }}
 
 {{ define "main" }}

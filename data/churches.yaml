@@ -1,110 +1,107 @@
-# List of roman catholic churches I've been to
 roman_catholic:
-  - name: Newman Catholic Center
-    location: Amherst, MA
-  - name: Mary Immaculate of Lourdes
-    location: Newton, MA
-  - name: St. Joseph's Parish
-    location: Medford, MA
-  - name: St. Paul Oratory
-    location: Warren, MA
-  - name: St. Brigid's Parish
-    location: Amherst, MA
-  - name: Madonna Queen of the Universe Shrine
-    location: East Boston, MA
-  - name: Saint Leonard of Port Maurice Parish
-    location: Boston, MA
-  - name: St. Francis of Assisi Church
-    location: Cambridge, MA
-  - name: Immaculate Conception Parish
-    location: Everett, MA
-  - name: St. Patrick Church
-    location: Columbus, OH
-  - name: St. Thomas More Priory
-    location: Sanford, FL
-  - name: Cathedral Basilica of St. Augustine
-    location: St. Augustine, FL
-  - name: Basílica de Nossa Senhora Aparecida
-    location: Aparecida, Brazil
-  - name: Acólitos Paróquia São Francisco de Assis
-    location: Monte Verde, Brazil
-  - name: Praça Cardeal Arcoverde
-    location: São Caetano do Sul, Brazil
-  - name: Igreja Matriz de Nossa Senhora da Candelária
-    location: Itu, Brazil
-  - name: Pátio do Colégio
-    location: São Paulo, Brazil
-  - name: Duomo di Siena
-    location: Siena, Italy
-  - name: Basilica di San Domenico
-    location: Siena, Italy
-  - name: Santuario della Casa di Santa Caterina
-    location: Siena, Italy
-  - name: Basilica di San Francesco d'Assisi
-    location: Assisi, Italy
-  - name: Basilica di Santa Chiara
-    location: Assisi, Italy
-  - name: Basilica di Santa Maria Maggiore
-    location: Assisi, Italy
-  - name: Chiesa di Santa Maria sopra Minerva
-    location: Assisi, Italy
-  - name: Chiesa dei Santi Michele e Gaetano
-    location: Florence, Italy
-  - name: Chiesa di San Giovanni Battista
-    location: Bracigliano, Italy
-  - name: Chiesa di San Pietro
-    location: Mercato San Severino, Italy
-  - name: Duomo di Napoli
-    location: Naples, Italy
-  - name: Duomo di Salerno
-    location: Salerno, Italy
-  - name: Chiesa di San Giorgio
-    location: Salerno, Italy
-  - name: Santuario della Beata Vergine del Santo Rosario di Pompei
-    location: Pompei, Italy
-  - name: Santuario di Montevergine
-    location: Mercogliano, Italy
-  - name: Duomo di Sant'Andrea Apostolo
-    location: Amalfi, Italy
-  - name: Basilica di Sant’Antonino
-    location: Sorrento, Italy
-  - name: Chiesa dei Santi Felice e Baccolo
-    location: Sorrento, Italy
-  - name: Parrocchia di Santa Maria Assunta
-    location: Val Gardena, Italy
-  - name: Chiesa di San Moise
-    location: Venice, Italy
-  - name: San Bonaventura Al Palatino
-    location: Rome, Italy
-  - name: Basilica Papale di San Pietro
-    location: Vatican City
-
-
+- name: Basilica di San Domenico
+  location: Siena, Italy
+- name: Basilica di San Francesco d'Assisi
+  location: Assisi, Italy
+- name: Basilica di Santa Chiara
+  location: Assisi, Italy
+- name: Basilica di Sant’Antonino
+  location: Sorrento, Italy
+- name: Basilica Papale di San Pietro
+  location: Vatican City
+- name: Cathedral Basilica of St. Augustine
+  location: St. Augustine, FL
+- name: Chiesa dei Santi Felice e Baccolo
+  location: Sorrento, Italy
+- name: Chiesa dei Santi Michele e Gaetano
+  location: Florence, Italy
+- name: Chiesa di San Giorgio
+  location: Salerno, Italy
+- name: Chiesa di San Moise
+  location: Venice, Italy
+- name: Chiesa di San Pietro
+  location: Mercato San Severino, Italy
+- name: Chiesa di Santa Maria sopra Minerva
+  location: Assisi, Italy
+- name: Duomo di Napoli
+  location: Naples, Italy
+- name: Duomo di Salerno
+  location: Salerno, Italy
+- name: Duomo di Sant'Andrea Apostolo
+  location: Amalfi, Italy
+- name: Duomo di Siena
+  location: Siena, Italy
+- name: Mary Immaculate of Lourdes
+  location: Newton, MA
+- name: Newman Catholic Center
+  location: Amherst, MA
+- name: Parrocchia di Santa Maria Assunta
+  location: Val Gardena, Italy
+- name: Saint Leonard of Port Maurice Parish
+  location: Boston, MA
+- name: San Bonaventura Al Palatino
+  location: Rome, Italy
+- name: Santuario della Beata Vergine del Santo Rosario di Pompei
+  location: Pompei, Italy
+- name: Santuario della Casa di Santa Caterina
+  location: Siena, Italy
+- name: St. Brigid's Parish
+  location: Amherst, MA
+- name: St. Patrick Church
+  location: Columbus, OH
+- name: St. Paul Oratory
+  location: Warren, MA
+- name: St. Thomas More Priory
+  location: Sanford, FL
+- name: Acólitos Paróquia São Francisco de Assis
+  location: Monte Verde, Brazil
+- name: Basilica di Santa Maria Maggiore
+  location: Assisi, Italy
+- name: Basílica de Nossa Senhora Aparecida
+  location: Aparecida, Brazil
+- name: Chiesa di San Giovanni Battista
+  location: Bracigliano, Italy
+- name: Igreja Matriz de Nossa Senhora da Candelária
+  location: Itu, Brazil
+- name: Immaculate Conception Parish
+  location: Everett, MA
+- name: Madonna Queen of the Universe Shrine
+  location: East Boston, MA
+- name: Praça Cardeal Arcoverde
+  location: São Caetano do Sul, Brazil
+- name: Pátio do Colégio
+  location: São Paulo, Brazil
+- name: Santuario di Montevergine
+  location: Mercogliano, Italy
+- name: St. Francis of Assisi Church
+  location: Cambridge, MA
+- name: St. Joseph's Parish
+  location: Medford, MA
 other:
-  - name: Saints Peter and Paul Ukrainian Catholic Church
-    location: Ludlow, MA
-    jurisdiction: Ukrainian Catholic
-  - name: Saint John the Baptist Monastery
-    location: Warwick, MA
-    jurisdiction: Bulgarian Eastern Orthodox
-  - name: Saint Methodios Faith and Heritage Center
-    location: Contoocook, NH
-    jurisdiction: Greek Orthodox
-  - name: Old North Church
-    location: Boston, MA
-    jurisdiction: Episcopal
-  - name: Reservoir Church
-    location: Cambridge, MA
-    jurisdiction: Non-denominational
-  - name: Ruggles Baptist Church
-    location: Boston, MA
-    jurisdiction: Baptist
-  - name: St. Photios Greek Orthodox National Shrine
-    location: St. Augustine, FL
-    jurisdiction: Greek Orthodox
-  - name: Assembleia de Deus do Jabaquara
-    location: São Paulo, Brazil
-    jurisdiction: Evangelical
-  - name: Primeira Igreja Batista de Curitiba
-    location: Curitiba, Brazil
-    jurisdiction: Baptist
+- name: Saint John the Baptist Monastery
+  location: Warwick, MA
+  jurisdiction: Bulgarian Eastern Orthodox
+- name: Saint Methodios Faith and Heritage Center
+  location: Contoocook, NH
+  jurisdiction: Greek Orthodox
+- name: Saints Peter and Paul Ukrainian Catholic Church
+  location: Ludlow, MA
+  jurisdiction: Ukrainian Catholic
+- name: St. Photios Greek Orthodox National Shrine
+  location: St. Augustine, FL
+  jurisdiction: Greek Orthodox
+- name: Assembleia de Deus do Jabaquara
+  location: São Paulo, Brazil
+  jurisdiction: Evangelical
+- name: Old North Church
+  location: Boston, MA
+  jurisdiction: Episcopal
+- name: Primeira Igreja Batista de Curitiba
+  location: Curitiba, Brazil
+  jurisdiction: Baptist
+- name: Reservoir Church
+  location: Cambridge, MA
+  jurisdiction: Non-denominational
+- name: Ruggles Baptist Church
+  location: Boston, MA
+  jurisdiction: Baptist
