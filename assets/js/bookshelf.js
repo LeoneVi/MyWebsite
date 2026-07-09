@@ -57,6 +57,7 @@ function formatDate(dateStr) {
     if (/^\d{4}-\d{2}$/.test(dateStr)) {
         const date = new Date(dateStr + "-01");
         return date.toLocaleDateString("en-US", {
+            timeZone: "America/New_York",
             month: "short",
             year: "numeric"
         });
@@ -64,8 +65,11 @@ function formatDate(dateStr) {
 
     // if full date
     if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
-        const date = new Date(dateStr);
+        const [year, month, day] = dateStr.split("-").map(Number);
+        const date = new Date(year, month - 1, day);
+
         return date.toLocaleDateString("en-US", {
+            timeZone: "America/New_York",
             month: "short",
             day: "numeric",
             year: "numeric"

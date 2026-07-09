@@ -6,8 +6,8 @@ import time
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-IN_PATH = BASE_DIR / "data" / "parsed_books.yaml"
-OUT_FILE = BASE_DIR / "data" / "parsed_books.yaml"
+IN_PATH = BASE_DIR / "data" / "read_books.yaml"
+OUT_FILE = BASE_DIR / "data" / "read_books.yaml"
 
 STATIC_BOOK_DIR = BASE_DIR / "static" / "books"
 STATIC_BOOK_DIR.mkdir(parents=True, exist_ok=True)
