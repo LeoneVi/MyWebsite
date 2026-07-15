@@ -1,23 +1,37 @@
+.page-layout{
+    padding: var(--spacing-xs);
+}
+
 .bookshelf-layout{
     display:flex;
     align-items:flex-start;
-    padding: var(--spacing-xs);
 }
 
 .shelves{
     width:220px;
-    flex-shrink:0;
-    position:sticky;
+    white-space: nowrap;
+    padding-right: var(--spacing-lg);
 }
 
-.shelves h2{
+.shelves h4{
     margin-top:0;
+    margin-bottom: var(--spacing-xs);
 }
 
 .shelves ul{
     list-style:none;
     padding:0;
     margin:0;
+}
+
+.shelves a:hover {
+    color: var(--color-muted);
+    text-decoration: none;
+}
+
+.shelves a.active {
+    color: var(--color-muted);
+    pointer-events: none;
 }
 
 .bookshelf .data-table {

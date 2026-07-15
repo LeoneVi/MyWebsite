@@ -110,11 +110,11 @@ document.addEventListener("DOMContentLoaded", () => {
     shelfList.insertAdjacentHTML(
         "beforeend",
         `
-        <ul>
-            <a href="#" data-filter="read">
+        <li>
+            <a href="#" class="active" data-filter="read">
                 read <span>(${rows.length})</span>
             </a>
-        </ul>
+        </li>
         `
     );
 
@@ -126,12 +126,12 @@ document.addEventListener("DOMContentLoaded", () => {
             shelfList.insertAdjacentHTML(
                 "beforeend",
                 `
-                <ul>
+                <li>
                     <a href="#" data-filter="${tag}">
                         ${tag.charAt(0)+ tag.slice(1)}
                         <span>(${count})</span>
                     </a>
-                </ul>
+                </li>
                 `
             );
         });
@@ -142,6 +142,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!link) return;
 
         e.preventDefault();
+
+        // update shelf to be active once clicked
+        shelfList.querySelectorAll("a").forEach(a => {
+            a.classList.remove("active");
+        });
+        link.classList.add("active");
+
         const filter = link.dataset.filter;
 
         rows.forEach(row => {
