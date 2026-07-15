@@ -1,8 +1,14 @@
 {{ define "main" }}
-<div class="bookshelf">
-    <h1>{{ .Title }}</h1>
+<h1>{{ .Title }}</h1>
+<div class="bookshelf-layout">
 
     {{ $books := site.Data.read_books }}
+
+    <aside class="shelves">
+        <h4> bookshelves </h4>
+        <ul id="shelf-list"></ul>
+    </aside>
+
     <div class="table-wrapper">
         <table class="data-table">
             <colgroup>
@@ -26,7 +32,8 @@
             <tbody>
             {{ range $books }}
             {{ $meta := .meta }}
-            <tr>
+
+            <tr data-tags="{{ delimit $meta.tags "," }}">
                 <td data-label="cover">
                     {{ if and $meta.cover (ne $meta.cover "null") }}
                     <img src="{{ $meta.cover }}" class="book-cover">

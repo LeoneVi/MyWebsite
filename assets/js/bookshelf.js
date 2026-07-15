@@ -85,3 +85,73 @@ document.querySelectorAll(".book-read").forEach(cell => {
         cell.textContent = formatDate(dateStr);
     }
 });
+
+
+/* SHELVES SECTION */
+document.addEventListener("DOMContentLoaded", () => {
+    const rows = document.querySelectorAll("tbody tr");
+    const shelfList = document.getElementById("shelf-list");
+
+    const counts = new Map();
+
+    counts.set("read", rows.length); // count total read books
+
+    rows.forEach(row => { // count every tag
+        const tags = row.dataset.tags;
+        if (!tags) return;
+
+        tags.split(",").forEach(tag => {
+            tag = tag.trim();
+            counts.set(tag, (counts.get(tag) || 0) + 1);
+        });
+    });
+
+    // read shelf
+    shelfList.insertAdjacentHTML(
+        "beforeend",
+        `
+        <ul>
+            <a href="#" data-filter="read">
+                read <span>(${rows.length})</span>
+            </a>
+        </ul>
+        `
+    );
+
+    // other shelves
+    [...counts.entries()]
+        .filter(([tag]) => tag !== "read")
+        .sort(([a], [b]) => a.localeCompare(b)) // alphabetical ordering
+        .forEach(([tag, count]) => {
+            shelfList.insertAdjacentHTML(
+                "beforeend",
+                `
+                <ul>
+                    <a href="#" data-filter="${tag}">
+                        ${tag.charAt(0)+ tag.slice(1)}
+                        <span>(${count})</span>
+                    </a>
+                </ul>
+                `
+            );
+        });
+
+    // filter displayed books based on shelf
+    shelfList.addEventListener("click", e => {
+        const link = e.target.closest("[data-filter]");
+        if (!link) return;
+
+        e.preventDefault();
+        const filter = link.dataset.filter;
+
+        rows.forEach(row => {
+            if (filter === "read") {
+                row.style.display = "";
+                return;
+            }
+
+            const tags = (row.dataset.tags || "").split(",");
+            row.style.display = tags.includes(filter) ? "" : "none";
+        });
+    });
+});

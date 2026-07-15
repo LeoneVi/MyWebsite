@@ -8,6 +8,10 @@
     author: Julia Baird
     page_count: 696
     cover: /books/1400069882.jpg
+    tags:
+      - nonfiction
+      - history
+      - biography
 - isbn: 0873226690
   work_id: OL795564M
   date_read: '2026-07-09'
@@ -33,6 +37,9 @@
     author: Karin Künzle-Watson
     page_count: 157
     cover: /books/0873226690.jpg
+    tags:
+      - nonfiction
+      - sports
 - isbn: null
   work_id: null
   date_read: '2026-01-22'
@@ -45,6 +52,10 @@
     title: Arch Linux
     author: Andrew Brookes
     cover: /books/Arch-Linux.jpg
+    tags:
+      - nonfiction
+      - cs
+      - technology
 - isbn: '9780066620732'
   date_read: '2026-01-16'
   rating: 4
@@ -54,6 +65,10 @@
     author: Linus Torvalds
     page_count: 288
     cover: /books/9780066620732.jpg
+    tags:
+      - nonfiction
+      - biography
+      - cs
 - isbn: '9781683570240'
   date_read: '2025-07-20'
   rating: 4
@@ -63,6 +78,9 @@
     author: Trent Horn
     page_count: 240
     cover: /books/9781683570240.jpg
+    tags:
+      - nonfiction
+      - religion
 - isbn: '9780300108835'
   date_read: '2025-06-29'
   rating: 4
@@ -77,6 +95,9 @@
     author: E.H. Gombrich
     page_count: 284
     cover: /books/9780300108835.jpg
+    tags:
+      - nonfiction
+      - history
 - isbn: null
   work_id: OL24290059W
   date_read: '2025-05-23'
@@ -87,6 +108,8 @@
     author: Arthur Schopenhauer
     page_count: null
     cover: /books/OL24290059W.jpg
+    tags:
+      - nonfiction
 - isbn: null
   work_id: OL44927W
   date_read: '2025-05-21'
@@ -97,6 +120,8 @@
     author: Thomas Hardy
     page_count: null
     cover: /books/OL44927W.jpg
+    tags:
+      - fiction
 - isbn: '9781580088084'
   date_read: '2025'
   rating: 5
@@ -105,10 +130,11 @@
   meta:
     title: 'The Perfect Scoop: Ice Creams, Sorbets, Granitas, and Sweet Accompaniments'
     author: David Lebovitz
-    tags:
-    - recipe
     page_count: 246
     cover: /books/9781580088084.jpg
+    tags:
+      - nonfiction
+      - cookbook
 - isbn: '9781668024447'
   date_read: '2024-12-15'
   rating: null
@@ -118,6 +144,9 @@
     author: Jill Duggar
     page_count: null
     cover: /books/9781668024447.jpg
+    tags:
+      - nonfiction
+      - biography
 - isbn: '9781533667922'
   date_read: '2024-11-15'
   rating: 4
@@ -131,6 +160,8 @@
     author: J.L. Collins
     page_count: 265
     cover: /books/9781533667922.jpg
+    tags:
+      - nonfiction
 - isbn: '9780140277449'
   date_read: '2024-09-09'
   rating: 5
@@ -146,6 +177,9 @@
     author: Iris Chang
     page_count: 304
     cover: /books/9780140277449.jpg
+    tags:
+      - nonfiction
+      - history
 - isbn: '9780525952473'
   date_read: '2024-08-21'
   rating: 5
@@ -163,6 +197,9 @@
     author: Timothy J. Keller
     page_count: 283
     cover: /books/9780525952473.jpg
+    tags:
+      - nonfiction
+      - religion
 - isbn: '9781668009048'
   date_read: '2024-06-17'
   rating: null
@@ -172,6 +209,9 @@
     author: Britney Spears
     page_count: null
     cover: /books/9781668009048.jpg
+    tags:
+      - nonfiction
+      - biography
 - isbn: '9780762435173'
   date_read: '2024-01-20'
   rating: 3
@@ -182,6 +222,8 @@
     author: Elizabeth Ford
     page_count: 234
     cover: /books/9780762435173.jpg
+    tags:
+      - nonfiction
 - isbn: null
   work_id: OL627084W
   date_read: '2024-01-05'
@@ -196,6 +238,8 @@
     author: Vladimir Nabokov
     page_count: null
     cover: /books/OL627084W.jpg
+    tags:
+      - fiction
 - isbn: '9780525536543'
   date_read: '2024-01-01'
   rating: 3
@@ -205,6 +249,9 @@
     author: Cal Newport
     page_count: 304
     cover: /books/9780525536543.jpg
+    tags:
+      - nonfiction
+      - technology
 - isbn: '9781524761455'
   date_read: '2024'
   rating: 2
@@ -215,10 +262,11 @@
   meta:
     title: 'Sweet Laurel: Recipes for Whole Food, Grain-Free Desserts: A Baking Book'
     author: Laurel Gallucci
-    tags:
-    - recipe
     page_count: 255
     cover: /books/9781524761455.jpg
+    tags:
+      - nonfiction
+      - cookbook
 - isbn: null
   work_id: OL166894W
   date_read: '2023-12-12'
@@ -229,6 +277,8 @@
     author: Fyodor Dostoevsky
     page_count: null
     cover: /books/OL166894W.jpg
+    tags:
+      - fiction
 - isbn: '9781982185831'
   date_read: '2023-12-05'
   rating: null
@@ -238,6 +288,9 @@
     author: Jennette McCurdy
     page_count: 320
     cover: /books/9781982185831.jpg
+    tags:
+      - nonfiction
+      - biography
 - isbn: '9780425191651'
   date_read: '2023-12-05'
   rating: 5
@@ -248,6 +301,8 @@
     author: Lundy Bancroft
     page_count: 408
     cover: /books/9780425191651.jpg
+    tags:
+      - nonfiction
 - isbn: '9781463647681'
   date_read: '2023-03-01'
   rating: null
@@ -257,6 +312,9 @@
     author: William T. Stead
     page_count: 132
     cover: /books/9781463647681.jpg
+    tags:
+      - nonfiction
+      - history
 - isbn: '9789998070011'
   date_read: '2023-02-01'
   rating: 1
@@ -266,6 +324,8 @@
     author: Isaac Asimov
     page_count: null
     cover: /books/generic-cover.jpg
+    tags:
+      - fiction
 - isbn: '9780679735779'
   date_read: '2022-06-24'
   rating: 5
@@ -275,6 +335,8 @@
     author: Bret Easton Ellis
     page_count: 399
     cover: /books/9780679735779.jpg
+    tags:
+      - fiction
 - isbn: '9780719058790'
   date_read: '2021-08-09'
   rating: 5
@@ -288,6 +350,9 @@
     author: Margaret Beetham
     page_count: 230
     cover: /books/9780719058790.jpg
+    tags:
+      - nonfiction
+      - history
 - isbn: '9780486291574'
   date_read: '2021-04-01'
   rating: 5
@@ -298,6 +363,9 @@
     author: Aldren A. Watson
     page_count: 160
     cover: /books/9780486291574.jpg
+    tags:
+      - nonfiction
+      - crafts
 - isbn: '9781570619915'
   date_read: '2021-03-20'
   rating: 5
@@ -305,10 +373,12 @@
   meta:
     title: 'The Hands-On Home: A Seasonal Guide to Cooking, Preserving & Natural Homekeeping'
     author: Erica Strauss
-    tags:
-    - recipe
     page_count: 388
     cover: /books/9781570619915.jpg
+    tags:
+      - nonfiction
+      - cookbook
+      - homemaking
 - isbn: '9780582777316'
   date_read: '2020-11-01'
   rating: 5
@@ -318,6 +388,8 @@
     author: George Orwell
     page_count: 72
     cover: /books/9780582777316.jpg
+    tags:
+      - fiction
 - isbn: '9780743273565'
   date_read: '2020-03-01'
   rating: 1
@@ -327,6 +399,8 @@
     author: F. Scott Fitzgerald
     page_count: 180
     cover: /books/9780743273565.jpg
+    tags:
+      - fiction
 - isbn: '9781595828682'
   date_read: '2020-01-14'
   rating: null
@@ -336,6 +410,9 @@
     author: Gainax
     page_count: null
     cover: /books/9781595828682.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781626926035'
   date_read: '2020-01-01'
   rating: null
@@ -345,6 +422,9 @@
     author: Kabi Nagata
     page_count: 142
     cover: /books/9781626926035.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9780142437339'
   date_read: '2020-01-01'
   rating: 3
@@ -354,6 +434,8 @@
     author: Arthur Miller
     page_count: 143
     cover: /books/9780142437339.jpg
+    tags:
+      - fiction
 - isbn: '9781634420600'
   date_read: '2019-06-10'
   rating: 1
@@ -363,6 +445,9 @@
     author: Shindo L
     page_count: 244
     cover: /books/9781634420600.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9784902948165'
   date_read: '2019-04-01'
   rating: 5
@@ -372,6 +457,9 @@
     author: Yoh Yoshinari
     page_count: null
     cover: /books/9784902948165.jpg
+    tags:
+      - nonfiction
+      - art
 - isbn: '9781421586205'
   date_read: '2019'
   rating: null
@@ -381,6 +469,9 @@
     author: Inio Asano
     page_count: 426
     cover: /books/9781421586205.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781421586212'
   date_read: '2019'
   rating: null
@@ -390,6 +481,9 @@
     author: Inio Asano
     page_count: 424
     cover: /books/9781421586212.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781421586229'
   date_read: '2019'
   rating: null
@@ -399,6 +493,9 @@
     author: Inio Asano
     page_count: 442
     cover: /books/9781421586229.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781421586236'
   date_read: '2019'
   rating: null
@@ -408,6 +505,9 @@
     author: Inio Asano
     page_count: 434
     cover: /books/9781421586236.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781421586243'
   date_read: '2019'
   rating: null
@@ -417,6 +517,9 @@
     author: Inio Asano
     page_count: null
     cover: /books/9781421586243.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781421586250'
   date_read: '2019'
   rating: null
@@ -426,6 +529,9 @@
     author: Inio Asano
     page_count: 480
     cover: /books/9781421586250.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781421586267'
   date_read: '2019'
   rating: 3
@@ -435,6 +541,9 @@
     author: Inio Asano
     page_count: null
     cover: /books/9781421586267.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781435249158'
   date_read: '2018-09-01'
   rating: 1
@@ -445,6 +554,8 @@
     author: John  Green
     page_count: 221
     cover: /books/9781435249158.jpg
+    tags:
+      - fiction
 - isbn: '9781626923485'
   date_read: '2018-07-14'
   rating: null
@@ -454,6 +565,9 @@
     author: coolkyousinnjya
     page_count: null
     cover: /books/9781626923485.jpg
+    tags:
+      - fiction
+      - manga
 - isbn: '9781580495936'
   date_read: '2017-10-01'
   rating: null
@@ -463,6 +577,8 @@
     author: Sophocles
     page_count: 80
     cover: /books/9781580495936.jpg
+    tags:
+      - fiction
 - isbn: '9780142000670'
   date_read: '2017-09-01'
   rating: 3
@@ -472,3 +588,5 @@
     author: John Steinbeck
     page_count: 112
     cover: /books/9780142000670.jpg
+    tags:
+      - fiction

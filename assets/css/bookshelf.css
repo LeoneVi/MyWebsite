@@ -1,5 +1,23 @@
-.bookshelf {
+.bookshelf-layout{
+    display:flex;
+    align-items:flex-start;
     padding: var(--spacing-xs);
+}
+
+.shelves{
+    width:220px;
+    flex-shrink:0;
+    position:sticky;
+}
+
+.shelves h2{
+    margin-top:0;
+}
+
+.shelves ul{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
 .bookshelf .data-table {

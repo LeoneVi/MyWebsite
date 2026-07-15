@@ -1,5 +1,5 @@
 ---
-title: My Bookshelf
+title: My Books
 layout: bookshelf
 ---
 
