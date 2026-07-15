@@ -1,3 +1,13 @@
+- isbn: 1400069882
+  work_id: OL27218734M
+  date_read: '2026-07-15'
+  rating: 4
+  review: null
+  meta:
+    title: Victoria, the queen
+    author: Julia Baird
+    page_count: 696
+    cover: /books/1400069882.jpg
 - isbn: 0873226690
   work_id: OL795564M
   date_read: '2026-07-09'
@@ -199,8 +209,9 @@
   date_read: '2024'
   rating: 2
   review: A lot of the recipes here are unfortunately a huge waste of ingredients.
-    Gluten free flours are expensive as it is, the amount maple syrup some of these recipes call for is enough to break your wallet.
-    These costly ingredients should not be wasted on recipes that will turn out badly.
+    Gluten free flours are expensive as it is, the amount maple syrup some of these
+    recipes call for is enough to break your wallet. These costly ingredients should
+    not be wasted on recipes that will turn out badly.
   meta:
     title: 'Sweet Laurel: Recipes for Whole Food, Grain-Free Desserts: A Baking Book'
     author: Laurel Gallucci
