@@ -1,16 +1,16 @@
 {{ define "main" }}
 <div class="page-layout">
     <h1>{{ .Title }}</h1>
+
+    {{ $books := site.Data.read_books }}
+
     <div class="bookshelf-layout">
-
-        {{ $books := site.Data.read_books }}
-
         <aside class="shelves">
-            <h4> bookshelves </h4>
+            <h4>bookshelves</h4>
             <ul id="shelf-list"></ul>
         </aside>
 
-        <div class="table-wrapper">
+        <main class="table-wrapper">
             <table class="data-table">
                 <colgroup>
                     <col class="col-cover">
@@ -20,55 +20,59 @@
                     <col class="col-review">
                     <col class="col-date">
                 </colgroup>
+
                 <thead>
                 <tr>
-                    <th>cover</th>
-                    <th>title</th>
-                    <th>author</th>
-                    <th>stars</th>
-                    <th>review</th>
-                    <th>date read</th>
+                    <th scope="col">cover</th>
+                    <th scope="col">title</th>
+                    <th scope="col">author</th>
+                    <th scope="col">stars</th>
+                    <th scope="col">review</th>
+                    <th scope="col">date read</th>
                 </tr>
                 </thead>
+
                 <tbody>
                 {{ range $books }}
                 {{ $meta := .meta }}
 
                 <tr data-tags="{{ delimit $meta.tags "," }}">
-                    <td data-label="cover">
-                        {{ if and $meta.cover (ne $meta.cover "null") }}
-                        <img src="{{ $meta.cover }}" class="book-cover">
-                        {{ end }}
-                    </td>
+                <td data-label="cover">
+                    {{ if and $meta.cover (ne $meta.cover "null") }}
+                    <img
+                            src="{{ $meta.cover }}"
+                            alt="Cover of {{ $meta.title }}"
+                            class="book-cover">
+                    {{ end }}
+                </td>
 
-                    <td data-label="title" class="book-title">
-                        {{ $meta.title }}
-                    </td>
+                <td data-label="title">{{ $meta.title }}</td>
 
-                    <td data-label="author" class="book-author">
-                        {{ $meta.author }}
-                    </td>
+                <td data-label="author">{{ $meta.author }}</td>
 
-                    <td data-label="stars" class="book-stars">
-                        {{ if .rating }}
-                        {{ strings.Repeat .rating "★" }}{{ strings.Repeat (sub 5 .rating) "☆" }}
-                        {{ end }}
-                    </td>
+                <td data-label="stars">
+                    {{ if .rating }}
+                    {{ strings.Repeat .rating "★" }}{{ strings.Repeat (sub 5 .rating) "☆" }}
+                    {{ end }}
+                </td>
 
-                    <td data-label="review" class="book-review">
-                        {{ if .review }}
-                        <span class="review-text">{{ .review }}</span>
-                        {{ end }}
-                    </td>
+                <td data-label="review">
+                    {{ if .review }}
+                    <span class="review-text">{{ .review }}</span>
+                    {{ end }}
+                </td>
 
-                    <td data-label="date read" class="book-read">
-                        {{ if .date_read }}{{ .date_read }}{{ end }}
-                    </td>
+                <td data-label="date read" class="book-read">
+                    {{ with .date_read }}
+                    {{ . }}
+                    {{ end }}
+                </td>
                 </tr>
+
                 {{ end }}
                 </tbody>
             </table>
-        </div>
+        </main>
     </div>
 </div>
 {{ end }}

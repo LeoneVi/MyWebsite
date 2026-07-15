@@ -8,14 +8,16 @@
 }
 
 .shelves{
-    width:220px;
+    flex: 0 0 auto;
     white-space: nowrap;
     padding-right: var(--spacing-lg);
+    margin-right: 0;
 }
 
 .shelves h4{
     margin-top:0;
     margin-bottom: var(--spacing-xs);
+    font-size: inherit;
 }
 
 .shelves ul{
@@ -34,18 +36,23 @@
     pointer-events: none;
 }
 
-.bookshelf .data-table {
+.table-wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.data-table {
     table-layout: auto;
     width: 100%;
     border-collapse: collapse;
 }
 
-.bookshelf .data-table th {
+.data-table th {
     text-align: left;
     border-bottom: 2px solid var(--color-ivory);
 }
 
-.bookshelf .data-table td {
+.data-table td {
     vertical-align: top;
     padding:  var(--spacing-md) var(--spacing-sm) var(--spacing-sm) 0px;
     text-align: left;
