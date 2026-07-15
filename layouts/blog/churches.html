@@ -14,10 +14,29 @@
   {{ $files := resources.Match (printf "churches/%s/*" $slug) }}
   {{ $count := len $files }}
 
+  <!-- Check if church visited less than a month ago -->
+  {{ $visited := .date_visited }}
+  {{ $isNew := false }}
+
+  {{ if $visited }}
+    {{ $visitDate := time.AsTime $visited }}
+    {{ $days := div (sub now.Unix $visitDate.Unix) 86400 }}
+    {{ if lt $days 30 }}
+      {{ $isNew = true }}
+  {{ end }}
+
+  {{ end }}
+
   <article class="church-card">
 
     {{ if gt $count 0 }}
     <div class="pswp-gallery">
+      {{ if $isNew }}
+      <div class="new-badge">
+        <img src="/icons/new-star.svg" alt="Recently visited">
+      </div>
+      {{ end }}
+
 
       {{ range $i, $img := $files }}
       <a
@@ -46,7 +65,7 @@
     {{ end }}
 
     <div class="church-info">
-      <h3>{{ .name }}</h3>
+      <h3>{{ .name }}{{ if .tlm }} ♱{{ end }}</h3>
 
       <p class="location">{{ .location }}</p>
 
@@ -66,6 +85,8 @@
 {{ end }}
 
 {{ define "main" }}
+
+{{ .Content }}
 
 <h2>Roman Catholic</h2>
 {{ template "churchTable" (dict

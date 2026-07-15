@@ -15,6 +15,7 @@ roman_catholic:
   location: Sorrento, Italy
 - name: Chiesa dei Santi Michele e Gaetano
   location: Florence, Italy
+  tlm: true
 - name: Chiesa di San Giorgio
   location: Salerno, Italy
 - name: Chiesa di San Moise
@@ -33,6 +34,7 @@ roman_catholic:
   location: Siena, Italy
 - name: Mary Immaculate of Lourdes
   location: Newton, MA
+  tlm: true
 - name: Newman Catholic Center
   location: Amherst, MA
 - name: Parrocchia di Santa Maria Assunta
@@ -45,14 +47,21 @@ roman_catholic:
   location: Pompei, Italy
 - name: Santuario della Casa di Santa Caterina
   location: Siena, Italy
+- name: St Mary's on Broadway
+  location: Providence, RI
+  date_visited: 2026-07-12
+  tlm: true
 - name: St. Brigid's Parish
   location: Amherst, MA
 - name: St. Patrick Church
   location: Columbus, OH
+  tlm: true
 - name: St. Paul Oratory
   location: Warren, MA
+  tlm: true
 - name: St. Thomas More Priory
   location: Sanford, FL
+  tlm: true
 - name: Acólitos Paróquia São Francisco de Assis
   location: Monte Verde, Brazil
 - name: Basilica di Santa Maria Maggiore
