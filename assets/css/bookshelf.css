@@ -116,6 +116,12 @@
 }
 
 @media (max-width: 1100px) {
+
+    .bookshelf-layout {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
     .bookshelf {
         padding: 0;
     }
