@@ -68,6 +68,9 @@ roman_catholic:
   location: Assisi, Italy
 - name: Basílica de Nossa Senhora Aparecida
   location: Aparecida, Brazil
+- name: Cathedral of St. Matthew the Apostle
+  location: Washington, D.C
+  date_visited: 2026-07-26
 - name: Chiesa di San Giovanni Battista
   location: Bracigliano, Italy
 - name: Igreja Matriz de Nossa Senhora da Candelária
