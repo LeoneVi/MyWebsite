@@ -47,7 +47,6 @@ document.querySelectorAll(".review-text").forEach(review => {
 
 /* edit date read format */
 function formatDate(dateStr) {
-
     // if year only
     if (/^\d{4}$/.test(dateStr)) {
         return dateStr;
@@ -55,7 +54,8 @@ function formatDate(dateStr) {
 
     // if year and month
     if (/^\d{4}-\d{2}$/.test(dateStr)) {
-        const date = new Date(dateStr + "-01");
+        const [year, month] = dateStr.split("-").map(Number);
+        const date = new Date(year, month -1);
         return date.toLocaleDateString("en-US", {
             timeZone: "America/New_York",
             month: "short",
