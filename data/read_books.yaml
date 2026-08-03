@@ -1,20 +1,41 @@
-- isbn: 1400069882
+- isbn: '9780300226478'
+  work_id: OL29349887M
+  date_read: 2026-08-2
+  rating: 5
+  review: It took me two trips to the ISG museum to get through the guide. I couldn't
+    recommend it enough. I have not only learned about the paintings at this museum,
+    but more about history, literature, and the city of Boston as well.
+  meta:
+    title: Isabella Stewart Gardner Museum
+    author: Christina M. Nielsen, Casey Riley, Nathaniel Silver
+    page_count: 208
+    cover: /books/9780300226478.jpg
+    tags:
+      - nonfiction
+      - art
+- isbn: '1400069882'
   work_id: OL27218734M
   date_read: '2026-07-15'
   rating: 4
-  review: As someone who is fascinated with Victorian culture, I figured a good way to learn more about the period would be to read a 
-    biography of the most important woman of the time. The period's namesake, Queen Victoria. The book starts off with the race between King George III's sons to secure an heir to the throne.
-    Ironic, because the sons had not produced a legitimate heir because they were too busy fooling around with mistresses. This is a stark contrast to the standard Queen Victoria would set when she married Prince Albert of Saxe-Coburg. 
-    They provided England the ideal model for what a strong British Family should look like. Their greatest achievement was the opening of the Great Exhibition, showcasing all the cutting-edge technological innovations of the time.
+  review: As someone who is fascinated with Victorian culture, I figured a good way
+    to learn more about the period would be to read a biography of the most important
+    woman of the time. The period's namesake, Queen Victoria. The book starts off
+    with the race between King George III's sons to secure an heir to the throne.
+    Ironic, because the sons had not produced a legitimate heir because they were
+    too busy fooling around with mistresses. This is a stark contrast to the standard
+    Queen Victoria would set when she married Prince Albert of Saxe-Coburg. They provided
+    England the ideal model for what a strong British Family should look like. Their
+    greatest achievement was the opening of the Great Exhibition, showcasing all the
+    cutting-edge technological innovations of the time.
   meta:
     title: Victoria, the queen
     author: Julia Baird
     page_count: 696
     cover: /books/1400069882.jpg
     tags:
-      - nonfiction
-      - history
-      - biography
+    - nonfiction
+    - history
+    - biography
 - isbn: 0873226690
   work_id: OL795564M
   date_read: '2026-07-09'
@@ -41,8 +62,8 @@
     page_count: 157
     cover: /books/0873226690.jpg
     tags:
-      - nonfiction
-      - sports
+    - nonfiction
+    - sports
 - isbn: null
   work_id: null
   date_read: '2026-01-22'
@@ -56,9 +77,9 @@
     author: Andrew Brookes
     cover: /books/Arch-Linux.jpg
     tags:
-      - nonfiction
-      - cs
-      - technology
+    - nonfiction
+    - cs
+    - technology
 - isbn: '9780066620732'
   date_read: '2026-01-16'
   rating: 4
@@ -69,9 +90,9 @@
     page_count: 288
     cover: /books/9780066620732.jpg
     tags:
-      - nonfiction
-      - biography
-      - cs
+    - nonfiction
+    - biography
+    - cs
 - isbn: '9781683570240'
   date_read: '2025-07-20'
   rating: 4
@@ -82,8 +103,8 @@
     page_count: 240
     cover: /books/9781683570240.jpg
     tags:
-      - nonfiction
-      - religion
+    - nonfiction
+    - religion
 - isbn: '9780300108835'
   date_read: '2025-06-29'
   rating: 4
@@ -99,8 +120,8 @@
     page_count: 284
     cover: /books/9780300108835.jpg
     tags:
-      - nonfiction
-      - history
+    - nonfiction
+    - history
 - isbn: null
   work_id: OL24290059W
   date_read: '2025-05-23'
@@ -112,7 +133,7 @@
     page_count: null
     cover: /books/OL24290059W.jpg
     tags:
-      - nonfiction
+    - nonfiction
 - isbn: null
   work_id: OL44927W
   date_read: '2025-05-21'
@@ -124,7 +145,7 @@
     page_count: null
     cover: /books/OL44927W.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9781580088084'
   date_read: '2025'
   rating: 5
@@ -136,8 +157,8 @@
     page_count: 246
     cover: /books/9781580088084.jpg
     tags:
-      - nonfiction
-      - cookbook
+    - nonfiction
+    - cookbook
 - isbn: '9781668024447'
   date_read: '2024-12-15'
   rating: null
@@ -148,8 +169,8 @@
     page_count: null
     cover: /books/9781668024447.jpg
     tags:
-      - nonfiction
-      - biography
+    - nonfiction
+    - biography
 - isbn: '9781533667922'
   date_read: '2024-11-15'
   rating: 4
@@ -164,7 +185,7 @@
     page_count: 265
     cover: /books/9781533667922.jpg
     tags:
-      - nonfiction
+    - nonfiction
 - isbn: '9780140277449'
   date_read: '2024-09-09'
   rating: 5
@@ -181,8 +202,8 @@
     page_count: 304
     cover: /books/9780140277449.jpg
     tags:
-      - nonfiction
-      - history
+    - nonfiction
+    - history
 - isbn: '9780525952473'
   date_read: '2024-08-21'
   rating: 5
@@ -201,8 +222,8 @@
     page_count: 283
     cover: /books/9780525952473.jpg
     tags:
-      - nonfiction
-      - religion
+    - nonfiction
+    - religion
 - isbn: '9781668009048'
   date_read: '2024-06-17'
   rating: null
@@ -213,8 +234,8 @@
     page_count: null
     cover: /books/9781668009048.jpg
     tags:
-      - nonfiction
-      - biography
+    - nonfiction
+    - biography
 - isbn: '9780762435173'
   date_read: '2024-01-20'
   rating: 3
@@ -226,7 +247,7 @@
     page_count: 234
     cover: /books/9780762435173.jpg
     tags:
-      - nonfiction
+    - nonfiction
 - isbn: null
   work_id: OL627084W
   date_read: '2024-01-05'
@@ -242,7 +263,7 @@
     page_count: null
     cover: /books/OL627084W.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9780525536543'
   date_read: '2024-01-01'
   rating: 3
@@ -253,8 +274,8 @@
     page_count: 304
     cover: /books/9780525536543.jpg
     tags:
-      - nonfiction
-      - technology
+    - nonfiction
+    - technology
 - isbn: '9781524761455'
   date_read: '2024'
   rating: 2
@@ -268,8 +289,8 @@
     page_count: 255
     cover: /books/9781524761455.jpg
     tags:
-      - nonfiction
-      - cookbook
+    - nonfiction
+    - cookbook
 - isbn: null
   work_id: OL166894W
   date_read: '2023-12-12'
@@ -281,7 +302,7 @@
     page_count: null
     cover: /books/OL166894W.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9781982185831'
   date_read: '2023-12-05'
   rating: null
@@ -292,8 +313,8 @@
     page_count: 320
     cover: /books/9781982185831.jpg
     tags:
-      - nonfiction
-      - biography
+    - nonfiction
+    - biography
 - isbn: '9780425191651'
   date_read: '2023-12-05'
   rating: 5
@@ -305,7 +326,7 @@
     page_count: 408
     cover: /books/9780425191651.jpg
     tags:
-      - nonfiction
+    - nonfiction
 - isbn: '9781463647681'
   date_read: '2023-03-01'
   rating: null
@@ -316,8 +337,8 @@
     page_count: 132
     cover: /books/9781463647681.jpg
     tags:
-      - nonfiction
-      - history
+    - nonfiction
+    - history
 - isbn: '9789998070011'
   date_read: '2023-02-01'
   rating: 1
@@ -328,7 +349,7 @@
     page_count: null
     cover: /books/generic-cover.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9780679735779'
   date_read: '2022-06-24'
   rating: 5
@@ -339,7 +360,7 @@
     page_count: 399
     cover: /books/9780679735779.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9780719058790'
   date_read: '2021-08-09'
   rating: 5
@@ -354,8 +375,8 @@
     page_count: 230
     cover: /books/9780719058790.jpg
     tags:
-      - nonfiction
-      - history
+    - nonfiction
+    - history
 - isbn: '9780486291574'
   date_read: '2021-04-01'
   rating: 5
@@ -367,8 +388,8 @@
     page_count: 160
     cover: /books/9780486291574.jpg
     tags:
-      - nonfiction
-      - crafts
+    - nonfiction
+    - crafts
 - isbn: '9781570619915'
   date_read: '2021-03-20'
   rating: 5
@@ -379,9 +400,9 @@
     page_count: 388
     cover: /books/9781570619915.jpg
     tags:
-      - nonfiction
-      - cookbook
-      - homemaking
+    - nonfiction
+    - cookbook
+    - homemaking
 - isbn: '9780582777316'
   date_read: '2020-11-01'
   rating: 5
@@ -392,7 +413,7 @@
     page_count: 72
     cover: /books/9780582777316.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9780743273565'
   date_read: '2020-03-01'
   rating: 1
@@ -403,7 +424,7 @@
     page_count: 180
     cover: /books/9780743273565.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9781595828682'
   date_read: '2020-01-14'
   rating: null
@@ -414,8 +435,8 @@
     page_count: null
     cover: /books/9781595828682.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781626926035'
   date_read: '2020-01-01'
   rating: null
@@ -426,8 +447,8 @@
     page_count: 142
     cover: /books/9781626926035.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9780142437339'
   date_read: '2020-01-01'
   rating: 3
@@ -438,7 +459,7 @@
     page_count: 143
     cover: /books/9780142437339.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9781634420600'
   date_read: '2019-06-10'
   rating: 1
@@ -449,8 +470,8 @@
     page_count: 244
     cover: /books/9781634420600.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9784902948165'
   date_read: '2019-04-01'
   rating: 5
@@ -461,8 +482,8 @@
     page_count: null
     cover: /books/9784902948165.jpg
     tags:
-      - nonfiction
-      - art
+    - nonfiction
+    - art
 - isbn: '9781421586205'
   date_read: '2019'
   rating: null
@@ -473,8 +494,8 @@
     page_count: 426
     cover: /books/9781421586205.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781421586212'
   date_read: '2019'
   rating: null
@@ -485,8 +506,8 @@
     page_count: 424
     cover: /books/9781421586212.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781421586229'
   date_read: '2019'
   rating: null
@@ -497,8 +518,8 @@
     page_count: 442
     cover: /books/9781421586229.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781421586236'
   date_read: '2019'
   rating: null
@@ -509,8 +530,8 @@
     page_count: 434
     cover: /books/9781421586236.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781421586243'
   date_read: '2019'
   rating: null
@@ -521,8 +542,8 @@
     page_count: null
     cover: /books/9781421586243.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781421586250'
   date_read: '2019'
   rating: null
@@ -533,8 +554,8 @@
     page_count: 480
     cover: /books/9781421586250.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781421586267'
   date_read: '2019'
   rating: 3
@@ -545,8 +566,8 @@
     page_count: null
     cover: /books/9781421586267.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781435249158'
   date_read: '2018-09-01'
   rating: 1
@@ -558,7 +579,7 @@
     page_count: 221
     cover: /books/9781435249158.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9781626923485'
   date_read: '2018-07-14'
   rating: null
@@ -569,8 +590,8 @@
     page_count: null
     cover: /books/9781626923485.jpg
     tags:
-      - fiction
-      - manga
+    - fiction
+    - manga
 - isbn: '9781580495936'
   date_read: '2017-10-01'
   rating: null
@@ -581,7 +602,7 @@
     page_count: 80
     cover: /books/9781580495936.jpg
     tags:
-      - fiction
+    - fiction
 - isbn: '9780142000670'
   date_read: '2017-09-01'
   rating: 3
@@ -592,4 +613,17 @@
     page_count: 112
     cover: /books/9780142000670.jpg
     tags:
-      - fiction
+    - fiction
+- isbn: '4756248756'
+  work_id: OL26961722M
+  date_read: '2017'
+  rating: 2
+  review: Overall pretty boring for an artbook.
+  meta:
+    title: Momentary
+    author: Ilya Kuvshinov
+    page_count: null
+    cover: /books/4756248756.jpg
+    tags:
+      - nonfiction
+      - art
