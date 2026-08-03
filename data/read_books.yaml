@@ -1,6 +1,6 @@
 - isbn: '9780300226478'
   work_id: OL29349887M
-  date_read: 2026-08-2
+  date_read: '2026-08-2'
   rating: 5
   review: It took me two trips to the ISG museum to get through the guide. I couldn't
     recommend it enough. I have not only learned about the paintings at this museum,
@@ -616,7 +616,7 @@
     - fiction
 - isbn: '4756248756'
   work_id: OL26961722M
-  date_read: '2017'
+  date_read: '2017-12'
   rating: 2
   review: Overall pretty boring for an artbook.
   meta:
