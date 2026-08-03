@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+    <link rel="icon" href="{{ "favicon.ico" | absURL }}">
 
-    {{ $styles := slice
+    {{/* Base styles every page needs */}}
+    {{ $baseStyles := slice
     (resources.Get "css/style.css")
     (resources.Get "css/language-dropdown.css")
-    (resources.Get "css/home.css")
-    (resources.Get "css/bookshelf.css")
-    (resources.Get "css/albums.css")
-    (resources.Get "css/churches.css")
-    | resources.Concat "css/main.css"
+    }}
+
+    {{/* Layout-specific stylesheet, if one exists for this page */}}
+    {{ $layoutCSS := printf "css/%s.css" .Layout }}
+    {{ with resources.Get $layoutCSS }}
+    {{ $baseStyles = $baseStyles | append . }}
+    {{ end }}
+
+    {{ $bundleName := printf "css/main-%s.css" (.Layout | default "default") }}
+    {{ $styles := $baseStyles
+    | resources.Concat $bundleName
     | resources.Minify
     | resources.Fingerprint
     }}
-
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"> <!-- import photoSwipe -->
+
+    {{/* PhotoSwipe only on pages that actually use a gallery */}}
+    {{ if eq .Layout "churches" }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css">
+    {{ end }}
 </head>
 <body class="{{ .Layout }}">
 
@@ -26,11 +38,14 @@
 {{ block "main" . }}
 {{ end }}
 
-
+{{/* Bookshelf JS only on the bookshelf page */}}
+{{ if eq .Layout "bookshelf" }}
 {{ $bookshelfJS := resources.Get "js/bookshelf.js" | js.Build }}
 <script src="{{ $bookshelfJS.RelPermalink }}"></script>
+{{ end }}
 
-<!-- Photoswipe script -->
+{{/* PhotoSwipe lightbox only where the gallery markup exists */}}
+{{ if eq .Layout "churches" }}
 <script type="module">
     import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.js';
 
@@ -42,5 +57,7 @@
 
     lightbox.init();
 </script>
+{{ end }}
+
 </body>
 </html>
