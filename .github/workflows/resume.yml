@@ -1,0 +1,32 @@
+name: Build Resume PDF
+
+on:
+  push:
+    paths:
+      - "resume/**"
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume/resume.tex
+
+      - name: Copy PDF to Hugo static folder
+        run: |
+          mkdir -p static/files
+          cp resume/resume.pdf static/files/resume.pdf
+
+      - name: Commit updated PDF
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add static/files/resume.pdf
+          git commit -m "Update resume PDF" || exit 0
+          git push
