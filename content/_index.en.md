@@ -12,6 +12,6 @@ I'm a computer science student interested in systems, networking, and building t
 ## Links
 
 - 📝 [Blog](/blog)
-- 📄 [Resume](/resume)
+- 📄 [Resume](/files/resume.pdf)
 - 💻 [Portfolio](/portfolio)
 - 🐙 [GitHub](https://github.com/LeoneVi)

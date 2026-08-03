@@ -1,4 +1,0 @@
----
-title: Currícolo
-empty: true
----

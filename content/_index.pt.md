@@ -12,6 +12,6 @@ Sou uma estudante de ciência da computação interessada em sistemas de computa
 ## Links
 
 - 📝 [Blog](/blog)
-- 📄 [Currículo](/resume)
+- 📄 [Currículo](/files/resume.pdf)
 - 💻 [Portfólio](/portfolio)
 - 🐙 [GitHub](https://github.com/LeoneVi)
