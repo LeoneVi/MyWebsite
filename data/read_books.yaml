@@ -8,6 +8,9 @@
     author: Heikala, 3DTotal Publishing
     page_count: 152
     cover: /books/9781909414815.jpg
+    tags:
+      - nonfiction
+      - art
 - isbn: '9780300226478'
   work_id: OL29349887M
   date_read: '2026-08-02'
