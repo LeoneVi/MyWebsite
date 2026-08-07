@@ -1,3 +1,13 @@
+- isbn: '9781909414815'
+  work_id: OL28693603MOL28693603M
+  date_read: '2026-08-07'
+  rating: 4
+  review: Cute art book with great tips on how to make watercolor illustrations.
+  meta:
+    title: Art of Heikala
+    author: Heikala, 3DTotal Publishing
+    page_count: 152
+    cover: /books/9781909414815.jpg
 - isbn: '9780300226478'
   work_id: OL29349887M
   date_read: '2026-08-02'
@@ -36,7 +46,7 @@
     - nonfiction
     - history
     - biography
-- isbn: '0873226690'
+- isbn: 0873226690
   work_id: OL795564M
   date_read: '2026-07-09'
   rating: 3
