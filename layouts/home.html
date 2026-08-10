@@ -9,7 +9,9 @@
 
   <div class="web-ring">
     <div id="umaring"></div>
-    <script src="https://umaring.github.io/toryleone.js"></script>
   </div>
 </div>
+
+{{ $webringJS := resources.Get "js/webring.js" | js.Build }}
+<script src="{{ $webringJS.RelPermalink }}" defer></script>
 {{ end }}

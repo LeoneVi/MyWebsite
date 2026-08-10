@@ -26,10 +26,13 @@
 }
 
 .web-ring {
+    display: flex;
     margin-top: 4rem;
     margin-bottom: 2rem;
+    align-items: center;
+    gap: var(--spacing-md, 1rem);
+    justify-content: center;
 }
-
 
 @media (max-width: 768px) {
     .home-main {
