@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
-    padding: 1rem;
+    flex: 1;
+    min-height: 0;
 }
 
 .home-main {
