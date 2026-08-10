@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="blog-layout">
+    <div class="blog-main">
+        <div class="blog-content">{{ .Content }}</div>
+        <div class="blog-image">
+            <img src="{{ .Params.featured_image }}" class="blog-profile-image">
+        </div>
+    </div>
+</div>
+{{ end }}
