@@ -1,6 +1,7 @@
 baseURL: https://toryleone.com/
 locale: en-us
 title: 'Tory''s Website'
+theme : 'mytheme'
 
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
