@@ -363,6 +363,18 @@
     cover: /books/generic-cover.jpg
     tags:
     - fiction
+- isbn: '8574067733'
+  work_id: OL35669169M
+  date_read: '2023'
+  rating: null
+  review: null
+  meta:
+    title: Onda
+    author: Suzy Lee
+    page_count: null
+    cover: /books/8574067733.jpg
+    tags:
+    - fiction
 - isbn: '9780679735779'
   date_read: '2022-06-24'
   rating: 5
