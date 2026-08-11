@@ -1,0 +1,7 @@
+/* base files */
+@import "base/_reset.css";
+@import "base/_style.css";
+@import "base/_variables.css";
+
+/* components */
+@import "components/language-dropdown.css";
