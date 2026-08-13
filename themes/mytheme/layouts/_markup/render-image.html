@@ -1,0 +1,22 @@
+{{- $class := "article-image-center" -}}
+
+{{- with .Title -}}
+{{- if eq . "left" -}}
+{{- $class = "article-image-left" -}}
+{{- else if eq . "right" -}}
+{{- $class = "article-image-right" -}}
+{{- else if eq . "center" -}}
+{{- $class = "article-image-center" -}}
+{{- end -}}
+{{- end -}}
+
+<figure class="article-image {{ $class }}">
+    <img
+            src="{{ .Destination | safeURL }}"
+            alt="{{ .Text }}"
+    >
+
+    {{- with .Text -}}
+    <figcaption>{{ . }}</figcaption>
+    {{- end -}}
+</figure>

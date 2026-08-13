@@ -6,6 +6,13 @@ theme : 'mytheme'
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
 
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
+
 languages:
   en:
     params:
