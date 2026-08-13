@@ -2,7 +2,6 @@
 title: No, You Are Not Better Than Everyone Else Because You're Catholic
 date: 2026-08-11
 layout: article
-draft: true
 ---
 
 ![Christ the last judgement Sistine Chapel](christ-the-last-judgment-sistine-chapel-michelangelo.webp "center")
