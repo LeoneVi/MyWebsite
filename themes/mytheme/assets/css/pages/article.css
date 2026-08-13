@@ -3,38 +3,45 @@
    ========================= */
 
 .article {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 0 var(--spacing-md);
     line-height: 1.75;
 }
 
+/* =========================
+   Article header
+   ========================= */
+
 .article-header {
-    margin: 0 auto var(--spacing-xl);
     text-align: center;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
 }
 
-.article h1 {
-    margin: 0 0 var(--spacing-sm);
+.article-header h1 {
     font-size: var(--font-size-xl);
     line-height: 1.2;
 }
 
 .article-date {
+    margin: 0;
     font-size: var(--font-size-sm);
 }
 
-.article p {
-    margin: 0 0 var(--spacing-lg);
-}
+/* Small divider underneath the header */
 
-.article h2,
-.article h3 {
-    margin-top: var(--spacing-xl);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.3;
-}
+.article-header::after {
+    content: "";
+    display: block;
 
-.article h3 {
-    font-size: var(--font-size-lg);
+    width: 100%;
+    height: 1px;
+
+    margin: var(--spacing-lg) auto 0;
+
+    background: var(--color-glaucous);
 }
 
 
@@ -66,7 +73,6 @@
 
 .article-image {
     margin: var(--spacing-xl) 0;
-    text-align: center;
 }
 
 .article-image img {
@@ -74,7 +80,6 @@
     width: auto;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
 }
 
 .article-image figcaption {
@@ -84,6 +89,7 @@
     font-size: var(--font-size-sm);
     font-style: italic;
     line-height: 1.4;
+    text-align: center;
 }
 
 
@@ -91,6 +97,12 @@
 
 .article-image-center {
     clear: both;
+    text-align: center;
+}
+
+.article-image-center img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -119,30 +131,21 @@
     width: 100%;
 }
 
-/* =========================
-   Mobile
-   ========================= */
+
+/* Mobile */
 
 @media (max-width: 600px) {
 
-    .article {
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
-
-    .article h1 {
-        font-size: var(--font-size-lg);
-    }
-
-    .article blockquote {
-        padding: var(--spacing-md) var(--spacing-lg);
-        margin: var(--spacing-lg) 0;
-    }
-
-    .article-figure-right,
-    .article-figure-left {
+    .article-image-right,
+    .article-image-left {
         float: none;
         width: 100%;
         max-width: 350px;
         margin: var(--spacing-lg) auto;
     }
-}
+
+    .article-image-right img,
+    .article-image-left img {
+        width: 100%;
+    }
+}}
