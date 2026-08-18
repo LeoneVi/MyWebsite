@@ -8,42 +8,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: DNS diagnostics
-        run: |
-          echo "=== resolv.conf ==="
-          cat /etc/resolv.conf
-
-          echo "=== system DNS ==="
-          dig toryleone.com A || true
-
-          echo "=== Cloudflare DNS ==="
-          dig @1.1.1.1 toryleone.com A || true
-
-          echo "=== Google DNS ==="
-          dig @8.8.8.8 toryleone.com A || true
-
-          echo "=== Quad9 DNS ==="
-          dig @9.9.9.9 toryleone.com A || true
-
-          echo "=== authoritative nameservers ==="
-          dig toryleone.com NS || true
-
-      - name: Test normal DNS
+      - name: Test current UMaRing behavior
         continue-on-error: true
         run: |
+          echo "=== CURRENT UMARING SETTINGS ==="
+
           curl -vL \
+            -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
             --connect-timeout 5 \
             --max-time 10 \
+            -w '\nHTTP=%{http_code}\nREMOTE=%{remote_ip}\nCONNECT=%{time_connect}\nTOTAL=%{time_total}\n' \
             https://toryleone.com \
-            -o /tmp/normal.html
+            -o /tmp/current.html
 
-      - name: Bypass DNS completely
+          grep -i umaring /tmp/current.html || true
+
+      - name: Test proposed UMaRing behavior
         run: |
-          curl -vL \
-            --resolve toryleone.com:443:100.0.29.209 \
-            --connect-timeout 5 \
-            --max-time 10 \
-            https://toryleone.com \
-            -o /tmp/direct.html
+          echo "=== PROPOSED RETRY SETTINGS ==="
 
-          grep -i umaring /tmp/direct.html
+          curl -vL \
+            -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
+            --connect-timeout 10 \
+            --max-time 30 \
+            --retry 3 \
+            --retry-delay 2 \
+            --retry-all-errors \
+            -w '\nHTTP=%{http_code}\nREMOTE=%{remote_ip}\nCONNECT=%{time_connect}\nTOTAL=%{time_total}\n' \
+            https://toryleone.com \
+            -o /tmp/proposed.html
+
+          echo "=== WEBRING DETECTION ==="
+          grep -i umaring /tmp/proposed.html
