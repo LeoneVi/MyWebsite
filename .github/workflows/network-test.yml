@@ -1,4 +1,4 @@
-name: Test home server DNS
+name: Test UMaRing
 
 on:
   workflow_dispatch:
@@ -8,49 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show resolver configuration
-        run: |
-          echo "=== /etc/resolv.conf ==="
-          cat /etc/resolv.conf
-
-      - name: Test system resolver
-        continue-on-error: true
-        run: |
-          echo "=== SYSTEM RESOLVER ==="
-          time dig toryleone.com A
-
-      - name: Test Cloudflare DNS
-        continue-on-error: true
-        run: |
-          echo "=== CLOUDFLARE 1.1.1.1 ==="
-          time dig @1.1.1.1 toryleone.com A
-
-      - name: Test Google DNS
-        continue-on-error: true
-        run: |
-          echo "=== GOOGLE 8.8.8.8 ==="
-          time dig @8.8.8.8 toryleone.com A
-
-      - name: Test Quad9 DNS
-        continue-on-error: true
-        run: |
-          echo "=== QUAD9 9.9.9.9 ==="
-          time dig @9.9.9.9 toryleone.com A
-
-      - name: Test authoritative DNS
-        continue-on-error: true
-        run: |
-          echo "=== NAMESERVERS ==="
-          dig toryleone.com NS
-
-      - name: Bypass DNS and reach site directly
+      - name: Test exactly like UMaRing
         run: |
           curl -vL \
-            --resolve toryleone.com:443:100.0.29.209 \
+            -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
             --connect-timeout 5 \
             --max-time 10 \
+            -w '\nHTTP=%{http_code}\nREMOTE=%{remote_ip}\nCONNECT=%{time_connect}\nTOTAL=%{time_total}\n' \
             https://toryleone.com \
             -o /tmp/site.html
 
-          echo "=== WEBRING ==="
           grep -i umaring /tmp/site.html
