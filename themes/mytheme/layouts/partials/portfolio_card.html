@@ -8,6 +8,14 @@
         tabindex="-1"
         {{ if .hidden }}hidden{{ end }}
 >
+    <header class="portfolio-card-header">
+        {{ if .single }}
+            <h1 id="{{ $projectID }}-title">{{ $page.Title }}</h1>
+        {{ else }}
+            <h2 id="{{ $projectID }}-title">{{ $page.Title }}</h2>
+        {{ end }}
+    </header>
+
     <figure class="portfolio-card-image">
         <img
                 src="{{ $page.Params.image | relURL }}"
@@ -20,12 +28,6 @@
     </figure>
 
     <div class="portfolio-card-copy">
-        {{ if .single }}
-            <h1 id="{{ $projectID }}-title">{{ $page.Title }}</h1>
-        {{ else }}
-            <h2 id="{{ $projectID }}-title">{{ $page.Title }}</h2>
-        {{ end }}
-
         <div class="portfolio-card-description">
             {{ $page.Content }}
         </div>
