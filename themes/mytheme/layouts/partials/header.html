@@ -15,7 +15,7 @@
         <span aria-hidden="true"></span>
     {{ end }}
 
-    <div class="lang-dropdown">
+    <div class="language-chooser-slot">
         {{ if gt (len .Translations) 0 }}
             {{ partial "language_chooser.html" . }}
         {{ end }}

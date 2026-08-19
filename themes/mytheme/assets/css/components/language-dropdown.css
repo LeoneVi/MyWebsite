@@ -1,6 +1,6 @@
 .lang-dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .lang-btn {
@@ -12,6 +12,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.4rem;
 }
 
@@ -39,23 +40,46 @@
 .lang-menu {
     position: absolute;
     top: 100%;
-    left: 0;
-    display: none;
+    right: 0;
+    z-index: 100;
+    display: flex;
     flex-direction: column;
-    margin-top: 0.5rem;
+    min-width: 48px;
+    padding-top: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .lang-dropdown:hover .lang-menu,
 .lang-dropdown:focus-within .lang-menu {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .lang-item {
-    padding: var(--spacing-md);
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
     opacity: 0.8;
+}
+
+.lang-link,
+.lang-active,
+.lang-menu .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.lang-link,
+.lang-active {
+    box-sizing: border-box;
+    padding: var(--spacing-md);
 }
 
 .lang-item:hover {
@@ -65,6 +89,6 @@
 
 .lang-menu svg {
     width: 25px;
-    height: 25px;
+    height: auto;
     display: block;
 }

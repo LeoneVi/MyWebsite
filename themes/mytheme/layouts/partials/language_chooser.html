@@ -3,7 +3,12 @@
 <div class="lang-dropdown">
 
     <!-- button face -->
-    <button class="lang-btn">
+    <button
+            class="lang-btn"
+            type="button"
+            aria-label="Choose language"
+            aria-haspopup="true"
+    >
         <span class="icon">
             {{ readFile "static/icons/globe.svg" | safeHTML }}
         </span>
