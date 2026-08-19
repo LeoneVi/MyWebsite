@@ -3,11 +3,26 @@
     {{ if .IsSection }}
     <header class="piano-page-header">
         <div class="piano-page-intro">
+            <h1>{{ .Title }}</h1>
             {{ .Content }}
         </div>
-        <p class="piano-page-count">
-            {{ len .RegularPages }} {{ if eq (len .RegularPages) 1 }}recording{{ else }}recordings{{ end }}
-        </p>
+
+        {{ if gt (len .RegularPages) 0 }}
+        <div class="piano-page-actions" aria-label="Recording playback options">
+            <button class="piano-page-action" type="button" data-piano-play-all aria-pressed="false">
+                <span class="piano-page-action-icon" aria-hidden="true">
+                    {{ readFile "static/icons/play.svg" | safeHTML }}
+                </span>
+                <span>Play all</span>
+            </button>
+            <button class="piano-page-action" type="button" data-piano-shuffle aria-pressed="false">
+                <span class="piano-page-action-icon" aria-hidden="true">
+                    {{ readFile "static/icons/shuffle.svg" | safeHTML }}
+                </span>
+                <span>Shuffle</span>
+            </button>
+        </div>
+        {{ end }}
     </header>
 
     <div class="piano-song-list">

@@ -15,6 +15,9 @@
     var isLeavingPage = false;
     var resumePending = false;
     var lastSavedSecond = -1;
+    var playbackQueue = [];
+    var queueIndex = -1;
+    var queueMode = '';
 
     function readStoredState() {
         try {
@@ -58,6 +61,47 @@
         return new URL(source, window.location.href).href;
     }
 
+    function trackFromButton(button) {
+        return {
+            source: button.dataset.audio,
+            title: button.dataset.title,
+            author: button.dataset.author
+        };
+    }
+
+    function pageTracks() {
+        return Array.from(document.querySelectorAll('[data-song-play]')).map(trackFromButton);
+    }
+
+    function shuffledTracks(tracks) {
+        var shuffled = tracks.slice();
+
+        for (var index = shuffled.length - 1; index > 0; index -= 1) {
+            var randomIndex = Math.floor(Math.random() * (index + 1));
+            var current = shuffled[index];
+            shuffled[index] = shuffled[randomIndex];
+            shuffled[randomIndex] = current;
+        }
+
+        return shuffled;
+    }
+
+    function updateQueueButtons() {
+        document.querySelectorAll('[data-piano-play-all], [data-piano-shuffle]').forEach(function (button) {
+            var buttonMode = button.hasAttribute('data-piano-shuffle') ? 'shuffle' : 'all';
+            var active = queueMode === buttonMode && queueIndex >= 0;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+    }
+
+    function clearQueue() {
+        playbackQueue = [];
+        queueIndex = -1;
+        queueMode = '';
+        updateQueueButtons();
+    }
+
     function formatTime(seconds) {
         if (!Number.isFinite(seconds)) return '0:00';
         var minutes = Math.floor(seconds / 60);
@@ -90,19 +134,25 @@
             : 0;
         time.textContent = formatTime(audio.currentTime) + ' / ' + formatTime(duration);
         updateSongButtons();
+        updateQueueButtons();
     }
 
-    async function playSong(button) {
-        var nextSource = sourceUrl(button.dataset.audio);
+    async function playTrack(track) {
+        var nextSource = sourceUrl(track.source);
 
         if (audio.src === nextSource) {
-            if (audio.paused) await audio.play();
-            else audio.pause();
+            if (audio.paused) {
+                try {
+                    await audio.play();
+                } catch (error) {
+                    label.textContent = 'Ready to play';
+                }
+            }
             return;
         }
 
-        title.textContent = button.dataset.title;
-        author.textContent = button.dataset.author;
+        title.textContent = track.title;
+        author.textContent = track.author;
         label.textContent = 'Loading';
         player.hidden = false;
         audio.src = nextSource;
@@ -111,8 +161,8 @@
 
         if ('mediaSession' in navigator && 'MediaMetadata' in window) {
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: button.dataset.title,
-                artist: button.dataset.author,
+                title: track.title,
+                artist: track.author,
                 album: 'Tory\'s piano recordings'
             });
         }
@@ -125,7 +175,56 @@
         }
     }
 
+    async function playSong(button) {
+        var nextSource = sourceUrl(button.dataset.audio);
+        clearQueue();
+
+        if (audio.src === nextSource) {
+            if (audio.paused) await audio.play();
+            else audio.pause();
+            return;
+        }
+
+        await playTrack(trackFromButton(button));
+    }
+
+    async function startQueue(mode) {
+        var tracks = pageTracks();
+        if (!tracks.length) return;
+
+        playbackQueue = mode === 'shuffle' ? shuffledTracks(tracks) : tracks;
+        queueIndex = 0;
+        queueMode = mode;
+        updateQueueButtons();
+        await playTrack(playbackQueue[queueIndex]);
+    }
+
+    async function playNextInQueue() {
+        if (!playbackQueue.length || queueIndex < 0) return;
+
+        queueIndex += 1;
+        if (queueIndex >= playbackQueue.length) {
+            clearQueue();
+            saveState(false);
+            return;
+        }
+
+        await playTrack(playbackQueue[queueIndex]);
+    }
+
     document.addEventListener('click', function (event) {
+        var playAllButton = event.target.closest('[data-piano-play-all]');
+        if (playAllButton) {
+            startQueue('all');
+            return;
+        }
+
+        var shuffleButton = event.target.closest('[data-piano-shuffle]');
+        if (shuffleButton) {
+            startQueue('shuffle');
+            return;
+        }
+
         var songButton = event.target.closest('[data-song-play]');
         if (songButton) playSong(songButton);
     });
@@ -138,6 +237,7 @@
 
     close.addEventListener('click', function () {
         resumePending = false;
+        clearQueue();
         audio.pause();
         audio.removeAttribute('src');
         audio.load();
@@ -167,7 +267,8 @@
     });
 
     audio.addEventListener('ended', function () {
-        saveState(false);
+        if (playbackQueue.length && queueIndex >= 0) playNextInQueue();
+        else saveState(false);
     });
 
     audio.addEventListener('timeupdate', function () {
@@ -182,7 +283,10 @@
         saveState(!audio.paused && !audio.ended);
     });
 
-    document.addEventListener('site:navigated', updateSongButtons);
+    document.addEventListener('site:navigated', function () {
+        updateSongButtons();
+        updateQueueButtons();
+    });
 
     if ('mediaSession' in navigator) {
         navigator.mediaSession.setActionHandler('play', function () { audio.play(); });
