@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="piano-page">
+    {{ if .IsSection }}
+    <header class="piano-page-header">
+        <div class="piano-page-intro">
+            {{ .Content }}
+        </div>
+        <p class="piano-page-count">
+            {{ len .RegularPages }} {{ if eq (len .RegularPages) 1 }}recording{{ else }}recordings{{ end }}
+        </p>
+    </header>
+
+    <div class="piano-song-list">
+        {{ range .RegularPages.ByWeight }}
+            {{ partial "piano_song.html" . }}
+        {{ else }}
+        <p>No recordings have been added yet.</p>
+        {{ end }}
+    </div>
+    {{ else }}
+    <a class="piano-back-link" href="{{ "/blog/piano/" | relLangURL }}">← All piano recordings</a>
+    <div class="piano-song-list piano-song-detail">
+        {{ partial "piano_song.html" . }}
+    </div>
+    {{ end }}
+</main>
+{{ end }}

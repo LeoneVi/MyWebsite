@@ -1,164 +1,94 @@
-function getMaxLength() {
-    if (window.matchMedia("(max-width: 480px)").matches) {
-        return 65; // phones
+(function () {
+    function getMaxLength() {
+        if (window.matchMedia('(max-width: 480px)').matches) return 65;
+        if (window.matchMedia('(max-width: 768px)').matches) return 260;
+        return 430;
     }
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        return 260; // tablets
-    }
-    return 430; // desktop
-}
 
-/* Make review text toggleable */
-document.querySelectorAll(".review-text").forEach(review => {
-    const fullText = review.textContent.trim();
-    const max_length = getMaxLength();
+    function formatDate(dateStr) {
+        if (/^\d{4}$/.test(dateStr)) return dateStr;
 
-    if (fullText.length > max_length) {
-        const shortText = fullText.slice(0, max_length);
-
-        review.innerHTML = `
-            <span class="collapsed">
-                ${shortText}
-                <a href="#" class="review-toggle">...more</a>
-            </span>
-            <span class="expanded" style="display:none">
-                ${fullText}
-                <a href="#" class="review-toggle"> (less)</a>
-            </span>
-        `;
-
-        review.querySelectorAll(".review-toggle").forEach(link => {
-            link.addEventListener("click", e => {
-                e.preventDefault();
-
-                review.querySelector(".collapsed").style.display =
-                    review.querySelector(".collapsed").style.display === "none"
-                        ? ""
-                        : "none";
-
-                review.querySelector(".expanded").style.display =
-                    review.querySelector(".expanded").style.display === "none"
-                        ? ""
-                        : "none";
+        if (/^\d{4}-\d{2}$/.test(dateStr)) {
+            var monthParts = dateStr.split('-').map(Number);
+            return new Date(monthParts[0], monthParts[1] - 1).toLocaleDateString('en-US', {
+                timeZone: 'America/New_York', month: 'short', year: 'numeric'
             });
-        });
-    }
-});
+        }
 
-/* edit date read format */
-function formatDate(dateStr) {
-    // if year only
-    if (/^\d{4}$/.test(dateStr)) {
+        if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
+            var dayParts = dateStr.split('-').map(Number);
+            return new Date(dayParts[0], dayParts[1] - 1, dayParts[2]).toLocaleDateString('en-US', {
+                timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric'
+            });
+        }
+
         return dateStr;
     }
 
-    // if year and month
-    if (/^\d{4}-\d{2}$/.test(dateStr)) {
-        const [year, month] = dateStr.split("-").map(Number);
-        const date = new Date(year, month -1);
-        return date.toLocaleDateString("en-US", {
-            timeZone: "America/New_York",
-            month: "short",
-            year: "numeric"
+    function initBookshelf() {
+        var shelfList = document.getElementById('shelf-list');
+        if (!shelfList) return;
+
+        var rows = Array.from(document.querySelectorAll('.data-table tbody tr'));
+        var counts = new Map([['read', rows.length]]);
+        shelfList.innerHTML = '';
+
+        document.querySelectorAll('.review-text').forEach(function (review) {
+            var fullText = review.textContent.trim();
+            var maxLength = getMaxLength();
+            if (fullText.length <= maxLength) return;
+
+            review.innerHTML = '<span class="collapsed"></span><span class="expanded" hidden></span>';
+            var collapsed = review.querySelector('.collapsed');
+            var expanded = review.querySelector('.expanded');
+            collapsed.textContent = fullText.slice(0, maxLength);
+            expanded.textContent = fullText;
+            collapsed.insertAdjacentHTML('beforeend', ' <a href="#" class="review-toggle">...more</a>');
+            expanded.insertAdjacentHTML('beforeend', ' <a href="#" class="review-toggle">(less)</a>');
+
+            review.querySelectorAll('.review-toggle').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    collapsed.hidden = !collapsed.hidden;
+                    expanded.hidden = !expanded.hidden;
+                });
+            });
+        });
+
+        document.querySelectorAll('.book-read').forEach(function (cell) {
+            var dateStr = cell.textContent.trim();
+            if (dateStr) cell.textContent = formatDate(dateStr);
+        });
+
+        rows.forEach(function (row) {
+            (row.dataset.tags || '').split(',').map(function (tag) { return tag.trim(); }).filter(Boolean).forEach(function (tag) {
+                counts.set(tag, (counts.get(tag) || 0) + 1);
+            });
+        });
+
+        shelfList.insertAdjacentHTML('beforeend', '<li><a href="#" class="active" data-filter="read">read <span>(' + rows.length + ')</span></a></li>');
+        Array.from(counts.entries()).filter(function (entry) { return entry[0] !== 'read'; }).sort(function (a, b) {
+            return a[0].localeCompare(b[0]);
+        }).forEach(function (entry) {
+            shelfList.insertAdjacentHTML('beforeend', '<li><a href="#" data-filter="' + entry[0] + '">' + entry[0] + ' <span>(' + entry[1] + ')</span></a></li>');
+        });
+
+        shelfList.addEventListener('click', function (event) {
+            var link = event.target.closest('[data-filter]');
+            if (!link) return;
+            event.preventDefault();
+
+            shelfList.querySelectorAll('a').forEach(function (anchor) { anchor.classList.remove('active'); });
+            link.classList.add('active');
+            var filter = link.dataset.filter;
+
+            rows.forEach(function (row) {
+                var tags = (row.dataset.tags || '').split(',').map(function (tag) { return tag.trim(); });
+                row.style.display = filter === 'read' || tags.includes(filter) ? '' : 'none';
+            });
         });
     }
 
-    // if full date
-    if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
-        const [year, month, day] = dateStr.split("-").map(Number);
-        const date = new Date(year, month - 1, day);
-
-        return date.toLocaleDateString("en-US", {
-            timeZone: "America/New_York",
-            month: "short",
-            day: "numeric",
-            year: "numeric"
-        });
-    }
-
-    return dateStr;
-}
-
-document.querySelectorAll(".book-read").forEach(cell => {
-    const dateStr = cell.textContent.trim();
-    if (dateStr) {
-        cell.textContent = formatDate(dateStr);
-    }
-});
-
-
-/* SHELVES SECTION */
-document.addEventListener("DOMContentLoaded", () => {
-    const rows = document.querySelectorAll("tbody tr");
-    const shelfList = document.getElementById("shelf-list");
-
-    const counts = new Map();
-
-    counts.set("read", rows.length); // count total read books
-
-    rows.forEach(row => { // count every tag
-        const tags = row.dataset.tags;
-        if (!tags) return;
-
-        tags.split(",").forEach(tag => {
-            tag = tag.trim();
-            counts.set(tag, (counts.get(tag) || 0) + 1);
-        });
-    });
-
-    // read shelf
-    shelfList.insertAdjacentHTML(
-        "beforeend",
-        `
-        <li>
-            <a href="#" class="active" data-filter="read">
-                read <span>(${rows.length})</span>
-            </a>
-        </li>
-        `
-    );
-
-    // other shelves
-    [...counts.entries()]
-        .filter(([tag]) => tag !== "read")
-        .sort(([a], [b]) => a.localeCompare(b)) // alphabetical ordering
-        .forEach(([tag, count]) => {
-            shelfList.insertAdjacentHTML(
-                "beforeend",
-                `
-                <li>
-                    <a href="#" data-filter="${tag}">
-                        ${tag.charAt(0)+ tag.slice(1)}
-                        <span>(${count})</span>
-                    </a>
-                </li>
-                `
-            );
-        });
-
-    // filter displayed books based on shelf
-    shelfList.addEventListener("click", e => {
-        const link = e.target.closest("[data-filter]");
-        if (!link) return;
-
-        e.preventDefault();
-
-        // update shelf to be active once clicked
-        shelfList.querySelectorAll("a").forEach(a => {
-            a.classList.remove("active");
-        });
-        link.classList.add("active");
-
-        const filter = link.dataset.filter;
-
-        rows.forEach(row => {
-            if (filter === "read") {
-                row.style.display = "";
-                return;
-            }
-
-            const tags = (row.dataset.tags || "").split(",");
-            row.style.display = tags.includes(filter) ? "" : "none";
-        });
-    });
-});
+    initBookshelf();
+    document.addEventListener('site:navigated', initBookshelf);
+})();

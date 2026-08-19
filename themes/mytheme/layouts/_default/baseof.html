@@ -18,6 +18,7 @@
     "css/base/_reset.css"
     "css/base/_style.css"
     "css/components/language-dropdown.css"
+    "css/components/music-player.css"
     }}
 
     {{ $layout := .Layout | default "default" }}
@@ -45,6 +46,7 @@
     }}
 
     <link
+            data-site-styles
             rel="stylesheet"
             href="{{ $cssBundle.RelPermalink }}"
             integrity="{{ $cssBundle.Data.Integrity }}"
@@ -53,6 +55,7 @@
     {{/* PhotoSwipe CSS */}}
     {{ if eq .Layout "churches" }}
     <link
+            data-page-style
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"
     >
@@ -63,29 +66,42 @@
 
 {{ partial "header.html" . }}
 
+<div id="site-content">
 {{ block "main" . }}
 {{ end }}
+</div>
 
-{{ if eq .Layout "bookshelf" }}
-{{ $bookshelfJS := resources.Get "js/bookshelf.js" | js.Build }}
-<script src="{{ $bookshelfJS.RelPermalink }}"></script>
+{{ partial "music_player.html" . }}
+
+{{ $jsFiles := slice
+    "js/site-navigation.js"
+    "js/music-player.js"
+    "js/bookshelf.js"
+    "js/webring.js"
+}}
+{{ $jsResources := slice }}
+{{ range $jsFiles }}
+    {{ with resources.Get . }}
+        {{ $jsResources = $jsResources | append . }}
+    {{ end }}
 {{ end }}
+{{ $siteJS := $jsResources
+    | resources.Concat "js/site.js"
+    | resources.Minify
+    | resources.Fingerprint
+}}
+<script
+        src="{{ $siteJS.RelPermalink }}"
+        integrity="{{ $siteJS.Data.Integrity }}"
+        defer
+></script>
 
-{{ if eq .Layout "churches" }}
-<script type="module">
-    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.js';
-
-    const lightbox = new PhotoSwipeLightbox({
-        gallery: '.pswp-gallery',
-        children: 'a',
-        pswpModule: () => import(
-            'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.js'
-            )
-    });
-
-    lightbox.init();
-</script>
-{{ end }}
+{{ $churchesJS := resources.Get "js/churches.js" | resources.Minify | resources.Fingerprint }}
+<script
+        type="module"
+        src="{{ $churchesJS.RelPermalink }}"
+        integrity="{{ $churchesJS.Data.Integrity }}"
+></script>
 
 </body>
 </html>

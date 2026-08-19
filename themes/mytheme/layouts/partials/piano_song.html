@@ -1,0 +1,40 @@
+{{ $author := .Params.author | default "Unknown artist" }}
+{{ $completed := .Params.completed | default false }}
+
+<article class="piano-song" data-song-card>
+    <div class="piano-song-control">
+        {{ with .Params.audio }}
+        <button
+                class="piano-song-play"
+                type="button"
+                data-song-play
+                data-audio="{{ . | relURL }}"
+                data-title="{{ $.Title }}"
+                data-author="{{ $author }}"
+                aria-label="Play {{ $.Title }} by {{ $author }}"
+        >
+            <span data-song-icon aria-hidden="true">▶</span>
+        </button>
+        {{ end }}
+    </div>
+
+    <div class="piano-song-copy">
+        <div class="piano-song-heading">
+            <div>
+                <h2>{{ .Title }}</h2>
+                <p class="piano-song-author">{{ $author }}</p>
+            </div>
+
+            <span class="piano-song-status{{ if $completed }} is-complete{{ end }}">
+                {{ if $completed }}Learned{{ else }}Learning{{ end }}
+            </span>
+        </div>
+
+        {{ with .Content }}
+        <div class="piano-song-notes">
+            <h3>Thoughts</h3>
+            {{ . }}
+        </div>
+        {{ end }}
+    </div>
+</article>

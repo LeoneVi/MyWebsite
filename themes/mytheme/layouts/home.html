@@ -11,7 +11,4 @@
     <div id="umaring"></div>
   </div>
 </div>
-
-{{ $webringJS := resources.Get "js/webring.js" | js.Build }}
-<script src="{{ $webringJS.RelPermalink }}" defer></script>
 {{ end }}

@@ -4,9 +4,11 @@ layout: blog
 featured_image: /images/ISG.jpeg
 ---
 
-🎨 [My art](https://art.toryleone.com/)
+🎨 [My art site](https://art.toryleone.com/)
 
-📚 [My bookshelf](/blog/bookshelf/) 
+🎹 [My piano recordings](/blog/piano/)
+
+📚 [My bookshelf](/blog/bookshelf/)
 
 🎸 [My favorite music](/blog/albums/)
 

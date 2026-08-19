@@ -1,28 +1,56 @@
 (function () {
-    var container = document.getElementById('umaring');
-    if (!container) return;
+    var cachedData = null;
 
-    fetch('https://umaring.github.io/toryleone.json')
-        .then(function (res) {
-            if (!res.ok) throw new Error('umaring fetch failed: ' + res.status);
-            return res.json();
-        })
-        .then(function (data) {
-            var html = '';
+    function render(container, data) {
+        container.innerHTML = '';
 
-            if (data.prev) {
-                html += '<a href="' + data.prev.url + '" class="umaring-prev" rel="noopener">' + data.prev.name + ' <- </a>';
-            }
+        if (data.prev) {
+            var previous = document.createElement('a');
+            previous.href = data.prev.url;
+            previous.className = 'umaring-prev';
+            previous.rel = 'noopener';
+            previous.textContent = data.prev.name + ' ← ';
+            container.appendChild(previous);
+        }
 
-            html += '<span class="umaring-label"> UMass Ring </span>';
+        var label = document.createElement('span');
+        label.className = 'umaring-label';
+        label.textContent = ' UMass Ring ';
+        container.appendChild(label);
 
-            if (data.next) {
-                html += '<a href="' + data.next.url + '" class="umaring-next" rel="noopener">' + '-> ' + data.next.name + '</a>';
-            }
+        if (data.next) {
+            var next = document.createElement('a');
+            next.href = data.next.url;
+            next.className = 'umaring-next';
+            next.rel = 'noopener';
+            next.textContent = ' → ' + data.next.name;
+            container.appendChild(next);
+        }
+    }
 
-            container.innerHTML = html;
-        })
-        .catch(function (err) {
-            console.error('umaring widget failed to load:', err);
-        });
+    function initWebring() {
+        var container = document.getElementById('umaring');
+        if (!container) return;
+        if (cachedData) {
+            render(container, cachedData);
+            return;
+        }
+
+        fetch('https://umaring.github.io/toryleone.json')
+            .then(function (response) {
+                if (!response.ok) throw new Error('umaring fetch failed: ' + response.status);
+                return response.json();
+            })
+            .then(function (data) {
+                cachedData = data;
+                var currentContainer = document.getElementById('umaring');
+                if (currentContainer) render(currentContainer, data);
+            })
+            .catch(function (error) {
+                console.error('umaring widget failed to load:', error);
+            });
+    }
+
+    initWebring();
+    document.addEventListener('site:navigated', initWebring);
 })();

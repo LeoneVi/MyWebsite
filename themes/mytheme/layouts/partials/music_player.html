@@ -1,0 +1,45 @@
+<aside
+        class="music-player"
+        id="persistent-music-player"
+        aria-label="Piano music player"
+        hidden
+>
+    <div class="music-player-main">
+        <button
+                class="music-player-toggle"
+                type="button"
+                data-player-toggle
+                aria-label="Play"
+        >
+            <span data-player-icon aria-hidden="true">▶</span>
+        </button>
+
+        <div class="music-player-details" aria-live="polite">
+            <span class="music-player-label" data-player-label>Now playing</span>
+            <strong class="music-player-title" data-player-title></strong>
+            <span class="music-player-author" data-player-author></span>
+        </div>
+
+        <button
+                class="music-player-close"
+                type="button"
+                data-player-close
+                aria-label="Close player"
+        >×</button>
+    </div>
+
+    <div class="music-player-progress-row">
+        <input
+                class="music-player-progress"
+                data-player-progress
+                type="range"
+                min="0"
+                max="1000"
+                value="0"
+                aria-label="Song progress"
+        >
+        <span class="music-player-time" data-player-time>0:00 / 0:00</span>
+    </div>
+
+    <audio data-player-audio preload="metadata"></audio>
+</aside>
