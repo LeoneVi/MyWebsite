@@ -10,6 +10,12 @@
                 href="{{ $parentURL }}"
                 class="back-button"
                 aria-label="Back to {{ $parentTitle }}"
+                {{ with .Parent }}
+                    {{ range .Rotate "language" }}
+                        data-parent-url-{{ .Language.Name }}="{{ .RelPermalink }}"
+                        data-parent-title-{{ .Language.Name }}="{{ .Title }}"
+                    {{ end }}
+                {{ end }}
         >←</a>
     {{ else }}
         <span aria-hidden="true"></span>

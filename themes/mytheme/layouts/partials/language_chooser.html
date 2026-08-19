@@ -41,7 +41,7 @@
 
             {{ else }}
             <!-- inactive language -->
-            <a href="{{ .RelPermalink }}" class="lang-link">
+            <a href="{{ .RelPermalink }}" class="lang-link" data-language="{{ $lang }}">
                 {{ if eq $lang "en" }}
                 <span class="icon">
                     {{ readFile "static/icons/flags/us.svg" | safeHTML }}

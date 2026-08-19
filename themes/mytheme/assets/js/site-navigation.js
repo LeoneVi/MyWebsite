@@ -1,5 +1,52 @@
 (function () {
     var activeRequest = null;
+    var languagePreferenceKey = 'preferred-site-language';
+    var preferredLanguage = '';
+
+    function normalizeLanguage(language) {
+        var normalized = String(language || '').toLowerCase().split('-')[0];
+        return /^[a-z0-9]+$/.test(normalized) ? normalized : '';
+    }
+
+    function getPreferredLanguage() {
+        if (preferredLanguage) return preferredLanguage;
+
+        try {
+            preferredLanguage = normalizeLanguage(window.localStorage.getItem(languagePreferenceKey));
+        } catch (error) {
+            preferredLanguage = '';
+        }
+
+        return preferredLanguage;
+    }
+
+    function rememberLanguage(language) {
+        var normalized = normalizeLanguage(language);
+        if (!normalized) return;
+
+        preferredLanguage = normalized;
+        try {
+            window.localStorage.setItem(languagePreferenceKey, normalized);
+        } catch (error) {
+            // Navigation still works if browser storage is unavailable.
+        }
+    }
+
+    function updateBackLink() {
+        var language = getPreferredLanguage();
+        if (!language) {
+            language = normalizeLanguage(document.documentElement.lang);
+            rememberLanguage(language);
+        }
+
+        var backLink = document.querySelector('.back-button[href]');
+        if (!backLink || !language) return;
+
+        var parentUrl = backLink.getAttribute('data-parent-url-' + language);
+        var parentTitle = backLink.getAttribute('data-parent-title-' + language);
+        if (parentUrl) backLink.setAttribute('href', parentUrl);
+        if (parentTitle) backLink.setAttribute('aria-label', 'Back to ' + parentTitle);
+    }
 
     function isPageLink(link, url) {
         if (!link || !link.href || link.target || link.hasAttribute('download')) return false;
@@ -111,6 +158,7 @@
             document.body.className = nextDocument.body.className;
             document.documentElement.lang = nextDocument.documentElement.lang;
             updateMetadata(nextDocument);
+            updateBackLink();
 
             if (pushState) window.history.pushState({ siteNavigation: true }, '', url.href);
 
@@ -130,6 +178,9 @@
         var link = event.target.closest('a[href]');
         if (!link) return;
 
+        var selectedLanguage = link.getAttribute('data-language');
+        if (selectedLanguage) rememberLanguage(selectedLanguage);
+
         var url = new URL(link.href, window.location.href);
         if (!isPageLink(link, url)) return;
 
@@ -142,4 +193,5 @@
     });
 
     window.history.replaceState({ siteNavigation: true }, '', window.location.href);
+    updateBackLink();
 })();
