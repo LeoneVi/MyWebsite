@@ -1,0 +1,6 @@
+{{- $newTab := or
+    (eq .Destination "https://art.toryleone.com/")
+    (eq .Destination "/files/resume.pdf")
+    (hasPrefix .Destination "https://github.com/LeoneVi")
+-}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

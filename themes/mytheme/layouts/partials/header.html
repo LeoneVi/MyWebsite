@@ -1,9 +1,19 @@
 <header class="site-header">
-    <a onclick="history.back()" class="back-button">
-        {{ if not (eq .Layout "home") }}
-        ←
+    {{ if not (eq .Layout "home") }}
+        {{ $parentURL := "/" | relLangURL }}
+        {{ $parentTitle := .Site.Title }}
+        {{ with .Parent }}
+            {{ $parentURL = .RelPermalink }}
+            {{ $parentTitle = .Title }}
         {{ end }}
-    </a>
+        <a
+                href="{{ $parentURL }}"
+                class="back-button"
+                aria-label="Back to {{ $parentTitle }}"
+        >←</a>
+    {{ else }}
+        <span aria-hidden="true"></span>
+    {{ end }}
 
     <div class="lang-dropdown">
         {{ if gt (len .Translations) 0 }}
