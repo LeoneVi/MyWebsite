@@ -3,4 +3,4 @@ title: Piano recordings
 layout: piano
 ---
 
-A small collection of songs I've learned (or am in the process of learning) on the piano. Once a song is played, you can continue browsing the rest of the site while listening.
+A small collection of recordings of me playing songs I’ve learned (or am still in the process of learning) on the piano. Once a recording is playing, you can continue browsing the rest of the site while listening.
