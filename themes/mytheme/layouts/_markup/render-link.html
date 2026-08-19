@@ -1,6 +1,13 @@
+{{- $destination := urls.Parse .Destination -}}
+{{- $href := .Destination -}}
+{{- if and (eq $destination.Host "") (hasPrefix $destination.Path "/") -}}
+    {{- with .Page.Site.GetPage $destination.Path -}}
+        {{- $href = .RelPermalink -}}
+    {{- end -}}
+{{- end -}}
 {{- $newTab := or
-    (eq .Destination "https://art.toryleone.com/")
-    (eq .Destination "/files/resume.pdf")
-    (hasPrefix .Destination "https://github.com/LeoneVi")
+    (eq $destination.Host "art.toryleone.com")
+    (hasSuffix $destination.Path "/files/resume.pdf")
+    (eq $destination.Host "github.com")
 -}}
-<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $newTab }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

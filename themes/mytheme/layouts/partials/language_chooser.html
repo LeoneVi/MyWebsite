@@ -1,4 +1,4 @@
-{{ if gt (len .Site.Languages) 1 }}
+{{ with .Page.Rotate "language" }}
 
 <div class="lang-dropdown">
 
@@ -19,9 +19,9 @@
 
     <div class="lang-menu">
 
-        {{ $current := .Page.Language.Lang }}
-        {{ range .Page.AllTranslations }}
-        {{ $lang := .Language.Lang }}
+        {{ $current := $.Page.Language.Name }}
+        {{ range . }}
+        {{ $lang := .Language.Name }}
 
         <div class="lang-item">
 

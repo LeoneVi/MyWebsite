@@ -2,7 +2,7 @@
 <div class="page-layout">
     <h1>{{ .Title }}</h1>
 
-    {{ $books := site.Data.read_books }}
+    {{ $books := hugo.Data.read_books }}
 
     <div class="bookshelf-layout">
         <aside class="shelves">

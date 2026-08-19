@@ -93,13 +93,13 @@
 
 <h2>Roman Catholic</h2>
 {{ template "churchTable" (dict
-"rows" .Site.Data.churches.roman_catholic
+"rows" hugo.Data.churches.roman_catholic
 "showJurisdiction" false
 ) }}
 
 <h2>Other</h2>
 {{ template "churchTable" (dict
-"rows" .Site.Data.churches.other
+"rows" hugo.Data.churches.other
 "showJurisdiction" true
 ) }}
 
