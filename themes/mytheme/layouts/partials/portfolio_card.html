@@ -1,0 +1,53 @@
+{{ $page := .page }}
+{{ $projectID := .projectID }}
+
+<article
+        class="portfolio-card"
+        data-portfolio-card="{{ $projectID }}"
+        aria-labelledby="{{ $projectID }}-title"
+        tabindex="-1"
+        {{ if .hidden }}hidden{{ end }}
+>
+    <figure class="portfolio-card-image">
+        <img
+                src="{{ $page.Params.image | relURL }}"
+                width="{{ $page.Params.image_width }}"
+                height="{{ $page.Params.image_height }}"
+                alt="{{ $page.Params.image_alt }}"
+                loading="lazy"
+                decoding="async"
+        >
+    </figure>
+
+    <div class="portfolio-card-copy">
+        {{ if .single }}
+            <h1 id="{{ $projectID }}-title">{{ $page.Title }}</h1>
+        {{ else }}
+            <h2 id="{{ $projectID }}-title">{{ $page.Title }}</h2>
+        {{ end }}
+
+        <div class="portfolio-card-description">
+            {{ $page.Content }}
+        </div>
+
+        {{ with $page.Params.github }}
+            <a
+                    class="portfolio-source-link"
+                    href="{{ . }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="{{ if eq $page.Language.Name "pt" }}Ver o código-fonte de {{ $page.Title }} no GitHub{{ else }}View {{ $page.Title }} source code on GitHub{{ end }}"
+            >
+                <img
+                        class="portfolio-source-icon"
+                        src="{{ "icons/github.svg" | relURL }}"
+                        width="40"
+                        height="40"
+                        alt=""
+                        aria-hidden="true"
+                >
+                <span>{{ if eq $page.Language.Name "pt" }}Ver código-fonte{{ else }}View source code{{ end }}</span>
+            </a>
+        {{ end }}
+    </div>
+</article>

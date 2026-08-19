@@ -1,0 +1,66 @@
+{{ define "main" }}
+<main class="portfolio-page" data-portfolio>
+    {{ if .IsSection }}
+        <section
+                class="portfolio-detail"
+                id="portfolio-detail"
+                data-portfolio-detail
+                aria-live="polite"
+                hidden
+        >
+            {{ range .RegularPages.ByWeight }}
+                {{ $projectID := printf "portfolio-%s" (.File.ContentBaseName | urlize) }}
+                {{ partial "portfolio_card.html" (dict
+                    "page" .
+                    "projectID" $projectID
+                    "hidden" true
+                    "single" false
+                ) }}
+            {{ end }}
+        </section>
+
+        <header class="portfolio-header">
+            <h1>{{ .Title }}</h1>
+            <div class="portfolio-intro">{{ .Content }}</div>
+        </header>
+
+        <div
+                class="portfolio-gallery"
+                aria-label="{{ if eq .Language.Name "pt" }}Projetos do portfólio{{ else }}Portfolio projects{{ end }}"
+        >
+            {{ range .RegularPages.ByWeight }}
+                {{ $projectID := printf "portfolio-%s" (.File.ContentBaseName | urlize) }}
+
+                <button
+                        class="portfolio-item"
+                        type="button"
+                        data-portfolio-open="{{ $projectID }}"
+                        aria-controls="portfolio-detail"
+                        aria-expanded="false"
+                >
+                    <span class="portfolio-thumbnail">
+                        <img
+                                src="{{ .Params.image | relURL }}"
+                                width="{{ .Params.image_width }}"
+                                height="{{ .Params.image_height }}"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                                {{ with .Params.thumbnail_position }}style="object-position: {{ . }}"{{ end }}
+                        >
+                    </span>
+                    <span class="portfolio-item-title">{{ .Title }}</span>
+                </button>
+            {{ end }}
+        </div>
+    {{ else }}
+        {{ $projectID := printf "portfolio-%s" (.File.ContentBaseName | urlize) }}
+        {{ partial "portfolio_card.html" (dict
+            "page" .
+            "projectID" $projectID
+            "hidden" false
+            "single" true
+        ) }}
+    {{ end }}
+</main>
+{{ end }}
