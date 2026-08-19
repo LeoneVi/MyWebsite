@@ -7,6 +7,7 @@
 
   {{ range $rows }}
 
+  {{ $churchName := .name }}
   {{ $name := .name | lower | replaceRE " " "-" }}
   {{ $loc := .location | lower | replaceRE "," "" | replaceRE " " "-" }}
   {{ $slug := printf "%s-%s" $name $loc }}
@@ -46,11 +47,13 @@
               {{ if ne $i 0 }}style="display:none"{{ end }}>
 
         {{ if eq $i 0 }}
+        {{ $thumbnail := $img.Resize "640x webp q72" }}
         <img
                 class="church-photo"
-                src="{{ $img.RelPermalink }}"
+                src="{{ $thumbnail.RelPermalink }}"
                 loading="lazy"
-                alt="{{ $.name }}">
+                decoding="async"
+                alt="{{ $churchName }}">
 
         {{ if gt $count 1 }}
         <span class="photo-count">{{ $count }} photos</span>
