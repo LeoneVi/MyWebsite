@@ -1,4 +1,5 @@
 (function () {
+    var storageKey = 'persistent-music-player';
     var player = document.querySelector('#persistent-music-player');
     if (!player) return;
 
@@ -11,6 +12,47 @@
     var progress = player.querySelector('[data-player-progress]');
     var time = player.querySelector('[data-player-time]');
     var close = player.querySelector('[data-player-close]');
+    var isLeavingPage = false;
+    var resumePending = false;
+    var lastSavedSecond = -1;
+
+    function readStoredState() {
+        try {
+            var stored = window.sessionStorage.getItem(storageKey);
+            return stored ? JSON.parse(stored) : null;
+        } catch (error) {
+            return null;
+        }
+    }
+
+    function clearStoredState() {
+        try {
+            window.sessionStorage.removeItem(storageKey);
+        } catch (error) {
+            // The player still works when browser storage is unavailable.
+        }
+    }
+
+    function saveState(playing) {
+        if (!audio.src || player.hidden) {
+            clearStoredState();
+            return;
+        }
+
+        try {
+            window.sessionStorage.setItem(storageKey, JSON.stringify({
+                source: audio.currentSrc || audio.src,
+                title: title.textContent,
+                author: author.textContent,
+                currentTime: Number.isFinite(audio.currentTime) ? audio.currentTime : 0,
+                playing: typeof playing === 'boolean'
+                    ? playing
+                    : !audio.paused && !audio.ended
+            }));
+        } catch (error) {
+            // The in-page player remains usable if storage is blocked or full.
+        }
+    }
 
     function sourceUrl(source) {
         return new URL(source, window.location.href).href;
@@ -65,6 +107,7 @@
         player.hidden = false;
         audio.src = nextSource;
         audio.load();
+        saveState(false);
 
         if ('mediaSession' in navigator && 'MediaMetadata' in window) {
             navigator.mediaSession.metadata = new MediaMetadata({
@@ -94,11 +137,13 @@
     });
 
     close.addEventListener('click', function () {
+        resumePending = false;
         audio.pause();
         audio.removeAttribute('src');
         audio.load();
         player.hidden = true;
         progress.value = 0;
+        clearStoredState();
         updateSongButtons();
     });
 
@@ -112,6 +157,31 @@
         audio.addEventListener(eventName, updatePlayer);
     });
 
+    audio.addEventListener('play', function () {
+        resumePending = false;
+        saveState(true);
+    });
+
+    audio.addEventListener('pause', function () {
+        if (!isLeavingPage) saveState(false);
+    });
+
+    audio.addEventListener('ended', function () {
+        saveState(false);
+    });
+
+    audio.addEventListener('timeupdate', function () {
+        var currentSecond = Math.floor(audio.currentTime);
+        if (currentSecond === lastSavedSecond) return;
+        lastSavedSecond = currentSecond;
+        saveState();
+    });
+
+    window.addEventListener('pagehide', function () {
+        isLeavingPage = true;
+        saveState(!audio.paused && !audio.ended);
+    });
+
     document.addEventListener('site:navigated', updateSongButtons);
 
     if ('mediaSession' in navigator) {
@@ -121,4 +191,41 @@
             if (typeof details.seekTime === 'number') audio.currentTime = details.seekTime;
         });
     }
+
+    function restorePlayer() {
+        var state = readStoredState();
+        if (!state || !state.source) return;
+
+        title.textContent = state.title || 'Piano recording';
+        author.textContent = state.author || 'Unknown artist';
+        player.hidden = false;
+        audio.src = state.source;
+        audio.load();
+
+        audio.addEventListener('loadedmetadata', function () {
+            if (Number.isFinite(state.currentTime) && Number.isFinite(audio.duration)) {
+                audio.currentTime = Math.min(state.currentTime, Math.max(0, audio.duration - 0.1));
+            }
+
+            updatePlayer();
+
+            if (state.playing) {
+                resumePending = true;
+                audio.play().catch(function () {
+                    label.textContent = 'Ready to resume';
+                });
+            }
+        }, { once: true });
+    }
+
+    document.addEventListener('pointerdown', function (event) {
+        if (!resumePending || !audio.paused || player.hidden) return;
+        if (event.target.closest('[data-player-toggle], [data-player-close], [data-song-play], [data-player-progress]')) return;
+
+        audio.play().catch(function () {
+            label.textContent = 'Ready to resume';
+        });
+    }, true);
+
+    restorePlayer();
 })();

@@ -84,6 +84,7 @@
 
         try {
             var response = await fetch(url.href, {
+                cache: 'no-store',
                 headers: { 'X-Requested-With': 'site-navigation' },
                 signal: request.signal
             });
