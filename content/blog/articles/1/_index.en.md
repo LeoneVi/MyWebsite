@@ -1,6 +1,6 @@
 ---
 title: No, You Are Not Better Than Everyone Else Because You're Catholic
-date: 2026-08-11
+date: 2026-08-20
 layout: article
 ---
 
@@ -18,8 +18,7 @@ This article is an open letter to all Catholics experiencing spiritual pride.
 
 A Catholic experiences spiritual pride when they look down on others who aren't as "spiritually clean" as they are. He may pray loudly before meals or disrupt others in prayer by singing hymns in holy sites.
 
-He may even see his faith as a rebellion against the secular world, opting to pray loudly around the irreligious to place a barrier between them and him. Much like how millennial atheists of the 2010s used their lack of faith 
-as revenge against their religious parents, the spiritually prideful Catholic uses his faith as an act to shock the secular world. Like the Pharisee, he shows the world that *he is closer to God* than the rest.
+He may even see his faith as a rebellion against the secular world, opting to pray loudly around the irreligious to place a barrier between them and him. Much like how a prideful atheist will use their lack of faith to intentionally provoke Christians, the spiritually prideful Catholic uses his faith as an act to shock the secular world. Like the Pharisee, he shows the world that *he is closer to God* than the rest.
 
 ## Holier than thee
 
@@ -36,14 +35,14 @@ When the spiritually prideful Catholic turns away 'unholy people' out of disgust
 ## Deafeningly pious 
 
 The spiritually prideful Catholic makes sure everyone around him knows that he prays. Instead of opting to quietly make the sign of the cross to express gratitude for the food in front of him, he deliberately jolts his hands across his body, making an obvious display of his faith for everyone around him to notice. He prays loudly, disrupting everyone around him.
-In holy sites, instead of praying silently, he may even sing hymns and interrupt the prayers of everyone else. He wants to set himself apart from the secular world, maybe he even intends to shock them as an act of defiance.
+He wants to set himself apart from the secular world, maybe he even intends to shock them as an act of defiance.
 
-He lectures fellow Catholics on how to live a life closer to God. "It's not good enough", he says, "to pray daily and go to mass!", making it obvious that he is more pious than all those around him. Even implying that he has secrets to godliness that even the practicing Catholics around him don't understand. 
+In holy sites, instead of praying silently, he may even sing hymns and interrupt the prayers of everyone else. He lectures fellow Catholics on how to live a life closer to God. "It's not good enough", he says, "to pray daily and go to mass!", making it obvious that he is more pious than all those around him. Even implying that he has secrets to godliness that even the practicing Catholics around him don't understand. 
 
 However, Christ repeatedly advises against these public demonstrations of prayer and faith.
 > "And when ye pray, you shall not be as the hypocrites, that love to stand and pray in the synagogues and corners of the streets, that they may be seen by men: Amen I say to you, they have received their reward. But thou when thou shalt pray, enter into thy chamber, and having shut the door, pray to thy Father in secret: and thy Father who seeth in secret will repay thee." Matthew 6:5–6
 
-Signing the cross and public prayer is not a tool to shock non-christians, and it is not a pedestal to set oneself higher than other Catholics. Christ tells his followers to pray when no one's looking. And it is to Christ that the spiritually prideful Catholic will have to answer to on his day of judgement. 
+Signing the cross and public prayer are not tools to shock non-christians, and they are not a pedestal to set oneself higher than other Catholics. Christ tells his followers to pray not as a performance but as a genuine act of communication with God.
 
 ## Changing paths
 
