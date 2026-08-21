@@ -2,13 +2,21 @@
 
 <main class="article">
 
+    {{ $hasTitle := ne .Title "" }}
+    {{ $hasDate := not .Date.IsZero }}
+    {{ if or $hasTitle $hasDate }}
     <header class="article-header">
+        {{ if $hasTitle }}
         <h1>{{ .Title }}</h1>
+        {{ end }}
 
+        {{ if $hasDate }}
         <p class="article-date">
             {{ .Date.Format "January 2, 2006" }}
         </p>
+        {{ end }}
     </header>
+    {{ end }}
 
     <div class="article-content">
         {{ .Content }}

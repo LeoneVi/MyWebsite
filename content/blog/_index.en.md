@@ -13,3 +13,5 @@ featured_image: /images/ISG.jpeg
 🎸 [My favorite music](/blog/albums/)
 
 ⛪ [Churches I've visited](/blog/churches/)
+
+🪷 [FAQ and Other Notes](/blog/faq-and-notes/)
