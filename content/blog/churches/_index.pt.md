@@ -1,6 +1,10 @@
 ---
 title: Igrejas que eu visitei
 layout: churches
+roman_catholic_heading: Cátolico romano
+other_heading: Outras
+recently_visited_label: Visitei recentemente
+photos_label: fotos
 ---
 
 Uma lista abrangente de cada igreja que eu lembro de ter visitado. As igrejas onde eu assisti a tradicional missa em latim são denotadas com o ♱ sìmbolo.

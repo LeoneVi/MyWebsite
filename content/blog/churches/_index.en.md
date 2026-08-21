@@ -1,6 +1,10 @@
 ---
 title: Churches I've visited
 layout: churches
+roman_catholic_heading: Roman Catholic
+other_heading: Other
+recently_visited_label: Recently visited
+photos_label: photos
 ---
 
 A comprehensive list of every church I can remember visiting. Churches where I attended the Traditional Latin Mass are denoted with a ♱ symbol.

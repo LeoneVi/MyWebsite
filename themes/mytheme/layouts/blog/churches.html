@@ -2,6 +2,8 @@
 
 {{ $showJurisdiction := .showJurisdiction }}
 {{ $rows := .rows }}
+{{ $recentlyVisitedLabel := .recentlyVisitedLabel }}
+{{ $photosLabel := .photosLabel }}
 
 <div class="church-grid">
 
@@ -34,7 +36,7 @@
     <div class="pswp-gallery">
       {{ if $isNew }}
       <div class="new-badge">
-        <img src="/icons/new-star.svg" alt="Recently visited">
+        <img src="/icons/new-star.svg" alt="{{ $recentlyVisitedLabel }}">
       </div>
       {{ end }}
 
@@ -56,7 +58,7 @@
                 alt="{{ $churchName }}">
 
         {{ if gt $count 1 }}
-        <span class="photo-count">{{ $count }} photos</span>
+        <span class="photo-count">{{ $count }} {{ $photosLabel }}</span>
         {{ end }}
 
         {{ end }}
@@ -91,16 +93,20 @@
 
 {{ .Content }}
 
-<h2>Roman Catholic</h2>
+<h2>{{ .Params.roman_catholic_heading }}</h2>
 {{ template "churchTable" (dict
 "rows" hugo.Data.churches.roman_catholic
 "showJurisdiction" false
+"recentlyVisitedLabel" .Params.recently_visited_label
+"photosLabel" .Params.photos_label
 ) }}
 
-<h2>Other</h2>
+<h2>{{ .Params.other_heading }}</h2>
 {{ template "churchTable" (dict
 "rows" hugo.Data.churches.other
 "showJurisdiction" true
+"recentlyVisitedLabel" .Params.recently_visited_label
+"photosLabel" .Params.photos_label
 ) }}
 
 {{ end }}
