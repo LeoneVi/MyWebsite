@@ -10,9 +10,14 @@
 {{- end -}}
 {{- end -}}
 
+{{- $src := .Destination -}}
+{{- with .Page.Resources.GetMatch .Destination -}}
+{{- $src = .RelPermalink -}}
+{{- end -}}
+
 <figure class="article-image {{ $class }}">
     <img
-            src="{{ .Destination | safeURL }}"
+            src="{{ $src | safeURL }}"
             alt="{{ .Text }}"
     >
 
