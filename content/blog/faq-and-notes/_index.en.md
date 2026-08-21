@@ -9,7 +9,7 @@ layout: article
 
 For the entirety of human history, nobody was able to be entertained at any moment with an endless amount of content in their pockets, nor were they able to answer any question that popped in their minds instantly. They didn't need it, and modern people don't need it either. It is a distraction from being present in the moment.
 
-The only time I need to answer a question I've had is either when I'm on my computer or at the library. When I'm out I want to focus on what I'm doing and the people I'm with. There is no reason that I would need access to an infinite amount of content and knowledge in my pocket anytime, and in any place. My life is considerably better with a dumber phone.
+The only time I need to answer a question I have is either when I'm on my computer or at the library. When I'm out I want to focus on what I'm doing and the people I'm with. There is no reason that I would need access to an infinite amount of content and knowledge in my pocket anytime, and in any place. My life is considerably better with a dumber phone.
 
 ## Appearance
 ### How long have you been growing out your hair? 

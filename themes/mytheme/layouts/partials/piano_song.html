@@ -1,5 +1,8 @@
 {{ $author := .Params.author | default "Unknown artist" }}
 {{ $completed := .Params.completed | default false }}
+{{ $pianoSection := .CurrentSection }}
+{{ $learnedLabel := $pianoSection.Params.learned_label }}
+{{ $learningLabel := $pianoSection.Params.learning_label }}
 
 <article class="piano-song" data-song-card>
     <div class="piano-song-control">
@@ -26,7 +29,7 @@
             </div>
 
             <span class="piano-song-status{{ if $completed }} is-complete{{ end }}">
-                {{ if $completed }}Learned{{ else }}Learning{{ end }}
+                {{ if $completed }}{{ $learnedLabel }}{{ else }}{{ $learningLabel }}{{ end }}
             </span>
         </div>
 
