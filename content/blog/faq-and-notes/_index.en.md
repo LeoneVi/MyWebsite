@@ -18,7 +18,7 @@ The only time I need to answer a question I've had is either when I'm on my comp
 People ask me this because I have long hair that ends at my hips. I started growing out my hair in 2019, inspired by my high school friend who had long, beautiful blonde hair.
 
 ### How did you grow your hair to be so long?
-![*Shower of Gold* by Howard Gardiner Cushing, ISG Museum](the-shower-of-gold.webp "right")
+![*Shower of Gold* by Howard Gardiner Cushing in the ISG Museum](the-shower-of-gold.webp "right")
 I avoid applying heat to my hair, so I never use a hairdryer or curling iron. I braid my hair every night before going to bed to avoid it getting matted. During winter time I try to always keep my hair braided, otherwise it would become matted from putting on and removing hats & jackets.
 
 I also try to keep a good diet, which is very important for the health of my hair.
@@ -33,18 +33,29 @@ I think body modifications like piercings are a distraction from the natural bea
 
 # Religion
 ## Why are you Catholic?
+![*Lamentation of Christ* by Filippino Lippi in the Borghese Gallery](lamentation-of-christ.webp "right")
 
 For many reasons, but I'll start off by saying why I'm not non-Catholic.
 
 I'm not an atheist because I believe there is a God. I believe that there was once nothing and it was a greater power who created the Universe, the Earth, and eventually humans.
 
-I'm not non-Christian because I believe that Jesus was half man and half God, and that his coming was prophesized in the Old Testament. I believe that he was born of a virgin, and was resurrected. 
+I'm not non-Christian because I believe that Jesus was fully man and fully God, and that his coming was prophesized in the Old Testament. I believe that he was born of a virgin, and was resurrected. 
 
+I'm not Orthodox because I believe in the authority of the pope.
+
+I'm not Protestant because I don't believe in 'Sola Scriptura'. I believe in the sacraments and the transubstantiation of the Eucharist. 
+
+I'm not anything but Roman Catholic because I was baptized Roman Catholic, and it's how I was raised. It's what all my ancestors who came before me practiced, as far as I know.
+
+I want to clarify that I respect all people regardless of their religious beliefs, and I would not be offended if someone disagreed with me. I only want to state why I'm Roman Catholic, for the reasons I listed above.
 
 # Notes
 ---
 ## About The Site
 ### Translations
+
+![*Saint Jerome Writing* by Caravaggio in the Borghese Gallery](st-jerome-writing.webp "right")
+
 All translations on this site are written by me. I included this feature onto my website because one of my hobbies is language learning. I believe writing in my target language will help me improve. Another reason why I included translations on this site is because I have many friends and family in other countries and I want them to be able to read my words directly in their mother tongue.
 
 I don't use google translate or AI for any of my translations. It would completely defeat the purpose of including translations on my website in the first place. 
