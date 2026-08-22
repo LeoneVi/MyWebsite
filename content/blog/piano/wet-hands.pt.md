@@ -7,4 +7,4 @@ audio: /piano/wet-hands.wav
 weight: 2
 ---
 
-A primeira canção que eu aprendi foi essa. Voltar na ano 2018, muito antes de eu comencei aprendendo o instrumento seriamente, aprendi sozinha *Wet Hands* por memorizar as notas de vídeos do piano com Synthesia.
+A primeira canção que eu aprendi foi essa. No ano 2018, muito antes de eu comencar a aprender o instrumento seriamente, aprendi sozinha *Wet Hands* por memorizando as notas de vídeos do piano com Synthesia.
