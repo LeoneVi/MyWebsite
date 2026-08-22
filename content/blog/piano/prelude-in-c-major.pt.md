@@ -1,5 +1,5 @@
 ---
-title: Prelude no.1 in C Major [BWV 846]
+title: Prelúdio em Dó maior [BWV 846]
 layout: piano
 author: Johann Sebastian Bach
 completed: true
