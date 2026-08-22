@@ -7,4 +7,4 @@ audio: /piano/waltz-in-a-minor.wav
 weight: 3
 ---
 
-Practique durante o verão de 2026. Espero que vou conseguir tocar todo de o canção bem, depois de o fim do ano. 
+Pratique durante o verão de 2026. Espero conseguir tocar a canção enteira bem, depois de o fim do ano. 
