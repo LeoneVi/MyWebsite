@@ -7,4 +7,4 @@ audio: /piano/prelude-in-c-major.wav
 weight: 1
 ---
 
-Aprendei em junho de 2026.
+Aprendi em junho de 2026.
