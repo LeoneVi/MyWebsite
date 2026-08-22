@@ -3,7 +3,7 @@ title: Gravações de piano
 layout: piano
 play_all_label: Tocar todas
 shuffle_label: Shuffle
-learned_label: Aprendei
+learned_label: Aprendi
 learning_label: Aprendendo
 ---
 
