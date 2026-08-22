@@ -7,4 +7,4 @@ learned_label: Aprendei
 learning_label: Aprendendo
 ---
 
-Uma coleção de gravações de eu tocando musica de piano que eu aprendei (ou que estô tentando aprender). Quando uma gravaçõe está tocando, pode continuar de navegar o resto do meu site durante escutando. 
+Uma coleção de gravações de eu tocando música de piano que eu aprendi (ou que est tentando aprender). Quando uma gravação está tocando, pode continuar de navegar o resto do meu site durante escutando. 
