@@ -60,7 +60,7 @@ All translations on this site are written by me. I included this feature onto my
 
 I don't use google translate or AI for any of my translations. It would completely defeat the purpose of including translations on my website in the first place. 
 
-When writing translations in Portuguese, I try to write what I am able to come up with on my own without a dictionary. When needed, I will use [WordReference](https://www.wordreference.com/)  or [Reverso](https://context.reverso.net/translation/) to look up specific words, expressions or conjugations I'm struggling to come up with on my own. Once my translation is written and published, I will make further corrections if needed after being given feedback by my friends and family. Because of my intentionality with my translations, the process is slow. Not every page or article can be translated right away.
+When writing translations in Portuguese, I try to write what I am able to come up with on my own without a dictionary. When needed, I will use [WordReference](https://www.wordreference.com/)  or [Reverso Contexto](https://context.reverso.net/translation/) to look up specific words, expressions or conjugations I'm struggling to come up with on my own. Once my translation is written and published, I will make further corrections if needed after being given feedback by my friends and family. Because of my intentionality with my translations, the process is slow. Not every page or article can be translated right away.
 
 I have future plans to add Spanish and Italian translations onto my site. 
 
