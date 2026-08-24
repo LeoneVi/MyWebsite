@@ -1,0 +1,127 @@
+statuses:
+  - id: never_visited
+    label: Never visited
+    color: "#ffffff"
+  - id: traveled_through
+    label: Traveled through
+    color: "#b9bfdd"
+  - id: visited
+    label: Visited
+    color: "#747cac"
+  - id: lived_in
+    label: Lived in
+    color: "#242740"
+
+countries:
+  - name: USA
+    subdivisions_label: States and district
+    map: /maps/usa.svg
+    regions:
+      alabama: never_visited
+      alaska: never_visited
+      arizona: never_visited
+      arkansas: traveled_through
+      california: visited
+      colorado: never_visited
+      connecticut: traveled_through
+      delaware: never_visited
+      district of Columbia: visited
+      florida: visited
+      georgia: never_visited
+      hawaii: visited
+      idaho: never_visited
+      illinois: visited
+      indiana: traveled_through
+      iowa: never_visited
+      kansas: never_visited
+      kentucky: visited
+      louisiana: never_visited
+      maine: visited
+      maryland: traveled_through
+      massachusetts: lived_in
+      michigan: never_visited
+      minnesota: never_visited
+      mississippi: never_visited
+      missouri: visited
+      montana: never_visited
+      nebraska: never_visited
+      nevada: never_visited
+      new Hampshire: visited
+      new Jersey: traveled_through
+      new Mexico: never_visited
+      new York: visited
+      north Carolina: never_visited
+      north Dakota: never_visited
+      ohio: visited
+      oklahoma: visited
+      oregon: never_visited
+      pennsylvania: visited
+      rhode Island: visited
+      south Carolina: never_visited
+      south Dakota: never_visited
+      tennessee: visited
+      texas: visited
+      utah: never_visited
+      vermont: visited
+      virginia: never_visited
+      washington: never_visited
+      west Virginia: never_visited
+      wisconsin: never_visited
+      wyoming: never_visited
+
+  - name: Brazil
+    subdivisions_label: States and federal district
+    map: /maps/brazil.svg
+    regions:
+      acre: never_visited
+      alagoas: never_visited
+      amapá: never_visited
+      amazonas: never_visited
+      bahia: never_visited
+      ceará: never_visited
+      distrito Federal: never_visited
+      espírito Santo: never_visited
+      goiás: never_visited
+      maranhão: never_visited
+      mato Grosso: never_visited
+      mato Grosso do Sul: never_visited
+      minas Gerais: visited
+      pará: never_visited
+      paraíba: never_visited
+      paraná: visited
+      pernambuco: never_visited
+      piauí: never_visited
+      rio de Janeiro: visited
+      rio Grande do Norte: never_visited
+      rio Grande do Sul: never_visited
+      rondônia: never_visited
+      roraima: never_visited
+      santa Catarina: never_visited
+      são Paulo: lived_in
+      sergipe: never_visited
+      tocantins: never_visited
+
+  - name: Italy
+    subdivisions_label: Regions
+    map: /maps/italy.svg
+    regions:
+      abruzzo: never_visited
+      basilicata: never_visited
+      calabria: never_visited
+      campania: visited
+      emilia-Romagna: never_visited
+      friuli Venezia Giulia: never_visited
+      lazio: never_visited
+      liguria: never_visited
+      lombardia: never_visited
+      marche: never_visited
+      molise: never_visited
+      piemonte: never_visited
+      puglia: never_visited
+      sardegna: never_visited
+      sicilia: never_visited
+      toscana: never_visited
+      trentino-Alto Adige/Südtirol: never_visited
+      umbria: visited
+      valle d’Aosta/Vallée d’Aoste: never_visited
+      veneto: never_visited

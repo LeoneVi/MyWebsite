@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{ $travelData := hugo.Data.travels }}
+{{ $allowedStatuses := slice "never_visited" "traveled_through" "visited" "lived_in" }}
+{{ $churchRegionPatterns := partial "travel_church_regions.html" . }}
+{{ $churchLocations := slice }}
+{{ range hugo.Data.churches }}
+    {{ range . }}
+        {{ $churchLocations = $churchLocations | append (lower .location) }}
+    {{ end }}
+{{ end }}
+
+<main class="travel-page">
+    <header class="travel-intro">
+        <p class="travel-kicker">Travel log</p>
+        <h1>{{ .Title }}</h1>
+        <div class="travel-description">{{ .Content }}</div>
+
+        <ul class="travel-legend" aria-label="Travel status legend">
+            {{ range $travelData.statuses }}
+            <li data-status-label="{{ .id }}" data-label="{{ .label }}">
+                <span class="legend-swatch" style="--legend-color: {{ .color }}" aria-hidden="true"></span>
+                <span>{{ .label }}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </header>
+
+    <section class="travel-grid" aria-label="Travel maps">
+        {{ range $travelData.countries }}
+        {{ $regionData := dict }}
+        {{ $countryName := .name }}
+        {{ $countryPatterns := index $churchRegionPatterns $countryName }}
+        {{ range $regionName, $configuredStatus := .regions }}
+            {{ $status := $configuredStatus }}
+            {{ $churchVisited := false }}
+            {{ $patterns := index $countryPatterns $regionName | default (slice) }}
+            {{ range $churchLocations }}
+                {{ $location := . }}
+                {{ range $patterns }}
+                    {{ if in $location . }}
+                        {{ $churchVisited = true }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ if and $churchVisited (ne $status "lived_in") }}
+                {{ $status = "visited" }}
+            {{ end }}
+            {{ if not (in $allowedStatuses $status) }}
+                {{ errorf "Unknown travel status %q for %s in data/travels.yaml" $status $regionName }}
+            {{ end }}
+            {{ $regionData = merge $regionData (dict (strings.FirstUpper $regionName) $status) }}
+        {{ end }}
+
+        <article class="travel-card" data-travel-card data-country="{{ .name | lower }}">
+            <div class="travel-card-heading">
+                <div>
+                    <h2>{{ .name }}</h2>
+                    <p>{{ .subdivisions_label }} · {{ len .regions }}</p>
+                </div>
+                <p class="map-readout" data-map-readout aria-live="polite">Explore the map</p>
+            </div>
+
+            <div class="travel-map-shell">
+                <object
+                    class="travel-map"
+                    data-travel-map
+                    data="{{ .map | relURL }}"
+                    type="image/svg+xml"
+                    aria-label="Travel status map of {{ .name }}">
+                    <img src="{{ .map | relURL }}" alt="Map of {{ .name }}">
+                </object>
+            </div>
+
+            <script type="application/json" class="travel-map-data">{{ $regionData | jsonify | safeJS }}</script>
+        </article>
+        {{ end }}
+    </section>
+</main>
+{{ end }}
