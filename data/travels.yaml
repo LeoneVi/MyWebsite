@@ -106,10 +106,10 @@ countries:
     map: /maps/italy.svg
     regions:
       abruzzo: never_visited
-      basilicata: never_visited
-      calabria: never_visited
+      basilicata: traveled_through
+      calabria: visited
       campania: visited
-      emilia-Romagna: never_visited
+      emilia-Romagna: traveled_through
       friuli Venezia Giulia: never_visited
       lazio: never_visited
       liguria: never_visited
