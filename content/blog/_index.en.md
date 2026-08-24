@@ -14,6 +14,4 @@ featured_image: /images/ISG.jpeg
 
 ⛪ [Churches I've visited](/blog/churches/)
 
-🗺 [My travels](/blog/travels/)
-
 🪷 [FAQ and Other Notes](/blog/faq-and-notes/)
