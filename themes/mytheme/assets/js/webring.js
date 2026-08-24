@@ -10,8 +10,9 @@
             previous.href = data.prev.url;
             previous.className = 'umaring-prev';
             previous.rel = 'noopener';
-            previous.textContent = data.prev.name + ' ← ';
+            previous.textContent = data.prev.name + ' ←';
             container.appendChild(previous);
+            container.appendChild(document.createTextNode(' '));
         }
 
         var label = document.createElement('a');
