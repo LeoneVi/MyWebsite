@@ -11,8 +11,10 @@
 
 <main class="travel-page">
     <header class="travel-intro">
-        <p class="travel-kicker">Travel log</p>
         <h1>{{ .Title }}</h1>
+    </header>
+
+    <div class="travel-intro-details">
         <div class="travel-description">{{ .Content }}</div>
 
         <ul class="travel-legend" aria-label="Travel status legend">
@@ -23,11 +25,11 @@
             </li>
             {{ end }}
         </ul>
-    </header>
+    </div>
 
     <section class="travel-grid" aria-label="Travel maps">
         {{ range $travelData.countries }}
-        {{ $regionData := dict }}
+        {{ $regionStatuses := dict }}
         {{ $countryName := .name }}
         {{ $countryPatterns := index $churchRegionPatterns $countryName }}
         {{ range $regionName, $configuredStatus := .regions }}
@@ -48,31 +50,23 @@
             {{ if not (in $allowedStatuses $status) }}
                 {{ errorf "Unknown travel status %q for %s in data/travels.yaml" $status $regionName }}
             {{ end }}
-            {{ $regionData = merge $regionData (dict (strings.FirstUpper $regionName) $status) }}
+            {{ $regionID := partial "travel_region_slug.html" $regionName }}
+            {{ $regionStatuses = merge $regionStatuses (dict $regionID $status) }}
         {{ end }}
 
-        <article class="travel-card" data-travel-card data-country="{{ .name | lower }}">
-            <div class="travel-card-heading">
-                <div>
-                    <h2>{{ .name }}</h2>
-                    <p>{{ .subdivisions_label }} · {{ len .regions }}</p>
-                </div>
-                <p class="map-readout" data-map-readout aria-live="polite">Explore the map</p>
-            </div>
+        {{ $mapPath := printf "static/%s" (strings.TrimPrefix "/" .map) }}
+        {{ $mapSVG := readFile $mapPath }}
+        {{ range $regionID, $status := $regionStatuses }}
+            {{ $defaultAttribute := printf `data-region="%s" data-status="never_visited"` $regionID }}
+            {{ $statusAttribute := printf `data-region="%s" data-status="%s"` $regionID $status }}
+            {{ $mapSVG = replace $mapSVG $defaultAttribute $statusAttribute }}
+        {{ end }}
 
+        <div class="travel-map-item" data-country="{{ .name | lower }}" aria-label="Travel status map of {{ .name }}">
             <div class="travel-map-shell">
-                <object
-                    class="travel-map"
-                    data-travel-map
-                    data="{{ .map | relURL }}"
-                    type="image/svg+xml"
-                    aria-label="Travel status map of {{ .name }}">
-                    <img src="{{ .map | relURL }}" alt="Map of {{ .name }}">
-                </object>
+                {{ $mapSVG | safeHTML }}
             </div>
-
-            <script type="application/json" class="travel-map-data">{{ $regionData | jsonify | safeJS }}</script>
-        </article>
+        </div>
         {{ end }}
     </section>
 </main>
