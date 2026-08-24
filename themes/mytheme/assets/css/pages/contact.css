@@ -1,0 +1,45 @@
+.contact-page {
+    width: min(100%, 680px);
+    margin: 0 auto;
+    padding: var(--spacing-sm) 0 var(--spacing-xl);
+}
+
+.contact-page > h1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-page > p:first-of-type {
+    margin-top: 0;
+    color: var(--color-muted);
+    line-height: 1.6;
+}
+
+.contact-page > h2 {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-base);
+}
+
+.contact-page > h2 + p {
+    margin: 0;
+}
+
+.contact-page > h2 + p a {
+    display: inline-block;
+    padding: .45rem .7rem;
+    border: 1px solid var(--color-muted);
+    border-radius: 6px;
+    color: var(--color-ivory);
+}
+
+.contact-page > h2 + p a:hover,
+.contact-page > h2 + p a:focus-visible {
+    border-color: var(--color-ivory);
+    background: var(--color-space-indigo);
+    text-decoration: none;
+}
+
+.contact-page > h2 + p a:focus-visible {
+    outline: 2px solid var(--color-ivory);
+    outline-offset: 3px;
+}
