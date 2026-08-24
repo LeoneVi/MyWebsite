@@ -1,5 +1,6 @@
 (function () {
     var cachedData = null;
+    const umaringLink = 'https://umaring.github.io/'
 
     function render(container, data) {
         container.innerHTML = '';
@@ -13,10 +14,13 @@
             container.appendChild(previous);
         }
 
-        var label = document.createElement('span');
+        var label = document.createElement('a');
+        label.href = umaringLink;
         label.className = 'umaring-label';
-        label.textContent = ' UMass Ring ';
+        label.textContent = 'UMass Ring';
+        container.appendChild(document.createTextNode(' '));
         container.appendChild(label);
+        container.appendChild(document.createTextNode(' '));
 
         if (data.next) {
             var next = document.createElement('a');
