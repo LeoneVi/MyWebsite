@@ -4,7 +4,8 @@ import yaml
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 IN_PATH = BASE_DIR / "data" / "churches.yaml"
-OUTPATH = BASE_DIR / "assets" / "churches"
+#themes/mytheme/assets/churches
+OUTPATH = BASE_DIR / "themes" / "mytheme" / "assets" / "churches"
 
 def get_subfolder_string(church):
     name = church.get("name").lower().strip().replace(" ", "-")

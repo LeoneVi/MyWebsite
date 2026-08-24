@@ -4,7 +4,8 @@ import yaml
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 IN_PATH = BASE_DIR / "data" / "churches.yaml"
-PHOTO_DIR = BASE_DIR / "assets" / "churches"
+#themes/mytheme/assets/churches
+PHOTO_DIR = BASE_DIR / "themes" / "mytheme" / "assets" / "churches"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 

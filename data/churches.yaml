@@ -54,6 +54,10 @@ roman_catholic:
   location: Providence, RI
   date_visited: 2026-07-12
   tlm: true
+- name: St. Adelaide Parish
+  location: Peabody, MA
+  tlm: true
+  date_visited: 2026-08-24
 - name: St. Brigid's Parish
   location: Amherst, MA
 - name: St. Patrick Church
