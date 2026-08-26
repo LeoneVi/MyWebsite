@@ -3,29 +3,28 @@ title: Não é Melhor do Todo Mundo Porque Você é Católico
 date: 2026-08-20
 layout: article
 ---
+###  * Eu estou trabalhando por traduzir este artículo agora. Por favor, volta em breve! * 
 
 ![Ó Ultimo Julgamento de Michelangelo na Capela Sistina](christ-the-last-judgement-sistine-chapel-michelangelo.webp "center")
 
 > "Disse também esta parábola a uns que confiavam muito em si mesmos, como se fossem justos, e desprezavam os outros. Subiram dois homens ao templo a fazer oração: um era fariseu, outro publicano. O fariseu, de pé, orava no seu interior desta forma: Graças te dou, ó Deus, porque não sou como os outros homens: ladrões, injustos, adúlteros, nem como este publicano. Jejuo duas vezes na semana; pago o dízimo de tudo o que possuo, O publicano, porém, conservando-se a distância, não ousava nem ainda levantar os olhos ao céu, mas batia no peito, dizendo: Meu Deus, tem piedade de mim pecador. Digo-vos que este voltou justificado para sua casa, o outro não; porque quem se exalta será humilhado, e quem se humilha será exaltado."
 Lucas 18:9-14
 
-This article is an open letter to all Catholics experiencing spiritual pride.
+Este articúlo é uma carta aberta pra todos os católicos experienciando soberba espiritual.
 
-A Catholic experiences spiritual pride when they look down on others who aren't as "spiritually clean" as they are. He may pray loudly before meals or disrupt others in prayer by singing hymns in holy sites.
+Um católico experiencia soberba espiritual quando eles olham de cima de outros quem não são "espiritualmente limpo" como eles são. Talvez, ele ora alta antes de refeiçãoes, ou perturba outros orando ao cantando hinos nos lugares santos. 
 
-He may even see his faith as a rebellion against the secular world, opting to pray loudly around the irreligious to place a barrier between them and him. Much like how a prideful atheist will use their lack of faith to intentionally provoke Christians, the spiritually prideful Catholic uses his faith as an act to shock the secular world. Like the Pharisee, he shows the world that *he is closer to God* than the rest.
+Talvez, ele inclusive acha que o fé dele é um rebelião contra o mundo secular, escolhendo de ora barulhento perto dos quem não são religiosos, porque ele quise ser separados dos eles. Como um atheisto soberba usa o falta de fé dele por disturba christianos, o católico com soberba espiritualmente usa o fé dele pra pertuba o mundo secular. Como o fariseu, ele monstra por o mundo que *ele é mais perto de Deus* do que o resto.
 
 ## Mais santo que vós
 
-He looks down on others who have fallen. He may even refuse to speak to those he deems as unholy. As if their 'ungodliness' is a stain so great they cease to be humans who Christ calls us to love.  ![Santa Teresinha com 8 anos](Saint_Therese-aged-8.webp "right")
-Unfortunately what the spiritually prideful Catholic does not realize is that even those who go to church every Sunday may not make it to the kingdom of heaven. A pious man may fall at his last moment. A sinner can be saved on his last breath. On our day of judgement Christ will humble us.
+Ele olha pra cima do outros quem queda mais longe do que ele. Talvez, ele refusa de falar com quem ele crê são ímpios. Como os 'pecaminoso' deles é uma mancha tão grande que eles terminaram de ser humanos quem Cristo nos chama pra amar. ![Santa Teresinha com 8 anos](Saint_Therese-aged-8.webp "right")
+Infelizemente, o católico com soberba espiritualmente não sabe que inclusive quem vai pra igreja cada domingo talvez não iría o reino do céu. Um homem pio talvez queda no momento último dele. O pecadore pode ser salvado na respira ultíma dele. No día de nos julgamento, Cristo ia nos torna humilde. 
 
-When Christ told the adulterer to "Nem eu te condeno; vai, e não peques mais." *(São João 8:11)*, did he not meet another at their level and encourage them to walk a more righteous path? Christ did not condemn her for her sins, he called her towards holiness.
+Quando Cristo disse por adúltero a "Nem eu te condeno; vai, e não peques mais." *(São João 8:11)*, ele ñao encontrou uma outra no nível dela e encoraja ela pra camina um caminho mais pio?  Cristo não condenou ela por o pecadore dela, ele chama ela por pio.
+Santa Teresinha ora famousamente por o salvato de um matador triplo quem estava olhando uma senteza de morte vindo. No o momento ultímo dele, ele beijou um crucifixo tres vezes. Santa Teresinha estava cheia de joaia de tinha ouvido disso. Ele foi salvado.[^1]
 
-St. Thérèse famously prayed for the salvation of a triple murderer who was facing an impending death sentence. At his last moment, it was told that he
-kissed a crucifix ten times. St. Thérèse exclaimed in joy, a nonbeliever was saved.[^1]
-
-When the spiritually prideful Catholic turns away 'unholy people' out of disgust, how many potential souls is he depriving Christ of? Instead of turning away, he should face those whom he sees as fallen, and be a ray of sun in their gloomy storm.
+Quando um católico com soberba espiritual torna de 'pessoas pecaminosas' com nojento, quantos [?] potencias ele está robando do Cristo? No lugar de tornando, ele deve olha pra quem ele crê são quedas, e ser uma raia do sol para eles segue do o escuro onde eles estão perdidos.
 
 ## Pio ensurdecedor
 

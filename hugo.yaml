@@ -13,13 +13,17 @@ markup:
         block: true
         title: true
 
+# Add a dateFormat to each future language using Go's reference date:
+# Mon Jan 2 15:04:05 MST 2006.
 languages:
   en:
     params:
       languageName: "English"
+      dateFormat: "January 2, 2006"
     weight: 1
 
   pt:
     params:
       languageName: "Português"
+      dateFormat: "02/01/2006"
     weight: 2

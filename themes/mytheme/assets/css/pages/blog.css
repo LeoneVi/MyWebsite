@@ -5,19 +5,44 @@
     align-items: center;
     flex: 1;
     min-height: 0;
+    padding-block: var(--spacing-lg);
 }
 
 .blog-main {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
     align-items: center;
-    gap: 3rem;
+    gap: clamp(2rem, 5vw, 5rem);
+    width: min(100%, 1100px);
+}
+
+.blog-columns {
+    display: grid;
+    grid-template-columns: minmax(230px, 0.9fr) minmax(300px, 1.1fr);
+    align-items: start;
+    gap: clamp(2rem, 4vw, 4rem);
+}
+
+.blog-pages,
+.blog-articles {
+    min-width: 0;
+}
+
+.blog-section-heading {
+    margin: 0 0 var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-ivory);
+    font-size: var(--font-size-lg);
+    line-height: 1.4;
 }
 
 .blog-content {
-    max-width: 500px;
     font-size: var(--font-size-lg);
-    line-height: 2;
+    line-height: 1.5;
+}
+
+.blog-content p {
+    margin: 0 0 var(--spacing-md);
 }
 
 .blog-content a {
@@ -28,6 +53,32 @@
     text-decoration: underline;
 }
 
+.blog-article-list {
+    display: grid;
+    gap: var(--spacing-md);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-article-list li {
+    line-height: 1.5;
+}
+
+.blog-article-list a:hover {
+    text-decoration: underline;
+}
+
+.blog-article-list time {
+    color: var(--color-muted);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+}
+
+.blog-image {
+    justify-self: center;
+}
+
 .blog-profile-image {
     max-height: 50vh;
     max-width: 100%;
@@ -35,19 +86,29 @@
     border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .blog-main {
-        flex-direction: column-reverse;
-        gap: 1.5rem;
-        width: 100%;
+@media (max-width: 1050px) {
+    .blog-layout {
+        justify-content: flex-start;
     }
 
-    .blog-content {
-        max-width: 100%;
+    .blog-main {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-image {
+        grid-row: 1;
     }
 
     .blog-profile-image {
         width: min(80vw, 300px);
         max-height: 40vh;
     }
+}
+
+@media (max-width: 700px) {
+    .blog-columns {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
 }

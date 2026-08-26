@@ -1,0 +1,2 @@
+{{- $format := .site.Params.dateFormat | default "January 2, 2006" -}}
+{{- .date.Format $format -}}

@@ -3,7 +3,7 @@
 <main class="article">
 
     {{ $hasTitle := ne .Title "" }}
-    {{ $hasDate := not .Date.IsZero }}
+    {{ $hasDate := not .PublishDate.IsZero }}
     {{ if or $hasTitle $hasDate }}
     <header class="article-header">
         {{ if $hasTitle }}
@@ -12,7 +12,9 @@
 
         {{ if $hasDate }}
         <p class="article-date">
-            {{ .Date.Format "January 2, 2006" }}
+            <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+                {{ partial "formatted-date.html" (dict "date" .PublishDate "site" .Site) }}
+            </time>
         </p>
         {{ end }}
     </header>

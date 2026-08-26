@@ -1,9 +1,41 @@
 {{ define "main" }}
 <div class="blog-layout">
     <div class="blog-main">
-        <div class="blog-content">{{ .Content }}</div>
+        <div class="blog-columns">
+            <section class="blog-pages" aria-labelledby="blog-pages-heading">
+                <h2 id="blog-pages-heading" class="blog-section-heading">
+                    {{ .Params.pages_heading | default "Pages I update often" }}
+                </h2>
+                <div class="blog-content">{{ .Content }}</div>
+            </section>
+
+            <section class="blog-articles" aria-labelledby="blog-articles-heading">
+                <h2 id="blog-articles-heading" class="blog-section-heading">
+                    {{ .Params.articles_heading | default "Articles" }}
+                </h2>
+
+                {{ $articles := where .Site.Pages "RelPermalink" "like" "/blog/articles/" }}
+                {{ with $articles.ByPublishDate.Reverse }}
+                <ul class="blog-article-list">
+                    {{ range . }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                        <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+                            &mdash; {{ partial "formatted-date.html" (dict "date" .PublishDate "site" .Site) }}
+                        </time>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </section>
+        </div>
+
         <div class="blog-image">
-            <img src="{{ .Params.featured_image }}" class="blog-profile-image">
+            <img
+                src="{{ .Params.featured_image }}"
+                class="blog-profile-image"
+                alt=""
+            >
         </div>
     </div>
 </div>
