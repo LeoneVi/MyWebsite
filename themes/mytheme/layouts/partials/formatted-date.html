@@ -1,2 +1,2 @@
-{{- $format := .site.Params.dateFormat | default "January 2, 2006" -}}
-{{- .date.Format $format -}}
+{{- $format := .format | default ":date_long" -}}
+{{- .date | time.Format $format -}}

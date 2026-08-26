@@ -13,17 +13,19 @@ markup:
         block: true
         title: true
 
-# Add a dateFormat to each future language using Go's reference date:
-# Mon Jan 2 15:04:05 MST 2006.
+# Add both date formats to each future language. The article format is
+# localized automatically; numeric list formats use Go's reference date.
 languages:
   en:
     params:
       languageName: "English"
-      dateFormat: "January 2, 2006"
+      listDateFormat: "01/02/2006"
+      articleDateFormat: ":date_long"
     weight: 1
 
   pt:
     params:
       languageName: "Português"
-      dateFormat: "02/01/2006"
+      listDateFormat: "02/01/2006"
+      articleDateFormat: ":date_long"
     weight: 2
