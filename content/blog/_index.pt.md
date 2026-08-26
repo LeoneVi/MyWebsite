@@ -2,8 +2,8 @@
 title: Blog
 layout: blog
 featured_image: /images/ISG.jpeg
-pages_heading: Pages I update often
-articles_heading: Articles
+pages_heading: Sítios que mudam frequentemente 
+articles_heading: Artigos
 ---
 
 🎨 [Minha arte](https://art.toryleone.com/)

@@ -3,7 +3,7 @@ title: Não é Melhor do Todo Mundo Porque Você é Católico
 date: 2026-08-20
 layout: article
 ---
-###  * Eu estou trabalhando por traduzir este artículo agora. Por favor, volta em breve! * 
+###  * Eu estou trabalhando por traduzir este artigo agora. Por favor, volta em breve! * 
 
 ![Ó Ultimo Julgamento de Michelangelo na Capela Sistina](christ-the-last-judgement-sistine-chapel-michelangelo.webp "center")
 
@@ -28,18 +28,16 @@ Quando um católico com soberba espiritual torna de 'pessoas pecaminosas' com no
 
 ## Pio ensurdecedor
 
-The spiritually prideful Catholic makes sure everyone around him knows that he prays. Instead of opting to quietly make the sign of the cross to express gratitude for the food in front of him, he deliberately jolts his hands across his body, making an obvious display of his faith for everyone around him to notice. He prays loudly, disrupting everyone around him.
-He wants to set himself apart from the secular world, maybe he even intends to shock them as an act of defiance.
+O católico com soberba espiritual quer que todo mundo perto dele sabe que ele ora. No lugar de escolhendo de quitamento fazer o signa do crucifixo por agradecer a comida no frente dele, ele eschole por mexer os mãos deles rapidos por corpo dele, fazendo uma pictura obvia de fé dele por tudo mundo perto dele olhar. Ele ora barulhento, perturbando tudo mundo perto dele.
+Ele quer de ser seperado do mundo secular. Talvez, ele pretenda de disturba eles de uma acíon de defiancia. 
 
-In holy sites, instead of praying silently, he may even sing hymns and interrupt the prayers of everyone else. He lectures fellow Catholics on how to live a life closer to God. "It's not good enough", he says, "to pray daily and go to mass!", making it obvious that he is more pious than all those around him. Even implying that he has secrets to godliness that even the practicing Catholics around him don't understand.
+Nos lugares santos, no lugar de orando silencioso, talvez ele canta himos e pertuba os oraçãoes de tudo mundo. Ele fala com orgulho a outros católicos sobre como viver uma vida mais perta do Deus. "Não é suficiente", ele diz, "por orar cada día, e ir pra missa!" Assim, é obvio que ele crê ele é mais pio do quem os outros. Inclusive sugestando que ele tem secretos de fé quem inclusive os outros católicos não sabem. 
 
-However, Christ repeatedly advises against these public demonstrations of prayer and faith.
+Enfim, Cristo nos advisa contra de os ações publicos de oração e fé:
 > "Quando orais, não sejais como os hipócritas, que gostam de orar em pé nas sinagogas e nos cantos das praças, a fim de serem vistos pelos homens. Em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando orares, entra no teu quarto, e, fechada a porta, ora a teu Pai em segredo; e teu Pai, que vê (o que se passa) em segredo, te dará a recompensa." São Mateus 6:5–6
 
-Signing the cross and public prayer are not tools to shock non-christians, and they are not a pedestal to set oneself higher than other Catholics. Christ tells his followers to pray not as a performance but as a genuine act of communication with God.
-
+Fazendo o movemento do crucifixo e oração publico não são ferradas por disturba os pessoas irreligiosos. Também, eles não são uma ferrada por colocarse mais pra cima do que os outros cátolicos. Cristo diga por os seguiridos deles por não ora de uma performencía, mas uma açõe sinciramente de communicação com Deus. 
 ## Mudando o caminho
 
-Every Catholic must battle the inner Pharisee in them, and strive to be the publican who Christ exalts.
-
+Nos estamos sempre lutando contra de os tentaçãoes por comitar peccados capitais, inclusive soberba. Pela a graça de Deus, e o habito de escholendo de pratiquar virtuoso no lugar de peca, nos podemos cresecer pelo o humilde nós. Gesú esta chamando tudo por seguir ele. Pelas parábolas eles nos diga como viver nessa vida por entrar o reino do céu. Cada católico deve lutar o fariseu dentro deles, e pretender de ser o publicano quem Criste exalta.
 [^1]: Trent Horn, Why We're Catholic: Our Reasons for Faith, Hope, and Love (San Diego: Catholic Answers Press, 2017), p. 49.
