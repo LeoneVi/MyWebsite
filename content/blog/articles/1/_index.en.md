@@ -1,6 +1,6 @@
 ---
 title: No, You Are Not Better Than Everyone Else Because You're Catholic
-date: 2026-08-20
+date: 2026-08-26
 layout: article
 ---
 
@@ -28,24 +28,24 @@ Unfortunately what the spiritually prideful Catholic does not realize is that ev
 When Christ told the adulterer to "Go, and now sin no more." *(John 8:11)*, did he not meet another at their level and encourage them to walk a more righteous path? Christ did not condemn her for her sins, he called her towards holiness.
 
 St. Thérèse famously prayed for the salvation of a triple murderer who was facing an impending death sentence. At his last moment, it was told that he
-kissed a crucifix ten times. St. Thérèse exclaimed in joy, a nonbeliever was saved.[^1]
+kissed a crucifix three times. St. Thérèse exclaimed in joy, a nonbeliever was saved.[^1]
 
-When the spiritually prideful Catholic turns away 'unholy people' out of disgust, how many potential souls is he depriving Christ of? Instead of turning away, he should face those whom he sees as fallen, and be a ray of sun in their gloomy storm.
+When the spiritually prideful Catholic turns away 'unholy people' out of disgust, how many potential souls is he depriving Christ of? Instead of turning away, he should face those whom he sees as fallen, and be a ray of sunshine to lead them out of the blinding darkness in which they are lost.
 
 ## Deafeningly pious 
 
 The spiritually prideful Catholic makes sure everyone around him knows that he prays. Instead of opting to quietly make the sign of the cross to express gratitude for the food in front of him, he deliberately jolts his hands across his body, making an obvious display of his faith for everyone around him to notice. He prays loudly, disrupting everyone around him.
 He wants to set himself apart from the secular world, maybe he even intends to shock them as an act of defiance.
 
-In holy sites, instead of praying silently, he may even sing hymns and interrupt the prayers of everyone else. He lectures fellow Catholics on how to live a life closer to God. "It's not good enough", he says, "to pray daily and go to mass!", making it obvious that he is more pious than all those around him. Even implying that he has secrets to godliness that even the practicing Catholics around him don't understand. 
+In holy sites, instead of praying silently, he may even sing hymns and interrupt the prayers of everyone else. He lectures fellow Catholics on how to live a life closer to God. "It's not good enough", he says, "to pray daily and go to Mass!", making it obvious that he is more pious than all those around him. Even implying that he has secrets to godliness that even the practicing Catholics around him don't understand. 
 
-However, Christ repeatedly advises against these public demonstrations of prayer and faith.
+However, Christ repeatedly advises against these public demonstrations of prayer and faith:
 > "And when ye pray, you shall not be as the hypocrites, that love to stand and pray in the synagogues and corners of the streets, that they may be seen by men: Amen I say to you, they have received their reward. But thou when thou shalt pray, enter into thy chamber, and having shut the door, pray to thy Father in secret: and thy Father who seeth in secret will repay thee." Matthew 6:5–6
-
-Signing the cross and public prayer are not tools to shock non-christians, and they are not a pedestal to set oneself higher than other Catholics. Christ tells his followers to pray not as a performance but as a genuine act of communication with God.
+ 
+Making the sign of the cross and public prayer are not tools to shock non-Christians, and they are not a pedestal to set oneself higher than other Catholics. Christ tells his followers to pray not as a performance but as a genuine act of communication with God.
 
 ## Changing paths
 
-Every Catholic must battle the inner Pharisee in them, and strive to be the publican who Christ exalts. 
+We are all in a constant battle against temptations to commit capital sins, including pride. Through God's grace, and the habit of choosing to practice virtue instead of sin, we can all grow in our humility. Jesus is calling all of us to follow him. Through his parables he tells us how to live in this life in order to make it into the Kingdom of Heaven. Every Catholic must battle the inner Pharisee in them, and strive to be the publican who Christ exalts.
 
 [^1]: Trent Horn, Why We're Catholic: Our Reasons for Faith, Hope, and Love (San Diego: Catholic Answers Press, 2017), 49.
