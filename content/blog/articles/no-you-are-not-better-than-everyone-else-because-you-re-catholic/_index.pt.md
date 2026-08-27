@@ -39,6 +39,6 @@ Enfim, Cristo nos advisa contra de os ações publicos de oração e da fé:
 Fazer o sinal da cruz e orar no publico não são ferramentas por chocar os pessoas irreligiosos. Também, eles não são uma ferramenta por colocarse mais para cima do que os outros cátolicos. Cristo diga por os seguidores deles por não ora de uma performance, mas uma açõe sincero para communicar com Deus. 
 ## Mudando o caminho
 
-Nos estamos sempre lutando contra de os tentações por comitar pecados capitais, inclusive a soberba. Pela a graça de Deus, e o habito de escholer de pratiquar virtude no lugar de pecado, nos podemos cresecer pelo humilde nós. Jesus esta nos chamando  por seguir ele. Pelas parábolas eles nos diga como viver nessa vida por entrar o reino do céu. Cada católico deve lutar o fariseu dentro deles, e pretender de ser o publicano quem Criste exalta.
+Nos estamos sempre lutando contra de os tentações por comitar pecados capitais, inclusive a soberba. Pela a graça de Deus, e o habito de escholer de pratiquar virtude no lugar de pecado, nos podemos cresecer pelo humilde nós. Jesus esta nos chamando  por seguir ele. Pelas parábolas eles nos diga como viver nessa vida por entrar o reino do céu. Cada católico deve lutar o fariseu dentro deles, e pretender de ser o publicano quem Cristo exalta.
 
 [^1]: Trent Horn, Why We're Catholic: Our Reasons for Faith, Hope, and Love (San Diego: Catholic Answers Press, 2017), p. 49.
