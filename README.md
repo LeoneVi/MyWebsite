@@ -12,6 +12,16 @@ Personal website built with [Hugo](https://gohugo.io/) and self-hosted on my own
 * **Nginx** — Web server
 * **Git** — Version control
 
+## Adding a translation
+
+Translated pages live beside the English page and use the same filename with a language suffix:
+
+* English: `page-name.en.md`
+* Portuguese: `page-name.pt.md`
+* Spanish: `page-name.es.md`
+* Italian: `page-name.it.md`
+
+Copy the front matter and content into the new sibling file, then translate it. Hugo automatically links files with the same base filename, and the language chooser appears once a page has at least one translation. Do not edit files in `public/`; Hugo regenerates that directory during a build.
 
 ## Self-Hosting
 

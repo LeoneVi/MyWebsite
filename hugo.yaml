@@ -19,6 +19,7 @@ languages:
   en:
     params:
       languageName: "English"
+      flag: "us"
       listDateFormat: "01/02/2006"
       articleDateFormat: ":date_long"
     weight: 1
@@ -26,6 +27,23 @@ languages:
   pt:
     params:
       languageName: "Português"
+      flag: "br"
       listDateFormat: "02/01/2006"
       articleDateFormat: ":date_long"
     weight: 2
+
+  es:
+    params:
+      languageName: "Español"
+      flag: "es"
+      listDateFormat: "02/01/2006"
+      articleDateFormat: ":date_long"
+    weight: 3
+
+  it:
+    params:
+      languageName: "Italiano"
+      flag: "it"
+      listDateFormat: "02/01/2006"
+      articleDateFormat: ":date_long"
+    weight: 4

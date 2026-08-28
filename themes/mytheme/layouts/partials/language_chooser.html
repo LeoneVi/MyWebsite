@@ -1,4 +1,11 @@
-{{ with .Page.Rotate "language" }}
+{{ $translatedPages := slice }}
+{{ range .Page.Rotate "language" }}
+    {{ if or .File .Site.Home.File }}
+        {{ $translatedPages = $translatedPages | append . }}
+    {{ end }}
+{{ end }}
+
+{{ if and (or .Page.File .Page.Site.Home.File) (gt (len $translatedPages) 1) }}
 
 <div class="lang-dropdown">
 
@@ -20,37 +27,34 @@
     <div class="lang-menu">
 
         {{ $current := $.Page.Language.Name }}
-        {{ range . }}
+        {{ range $translatedPages }}
         {{ $lang := .Language.Name }}
+        {{ $languageName := .Language.Params.languageName | default $lang }}
+        {{ $flag := .Language.Params.flag | default $lang }}
+        {{ $flagPath := printf "static/icons/flags/%s.svg" $flag }}
 
         <div class="lang-item">
 
             {{ if eq $lang $current }}
             <!-- current language -->
-            <span class="lang-active">
-                        {{ if eq $lang "en" }}
-                            <span class="icon">
-                                    {{ readFile "static/icons/flags/us.svg" | safeHTML }}
-                            </span>
-                        {{ else if eq $lang "pt" }}
-                            <span class="icon">
-                                    {{ readFile "static/icons/flags/br.svg" | safeHTML }}
-                            </span>
-                        {{ end }}
-                    </span>
+            <span class="lang-active" aria-current="page" aria-label="{{ $languageName }}" title="{{ $languageName }}">
+                <span class="icon">
+                    {{ readFile $flagPath | safeHTML }}
+                </span>
+            </span>
 
             {{ else }}
             <!-- inactive language -->
-            <a href="{{ .RelPermalink }}" class="lang-link" data-language="{{ $lang }}">
-                {{ if eq $lang "en" }}
+            <a
+                    href="{{ .RelPermalink }}"
+                    class="lang-link"
+                    data-language="{{ $lang }}"
+                    aria-label="{{ $languageName }}"
+                    title="{{ $languageName }}"
+            >
                 <span class="icon">
-                    {{ readFile "static/icons/flags/us.svg" | safeHTML }}
+                    {{ readFile $flagPath | safeHTML }}
                 </span>
-                {{ else if eq $lang "pt" }}
-                <span class="icon">
-                    {{ readFile "static/icons/flags/br.svg" | safeHTML }}
-                </span>
-                {{ end }}
             </a>
             {{ end }}
 
