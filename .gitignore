@@ -7,3 +7,6 @@ resources/
 .hugo_build.lock
 *.csv
 .venv
+
+__pycache__/
+*.py[cod]

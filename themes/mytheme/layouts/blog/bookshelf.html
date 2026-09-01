@@ -35,8 +35,9 @@
                 <tbody>
                 {{ range $books }}
                 {{ $meta := .meta }}
+                {{ $tags := $meta.tags | default (slice) }}
 
-                <tr data-tags="{{ delimit $meta.tags "," }}">
+                <tr data-tags="{{ delimit $tags "," }}">
                 <td data-label="cover">
                     {{ if and $meta.cover (ne $meta.cover "null") }}
                     <img

@@ -32,3 +32,21 @@ The server builds and serves the Hugo-generated website using Nginx. The site is
 **https://toryleone.com**
 
 This setup gives me full control over the website, server, deployment, and infrastructure without relying on a third-party hosting platform.
+
+## Bookshelf maintenance
+
+The bookshelf scripts use a project-local Python environment. Set it up once:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+
+Then enrich newly added books with Open Library metadata and cover images:
+
+```sh
+.venv/bin/python scripts/bookshelf/enrich_read_books.py
+```
+
+Use `--dry-run` to fetch and report without changing files, or `--refresh` to
+retry metadata that Open Library did not have during an earlier run.

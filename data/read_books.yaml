@@ -1,5 +1,21 @@
+- isbn: '9994674188'
+  work_id: OL9207514M
+  date_read: '2026-08-30'
+  meta:
+    title: Latin English Booklet Missal for Praying the Traditional Mass
+    author: ''
+    page_count: null
+    cover: /books/9994674188.jpg
+- isbn: null
+  work_id: OL25576194M
+  date_read: '2026-08-30'
+  meta:
+    title: Alfred's basic adult piano course
+    author: Willard A. Palmer
+    page_count: 96
+    cover: /books/OL25576194M.jpg
 - isbn: '9781909414815'
-  work_id: OL28693603MOL28693603M
+  work_id: OL28693603M
   date_read: '2026-08-07'
   rating: 4
   review: Cute art book with great tips on how to make watercolor illustrations.
@@ -9,8 +25,8 @@
     page_count: 152
     cover: /books/9781909414815.jpg
     tags:
-      - nonfiction
-      - art
+    - nonfiction
+    - art
 - isbn: '9780300226478'
   work_id: OL29349887M
   date_read: '2026-08-02'
@@ -652,3 +668,10 @@
     cover: /books/9780142000670.jpg
     tags:
     - fiction
+- isbn: 0982522738
+  work_id: OL27089045M
+  meta:
+    title: Starting strength
+    author: Mark Rippetoe
+    page_count: 347
+    cover: /books/0982522738.jpg
