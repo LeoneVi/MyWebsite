@@ -36,14 +36,16 @@
                 {{ range $books }}
                 {{ $meta := .meta }}
                 {{ $tags := $meta.tags | default (slice) }}
+                {{ $cover := printf "/books/%s.webp" .work_id }}
 
                 <tr data-tags="{{ delimit $tags "," }}">
                 <td data-label="cover">
-                    {{ if and $meta.cover (ne $meta.cover "null") }}
+                    {{ with .work_id }}
                     <img
-                            src="{{ $meta.cover }}"
+                            src="{{ $cover }}"
                             alt="Cover of {{ $meta.title }}"
-                            class="book-cover">
+                            class="book-cover"
+                            loading="lazy">
                     {{ end }}
                 </td>
 

@@ -48,5 +48,11 @@ Then enrich newly added books with Open Library metadata and cover images:
 .venv/bin/python scripts/bookshelf/enrich_read_books.py
 ```
 
+Each entry in `data/read_books.yaml` needs a top-level `work_id`. This is normally
+an Open Library work ID, or a stable local slug for books that are not cataloged.
+Cover paths are derived automatically as `static/books/<work_id>.webp`; do not add
+a `meta.cover` field. The enrichment script resolves work IDs from ISBN or edition
+IDs and saves new cover downloads as WebP.
+
 Use `--dry-run` to fetch and report without changing files, or `--refresh` to
 retry metadata that Open Library did not have during an earlier run.
