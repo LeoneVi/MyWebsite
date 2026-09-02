@@ -1,25 +1,40 @@
+- isbn: '9781982195151'
+  work_id: OL27299920W
+  review: null
+  rating: null
+  date_read: '2026-09-01'
+  meta:
+    title: The Pasta Queen
+    author: 'Nadia Caterina Munno'
+    page_count: 288
+    tags:
+      - nonfiction
+      - cookbook
 - isbn: '9994674188'
   work_id: OL9207514M
   date_read: '2026-08-30'
-  review: My go to book for following along with TLM. It is much easier to follow along with mass using this booklet vs the 1962 missal.
+  review: My go to book for following along with TLM. It is much easier to follow
+    along with mass using this booklet vs the 1962 missal.
   meta:
     title: Latin English Booklet Missal for Praying the Traditional Mass
     author: ''
     page_count: null
     tags:
-      - nonfiction
-      - religion
+    - nonfiction
+    - religion
 - isbn: null
   work_id: OL17002224W
   date_read: '2026-08-30'
-  review: If anyone were to tell me they wanted to learn piano, I'd definitely recommend them this book. Thanks to this book, I was able to teach myself how to read sheet music.
+  review: If anyone were to tell me they wanted to learn piano, I'd definitely recommend
+    them this book. Thanks to this book, I was able to teach myself how to read sheet
+    music.
   meta:
     title: Alfred's basic adult piano course
     author: Willard A. Palmer
     page_count: 96
     tags:
-      - nonfiction
-      - piano
+    - nonfiction
+    - piano
 - isbn: '9781909414815'
   work_id: OL21187772W
   date_read: '2026-08-07'
