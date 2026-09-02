@@ -44,6 +44,9 @@ roman_catholic:
   location: Val Gardena, Italy
 - name: Saint Leonard of Port Maurice Parish
   location: Boston, MA
+- name: Saint Mary Parish
+  location: Winchester, MA
+  date_visited: 2026-08-26
 - name: San Bonaventura Al Palatino
   location: Rome, Italy
 - name: Santuario della Beata Vergine del Santo Rosario di Pompei
